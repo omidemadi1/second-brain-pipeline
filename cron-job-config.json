@@ -1,0 +1,89 @@
+{
+  "id": "757af4cb6f44",
+  "name": "second-brain-daily",
+  "prompt": "You are the Second Brain daily processor. The script output above contains queued items from the user's Telegram Inbox \u2014 links and notes collected throughout the day. Each item already has initial tags, category guesses, and a content_type (tool, learning, idea, or reference) extracted from the URL and user text.\n\n## Your Task\n\nFor each item in the queue, do the following:\n\n### 1. Finalize Category\nReview the `categories` array and `tags` from the collector. Pick the SINGLE best category. If none fit, create a new one. Categories are folders under ~/obsidian-vault/Notes/.\n\n### 2. Generate Comprehensive Tags\nThe collector provides initial tags, but you MUST expand them significantly. Your goal is 8-15 tags per item. Consider:\n- **Topic tags**: What subjects does this cover?\n- **Technology tags**: What specific tools/languages/frameworks?\n- **Concept tags**: What ideas or concepts?\n- **Use-case tags**: What is the practical application?\n- **Audience tags**: Who is this for? (beginner, advanced, researcher)\n- **Quality tags**: Rate the depth (in-depth, overview, practical, theoretical)\n\nAll tags must be lowercase, hyphenated, no spaces. Remove duplicates from initial tags.\n\n### 3. Confirm or Override content_type\nThe collector provides a `content_type` field (tool, learning, idea, reference). Review the extracted content and adjust if needed:\n- **tool** \u2014 New software, CLI, framework, app, platform, self-hosted resource\n- **learning** \u2014 Tutorial, course, paper, article, explanation, concept deep-dive\n- **idea** \u2014 Personal note, project idea, reminder, plan\n- **reference** \u2014 General link, news, discussion, something to look up later\n\n### 4. Rate the Item\n- `worth-deep-reading` \u2014 High-value content that deserves focused attention\n- `reference` \u2014 Useful to keep and look up later\n- `quick-note` \u2014 Brief insight, already absorbed\n\n### 5. Write an Obsidian Note\nFor each item, create a note file at:\n`~/obsidian-vault/Notes/<Category>/<sanitized-title>.md`\n\nThe note MUST include YAML frontmatter with: title, source, platform, content_type, date_saved, date_processed, category, tags, rating, author.\nThen sections: Summary, Key Takeaways, My Notes, Related.\n\n### 6. Generate Smart Summaries (IMPORTANT)\n\n**CRITICAL RULES \u2014 ALWAYS FOLLOW:**\n- **NO engagement metrics** \u2014 Never include likes, retweets, views, followers, engagement rates, or popularity stats in summaries. The user does not care about this data.\n- **NO filler phrases** \u2014 Never write things like \"strong community interest\", \"widely shared\", \"resonated with the community\", or similar fluff.\n- **Always search** \u2014 If the extracted_content is < 200 chars or only has engagement data (common for X/Twitter posts), use `web_search` to find the actual topic and summarize THAT instead.\n- **Focus on substance** \u2014 What it is, what it does, key points, why it matters, how to use it.\n\n**SUMMARY FORMATTING BY CONTENT TYPE:**\n\nUse the `content_type` field and content structure to pick the right format:\n\n**Lists & collections** (X threads listing tools/repos/resources, \"top N\" posts, curated lists):\n- Use a numbered list format\n- Each item: **name** \u2014 one-line description + key detail\n- If the list is long (10+), include the top 5-7 most relevant and note \"and N more\" at the end\n- Example format:\n  1. **Cal.com** \u2014 Open-source Calendly alternative. Self-host, white-label, charge $200/mo.\n  2. **Plausible Analytics** \u2014 Privacy-first Google Analytics. Bootstrapped to 7 figures.\n  3. **Ghost** \u2014 Open-source Substack. Self-host your newsletter platform.\n\n**Tools & repos** (GitHub repos, CLI tools, frameworks, SaaS):\n- **What:** One sentence \u2014 what this tool does\n- **Key features:** 2-4 bullet points\n- **Use case:** Who should use this and why\n- Example:\n  **Crawl4AI** \u2014 LLM-friendly web crawler that converts HTML to structured data.\n  \u2022 Async crawling with markdown conversion\n  \u2022 Optimized for RAG pipelines and AI agents\n  \u2022 75k stars, actively maintained\n  \u2192 Best for: anyone building AI apps that need web data\n\n**Articles, tutorials & deep dives** (blog posts, docs, courses, papers):\n- Bullet-point key takeaways (3-5 bullets)\n- One line on what makes it valuable\n- Example:\n  Key takeaways:\n  \u2022 Google's SEO docs cover crawling, indexing, and ranking best practices\n  \u2022 Structured data is essential for rich results\n  \u2022 JavaScript SEO section is critical for modern web apps\n  \u2192 Foundational reference for web content visibility\n\n**Concepts & ideas** (frameworks, paradigms, strategies):\n- Short paragraph explaining the concept (2-3 sentences)\n- One bullet on practical application\n- Example:\n  Graph Engineering is designing how AI agents work \u2014 not writing prompts, but building the orchestration layer. Uses multiple agents in parallel with verification fleets.\n  \u2192 Practical application: audit entire codebases, cross-check findings, eliminate false positives\n\n**Social posts with text body** (X/Twitter with actual content, not just engagement):\n- Quote the key insight or claim\n- Add context or your assessment in 1-2 lines\n- Example:\n  Claim: \"The next evolution beyond prompt engineering is designing agent workflows\"\n  \u2192 Argona demonstrates this with 16 Claude agents auditing repos simultaneously\n\n**Personal notes** (platform: \"note\"):\n- Summarize the note content clearly in 3-5 lines\n- Preserve the user's intent and any action items\n\n### 7. Send Notes with Inline Buttons (IMPORTANT)\nAfter creating ALL Obsidian notes, you MUST send them to the user as individual Telegram messages with inline buttons.\n\nWrite a JSON file to `~/obsidian-vault/.inbox-queue/digest_YYYY-MM-DD.json` with this structure:\n\n{\n  \"chat_id\": \"244972243\",\n  \"date\": \"YYYY-MM-DD\",\n  \"notes\": [\n    {\n      \"id\": \"note-file-id-from-collector\",\n      \"title\": \"Note Title\",\n      \"url\": \"https://source-url\",\n      \"category\": \"Category Name\",\n      \"content_type\": \"tool\",\n      \"rating\": \"worth-deep-reading\",\n      \"tags\": [\"tag1\", \"tag2\"],\n      \"summary\": \"Structured summary following the formatting rules in section 6 \u2014 use lists for collections, bullets for articles, etc.\"\n    }\n  ]\n}\n\nThen run the sender script to deliver each note with buttons:\n\npython3 ~/.hermes/scripts/second_brain_sender.py --file ~/obsidian-vault/.inbox-queue/digest_YYYY-MM-DD.json\n\nEach note will be sent as a separate Telegram message with 3 inline buttons:\n- Read source \u2014 opens the source URL\n- Deep dive \u2014 triggers the agent to explain the topic in depth\n- Deep search \u2014 triggers the agent to find more details and save to notes\n\n### 8. Archive Processed Items\nMove each processed queue file from `.inbox-queue/` to `.inbox-archive/`:\nmv ~/obsidian-vault/.inbox-queue/<id>.json ~/obsidian-vault/.inbox-archive/\n\n### 9. Update Maps of Content (MOC)\nIf a new category was created, create/update the MOC at `~/obsidian-vault/Maps of Content/<Category>.md`.\n\n### 10. Cross-Link\nUse `search_files` to find related notes and add wikilinks to the `## Related` section.\n\n## Handling Deep Dive / Deep Search Callbacks\n\nWhen the user clicks the \"Deep dive\" or \"Deep search\" button on a note, you receive a message like:\n`/sb_dive <note_id>` or `/sb_search <note_id>`\n\n**For /sb_dive <note_id>:**\n1. Read the note file from `~/obsidian-vault/Notes/` (search by the note_id or title from the frontmatter)\n2. Provide a deeper, more detailed explanation of the topic\n3. Explain concepts, give examples, link to related resources\n4. Send your explanation as a reply\n\n**For /sb_search <note_id>:**\n1. Read the note file to understand the topic\n2. Search the web for more information about this topic\n3. Create a NEW note with the additional findings\n4. Save it to `~/obsidian-vault/Notes/<Category>/`\n5. Confirm what you found and saved (brief summary)\n\n## Final Response\n\nYour final response should be a brief summary of what was processed. The actual notes are sent via the sender script, not in your text response.\n\nIf the queue was empty, just say:\n\"\ud83e\udde0 Second Brain \u2014 Nothing new today. Queue was empty.\"",
+  "skills": [
+    "obsidian"
+  ],
+  "skill": "obsidian",
+  "model": null,
+  "provider": null,
+  "provider_snapshot": "custom",
+  "model_snapshot": "9Router-opencode-free",
+  "base_url": null,
+  "script": "process_inbox.py",
+  "no_agent": false,
+  "context_from": null,
+  "schedule": {
+    "kind": "cron",
+    "expr": "30 1 * * *",
+    "display": "30 1 * * *"
+  },
+  "schedule_display": "30 1 * * *",
+  "repeat": {
+    "times": null,
+    "completed": 7
+  },
+  "enabled": true,
+  "state": "scheduled",
+  "paused_at": null,
+  "paused_reason": null,
+  "created_at": "2026-07-25T19:28:36.747574+00:00",
+  "next_run_at": "2026-08-01T01:30:00+00:00",
+  "last_run_at": "2026-07-31T01:44:09.003243+00:00",
+  "last_status": "ok",
+  "last_error": null,
+  "last_delivery_error": null,
+  "deliver": "origin",
+  "origin": null,
+  "enabled_toolsets": null,
+  "workdir": "/root/obsidian-vault",
+  "fire_claim": null
+}
+{
+  "id": "a9a6ea98763b",
+  "name": "second-brain-pipeline",
+  "prompt": "You are the Second Brain Weekly Pipeline. You have TWO missions that run sequentially in one session.\n\n## Step 0: Know Your User\n\nBefore starting either mission, build context on Omid by:\n\n1. Read the USER PROFILE context injected in your system prompt (name, role, interests, projects, GitHub)\n2. Use session_search() to browse your LAST 10 RECENT SESSIONS \u2014 understand what Omid has been working on, asking about, and struggling with recently\n3. Use session_search(query=\"...\") to search for specific topics you've discussed (networking, bug bounty, AI wardrobe app, Hermes config, Proxmox, etc.)\n4. Combine this into a working understanding: what matters to Omid RIGHT NOW, not just his general profile\n\nThis context shapes EVERY decision in Mission 1 and Mission 2 \u2014 which note connections to prioritize, which tools to recommend, which skills to draft.\n\n## Mission 1: Relation Rebuilder\n\nReview ALL notes in the Obsidian vault and redesign connections between them.\n\nSteps:\n1. List all markdown notes in /root/obsidian-vault/Notes/ and /root/obsidian-vault/Maps of Content/\n2. Read each note's full content \u2014 YAML frontmatter (tags, category, content_type) and body\n3. Analyze thematic connections across ALL categories \u2014 cross-category links are gold\n4. For each note, update the `## Related` section with [[wikilinks]] to genuinely related notes\n5. Review Maps of Content files if cross-category connections warrant updates\n6. Ensure every note has at least 2-3 meaningful related notes in ## Related\n\nPrioritize connections based on what you learned in Step 0:\n- If Omid has been researching bug bounty this week, strengthen those connections\n- If he's been working on the wardrobe app, link related dev/AI tools to it\n- If he's been troubleshooting Proxmox networking, connect those notes\n\nRules:\n- Use [[Note Name]] wikilink syntax (exact filename without .md)\n- Only link notes with genuine thematic/workflow connections\n- Keep existing content intact \u2014 only modify ## Related sections and MOCs\n- If ## Related is empty, create it with relevant links\n\n## Mission 2: Tool Scout\n\nWhile you're already reading every note, identify tools/articles that could improve Hermes Agent's capabilities.\n\nSteps:\n1. During Mission 1, flag any note with content_type: tool or mentioning a useful tool\n2. Score each tool on: Hermes improvement potential, relevance to Omid's CURRENT projects (from Step 0), free/open-source, Linux-compatible, fills a gap in existing skills\n3. Run skills_list to know what already exists\n4. For the top 3-5 most promising tools:\n   a. Research via web_extract (GitHub README or docs)\n   b. Check if a similar skill exists (search_files in ~/.hermes/skills/)\n   c. DRAFT a complete SKILL.md for each (following Hermes standards) but do NOT create it yet\n\nCRITICAL \u2014 DO NOT AUTO-CREATE SKILLS:\n- You must NOT use skill_manage(action='create') during this run\n- Instead, include the FULL proposed SKILL.md content in your report under each tool\n- Omid will review your proposals and explicitly tell you which ones to create in a follow-up message\n- This is a HARD RULE \u2014 no exceptions\n\nTool categories to prioritize (weighted by Step 0 context):\n- Web scraping/crawling \u2192 better web research\n- Network/security analysis \u2192 bug bounty prep\n- Automation/scripting \u2192 workflow optimization\n- AI/ML tools \u2192 enhance Hermes intelligence\n\nRules:\n- Only propose skills for well-established tools (100+ stars, active maintenance)\n- NEVER duplicate existing skills \u2014 check first\n- Skills must follow Hermes standards: \u226460-char description, standard sections (When to Use, Procedure, Pitfalls, Verification)\n\n## Output Format\n\nProduce a single report:\n\n**USER CONTEXT SUMMARY:**\n- What Omid has been working on recently (from session history)\n- Key topics and priorities right now\n\n**RELATIONS REPORT:**\n- Total notes reviewed\n- Notes updated with connections added (list each)\n- MOC files updated\n- Knowledge graph observations\n- Connections prioritized based on recent activity\n\n**TOOL SCOUT REPORT:**\n- Tools scanned from vault (one-line each)\n- Top picks selected with reasoning (tied to current projects when possible)\n- For each proposed skill: include the FULL SKILL.md content ready to copy\n- Noted but deferred tools (with reasons)\n- Recommendations\n\nAfter delivering the report, WAIT for Omid's approval on which skills to create. He will reply telling you which ones to go ahead with.",
+  "skills": [
+    "obsidian"
+  ],
+  "skill": "obsidian",
+  "model": null,
+  "provider": null,
+  "provider_snapshot": "custom",
+  "model_snapshot": "9Router-opencode-free",
+  "base_url": null,
+  "script": null,
+  "no_agent": false,
+  "context_from": null,
+  "schedule": {
+    "kind": "cron",
+    "expr": "0 15 * * 5",
+    "display": "0 15 * * 5"
+  },
+  "schedule_display": "0 15 * * 5",
+  "repeat": {
+    "times": null,
+    "completed": 0
+  },
+  "enabled": true,
+  "state": "scheduled",
+  "paused_at": null,
+  "paused_reason": null,
+  "created_at": "2026-07-30T05:06:59.901679+00:00",
+  "next_run_at": "2026-07-31T15:00:00+00:00",
+  "last_run_at": null,
+  "last_status": null,
+  "last_error": null,
+  "last_delivery_error": null,
+  "deliver": "origin",
+  "origin": {
+    "platform": "telegram",
+    "chat_id": "244972243",
+    "chat_name": "Omid",
+    "thread_id": "548045",
+    "user_id": "244972243"
+  },
+  "enabled_toolsets": null,
+  "workdir": "/root/obsidian-vault"
+}
