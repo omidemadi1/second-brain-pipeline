@@ -1,0 +1,32 @@
+{
+  "id": "d8604d984e98",
+  "url": "https://developers.google.com/search/docs",
+  "text": "Google Search documentation — official guide on how Google crawls, indexes, and ranks websites. Key topics: URL structure, duplicate content, canonical URLs.",
+  "platform": "web",
+  "category_guess": "General",
+  "categories": [
+    "General"
+  ],
+  "content_type": "learning",
+  "tags": [
+    "canonical",
+    "crawls",
+    "documentation",
+    "duplicate",
+    "google",
+    "guide",
+    "indexes",
+    "key",
+    "official",
+    "ranks",
+    "search",
+    "structure",
+    "topics",
+    "url",
+    "urls"
+  ],
+  "title_preview": "https://developers.google.com/search/docs",
+  "timestamp": "2026-07-28T19:10:17.160979+03:30",
+  "user_message": "Google Search documentation — official guide on how Google crawls, indexes, and ranks websites. Key topics: URL structure, duplicate content, canonical URLs. https://developers.google.com/search/docs",
+  "processed": false
+}

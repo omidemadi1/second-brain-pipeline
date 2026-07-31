@@ -2,14 +2,17 @@
 __pycache__/
 *.pyc
 *.pyo
+
+# Environment
 .env
 venv/
 
 # Obsidian
 .obsidian/
 
-# Queue data (user-specific)
+# Queue data
 .inbox-queue/
+.inbox-queue/__pycache__/
 .inbox-archive/
 
 # OS
@@ -19,3 +22,6 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Temp scripts
+check_related.py

@@ -1,0 +1,33 @@
+{
+  "id": "a4065ba35fd5",
+  "url": "https://agentcookie.dev/",
+  "text": "AgentCookie — open-source tool syncing browser cookies, CLI tokens, and API keys with AI agents (OpenClaw, Hermes). Uses Tailscale for encrypted direct connection. Install: agentcookie wizard install",
+  "platform": "web",
+  "category_guess": "AI & Machine Learning",
+  "categories": [
+    "AI & Machine Learning",
+    "Development"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "ai-agents",
+    "agentcookie",
+    "api",
+    "browser",
+    "cli",
+    "connection",
+    "cookies",
+    "direct",
+    "encrypted",
+    "hermes",
+    "install",
+    "keys",
+    "open-source",
+    "openclaw",
+    "syncing"
+  ],
+  "title_preview": "https://agentcookie.dev/",
+  "timestamp": "2026-07-30T11:42:53.621440+03:30",
+  "user_message": "https://agentcookie.dev/ AgentCookie — open-source tool syncing browser cookies, CLI tokens, and API keys with AI agents (OpenClaw, Hermes). Uses Tailscale for encrypted direct connection. Install: agentcookie wizard install",
+  "processed": false
+}

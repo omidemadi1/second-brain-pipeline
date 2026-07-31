@@ -1,0 +1,32 @@
+{
+  "id": "b740d837da86",
+  "url": "https://usefeyn.com/blog/feynobg",
+  "text": "FeyNoBg — free open-source background removal model by Feyn. Handles complex edges like windblown hair. Python library NoBg available on GitHub. Test on Hugging Face:",
+  "platform": "web",
+  "category_guess": "Development",
+  "categories": [
+    "Development"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "available",
+    "background",
+    "complex",
+    "edges",
+    "face",
+    "feyn",
+    "feynobg",
+    "free",
+    "github",
+    "hair",
+    "handles",
+    "hugging",
+    "library",
+    "like",
+    "model"
+  ],
+  "title_preview": "https://usefeyn.com/blog/feynobg",
+  "timestamp": "2026-07-28T00:44:07.810883+03:30",
+  "user_message": "https://usefeyn.com/blog/feynobg FeyNoBg — free open-source background removal model by Feyn. Handles complex edges like windblown hair. Python library NoBg available on GitHub. Test on Hugging Face: https://huggingface.co/feyninc/FeyNobg",
+  "processed": false
+}

@@ -1,0 +1,166 @@
+{
+  "chat_id": "244972243",
+  "date": "2026-07-28",
+  "notes": [
+    {
+      "id": "7344796a1c66",
+      "title": "Marketing Skills — Pre-Built AI Skill Files",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "category": "Productivity & Tools",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["marketing-skills", "claude-code", "codex", "cursor", "windsurf", "ai-agents", "copywriting", "seo", "analytics", "growth-engineering", "email-marketing", "cold-outreach", "cro", "prompt-engineering", "open-source", "developer-tools"],
+      "summary": "Pre-built marketing skill files for AI coding agents (Claude Code, Codex, Cursor, Windsurf) by Corey Haines. Covers CRO, copywriting, SEO, analytics, growth engineering, and email marketing workflows (cold outreach, follow-up sequences, subject lines, onboarding, churn prevention). 42k GitHub stars indicate massive community adoption. These skill files teach AI agents domain-specific marketing workflows, making them ready to handle real marketing tasks out of the box."
+    },
+    {
+      "id": "2db83a025fb2",
+      "title": "Crawl4AI — LLM-Friendly Web Crawler",
+      "url": "https://github.com/unclecode/crawl4ai",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["crawl4ai", "web-crawler", "llm", "rag", "ai-agents", "open-source", "web-scraping", "data-extraction", "structured-data", "python", "html-parsing", "async-crawling", "developer-tools", "data-pipeline"],
+      "summary": "Open-source LLM-friendly web crawler with 75k stars and 8k forks. Converts raw HTML into clean structured data optimized for RAG pipelines and AI agents. Supports async crawling, markdown conversion, and structured data extraction. Major tool for anyone building AI applications that need web data — bridges the gap between raw web content and LLM-consumable formats."
+    },
+    {
+      "id": "543fba56e9cf",
+      "title": "Book-to-Skill — Convert Books to AI Agent Skills",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "reference",
+      "tags": ["book-to-skill", "ai-agents", "skill-files", "documentation", "knowledge-extraction", "llama-index", "rag", "open-source", "automation", "python", "agent-workflows", "prompt-engineering", "llm", "code"],
+      "summary": "Tool that automatically converts books and project documentation into AI agent skill files. Uses LlamaIndex for document processing and generates structured skill files from PDFs, markdown, and other formats. Useful for creating custom AI agent knowledge bases from existing documentation — turning static docs into actionable agent capabilities."
+    },
+    {
+      "id": "fbb6c6e2ca5f",
+      "title": "Claude Video — Video Analysis for Claude Code",
+      "url": "https://github.com/bradautomates/claude-video",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["claude-video", "claude-code", "video-analysis", "groq", "whisper", "speech-to-text", "youtube", "tiktok", "loom", "open-source", "key-frame-processing", "cost-optimization", "developer-tools", "transcription", "summarization"],
+      "summary": "Open-source video analysis tool for Claude Code. Summarizes videos and extracts key points with timestamps. Supports YouTube, TikTok, Loom, local files, and screen recordings. Processes only key frames for significant cost reduction. Uses Groq Whisper for fast speech-to-text. Essential tool for developers who need to analyze video content within Claude Code workflows."
+    },
+    {
+      "id": "b740d837da86",
+      "title": "FeyNoBg — Background Removal Model",
+      "url": "https://usefeyn.com/blog/feynobg",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["feynobg", "background-removal", "image-processing", "computer-vision", "open-source", "python", "nobg", "huggingface", "feyn", "deep-learning", "segmentation", "image-editing", "free-tool", "edge-detection"],
+      "summary": "Free open-source background removal model by Feyn. Handles complex edges like windblown hair better than many commercial alternatives. Python library NoBg available on GitHub. Demo on Hugging Face. Competitive with Remove.bg and similar commercial tools — a strong open-source alternative for image processing pipelines."
+    },
+    {
+      "id": "595215f2db1e",
+      "title": "OSINT: Find Everything About Anyone",
+      "url": "",
+      "category": "Cybersecurity",
+      "content_type": "learning",
+      "rating": "worth-deep-reading",
+      "tags": ["osint", "intelligence-gathering", "digital-investigation", "username-hunting", "email-intelligence", "geolocation", "evidence-collection", "cybersecurity", "privacy", "open-source-tools", "sherlock", "spiderfoot", "epieos", "holehe", "hunchly", "osint-frameworks", "reconnaissance", "investigation"],
+      "summary": "Comprehensive OSINT guide covering tools and techniques for finding information about anyone online. Tools: IntelTechniques, Epieos (email lookup), Sherlock (username hunting), Holehe (email verification), Hunchly (web investigation), Overpass Turbo (OpenStreetMap queries), SpiderFoot (automated OSINT). Covers digital identity connection, username hunting, email intelligence, geolocation, and evidence collection. Essential reference for digital investigators."
+    },
+    {
+      "id": "45345c3d1e64",
+      "title": "Paranoia Privacy Wiki",
+      "url": "https://paranoiaprivacy.wiki/",
+      "category": "Cybersecurity",
+      "content_type": "learning",
+      "rating": "worth-deep-reading",
+      "tags": ["privacy", "digital-privacy", "anonymity", "secure-browsing", "encrypted-messaging", "phone-hardening", "metadata-removal", "private-email", "anonymous-payments", "privacy-apps", "opsec", "self-hosted", "tor", "vpn", "threat-modeling", "comprehensive-guide", "free-resource"],
+      "summary": "Free comprehensive guide to digital privacy and anonymity. Covers secure browsing (Tor, VPNs, browser hardening), encrypted messaging (Signal, Session), phone hardening (de-Googling, app permissions), metadata removal from photos/documents, private email services, privacy-friendly app alternatives, and anonymous payment methods. Essential reference for anyone concerned about digital privacy and operational security."
+    },
+    {
+      "id": "a8ac739df228",
+      "title": "Grok Build /deep-research Command",
+      "url": "",
+      "category": "AI & Machine Learning",
+      "content_type": "reference",
+      "rating": "reference",
+      "tags": ["grok", "deep-research", "ai-agents", "research-automation", "parallel-agents", "claim-verification", "evidence-collection", "grok-4-5", "bounded-agents", "structured-research", "fact-checking", "source:smartainewss"],
+      "summary": "Grok Build's /deep-research command enables structured research with bounded parallel agents. Designs focused sub-questions, collects claims with evidence, cross-checks each claim separately, keeps only verified ones with sources. Marks incomplete coverage as Partial. Uses Grok 4.5 model. Represents a new approach to AI-assisted research with built-in fact verification — promising for reliable research workflows."
+    },
+    {
+      "id": "a1216434a494",
+      "title": "Graph Engineering — The Layer Above Prompting",
+      "url": "https://x.com/i/status/2081374396900425875",
+      "category": "AI & Machine Learning",
+      "content_type": "reference",
+      "rating": "worth-deep-reading",
+      "tags": ["graph-engineering", "ai-agents", "claude", "prompt-engineering", "agent-design", "code-audit", "security-audit", "multi-agent", "parallel-agents", "verification", "developer-tools", "advanced-ai"],
+      "summary": "Argona introduces 'Graph Engineering' — designing how AI agents work rather than just writing prompts. Uses 16 Claude agents to audit an entire repo simultaneously, with a second fleet re-checking findings on fresh context. Found 11 endpoints with missing auth checks, 3 false positives caught by the verifier. Positioned as the next evolution beyond prompt engineering, focused on agent orchestration and workflow design. 846 likes indicate strong community interest."
+    },
+    {
+      "id": "ac9e0de83e85",
+      "title": "Graph Engineering Overview",
+      "url": "https://x.com/i/status/2080626046903157126",
+      "category": "AI & Machine Learning",
+      "content_type": "reference",
+      "rating": "reference",
+      "tags": ["graph-engineering", "ai-agents", "prompt-engineering", "agent-design", "future-of-ai", "developer-tools", "paradigm-shift"],
+      "summary": "Argona's overview of Graph Engineering — a new kind of engineer who doesn't write prompts but designs how AI works. Describes it as a paradigm shift where people who understand agent orchestration will outpace those still focused on prompt writing. 211 likes, 26 retweets. Complements the detailed Graph Engineering thread by establishing the conceptual framework."
+    },
+    {
+      "id": "5c9c5b98cf7d",
+      "title": "Machina — High-Engagement AI Post",
+      "url": "https://x.com/i/status/2081017272924361162",
+      "category": "General",
+      "content_type": "reference",
+      "rating": "quick-note",
+      "tags": ["ai", "social-media", "engagement", "visual-content"],
+      "summary": "High-engagement post from Machina (@EXM7777) with 925 likes and 101 retweets. Content appears to be primarily visual/media-based with no text body. The strong engagement metrics suggest it resonated with the AI community."
+    },
+    {
+      "id": "79ce36c485f3",
+      "title": "Codez — Viral AI Post",
+      "url": "https://x.com/i/status/2081516454352945639",
+      "category": "General",
+      "content_type": "reference",
+      "rating": "quick-note",
+      "tags": ["ai", "social-media", "viral-content", "engagement"],
+      "summary": "Viral AI-related post from Codez (@0xCodez) with 3,383 likes and 620 retweets. No text body — content is image or video based. Exceptionally high engagement indicates widely shared AI content that struck a chord with the community."
+    },
+    {
+      "id": "f57741d7cb52",
+      "title": "Akshay — AI Post",
+      "url": "https://x.com/akshay_pachaar/status/2081089131808243999",
+      "category": "General",
+      "content_type": "reference",
+      "rating": "quick-note",
+      "tags": ["ai", "social-media", "engagement"],
+      "summary": "AI-related post from Akshay (@akshay_pachaar) with 764 likes and 115 retweets. No text body visible — likely image or video content. Moderate-to-high engagement suggests community interest in the topic."
+    },
+    {
+      "id": "022054231e57",
+      "title": "FeyNoBg on Hugging Face",
+      "url": "https://huggingface.co/feyninc/FeyNobg",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "reference",
+      "tags": ["feynobg", "huggingface", "background-removal", "image-processing", "computer-vision", "model-demo", "free-tool", "edge-detection", "python", "image-segmentation"],
+      "summary": "Hugging Face demo page for FeyNoBg background removal model. Test the model directly in the browser. Part of the Feyn ecosystem alongside the NoBg Python library. Handles complex edges like windblown hair — try it before integrating into your pipeline."
+    },
+    {
+      "id": "01f57101c924",
+      "title": "10 GitHub Repos That Print Money While You Sleep",
+      "url": "https://x.com/i/status/2081383533059453126",
+      "category": "Development",
+      "content_type": "reference",
+      "rating": "reference",
+      "tags": ["github", "open-source", "monetization", "saas", "startups", "side-hustle", "cal-com", "plausible-analytics", "ghost", "self-hosted", "entrepreneurship", "business-models", "white-label", "recurring-revenue"],
+      "summary": "Thread listing 10 open-source GitHub repos that can be monetized: Cal.com (open-source Calendly, white-label for $200/mo), Plausible Analytics (privacy-first GA, resell at $50/mo/client), Ghost (open-source Substack), and more. Shows how open-source can be bootstrapped into profitable businesses through hosting, white-labeling, and reselling."
+    },
+    {
+      "id": "206ad28760e2",
+      "title": "10 GitHub Repos That Print Money (Full Thread)",
+      "url": "https://x.com/i/status/2079165300625330317",
+      "category": "Development",
+      "content_type": "reference",
+      "rating": "reference",
+      "tags": ["github", "open-source", "monetization", "saas", "startups", "side-hustle", "cal-com", "plausible-analytics", "ghost", "self-hosted", "entrepreneurship", "business-models", "white-label", "recurring-revenue", "developer-tools"],
+      "summary": "Full thread from Kshitij Mishra (@DAIEvolutionHub) detailing 10 GitHub repos for passive income. Each includes business model, revenue potential, and getting started guide. Cal.com ($5M ARR in 3 years), Plausible Analytics (bootstrapped to 7 figures), Ghost. Practical playbook for developers looking to monetize open-source — 1,031 likes, 168 retweets."
+    }
+  ]
+}

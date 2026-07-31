@@ -1,0 +1,33 @@
+{
+  "id": "fbb6c6e2ca5f",
+  "url": "https://github.com/bradautomates/claude-video",
+  "text": "Claude Video — open-source video analysis for Claude Code. Summarizes videos, extracts key points with timestamps. Supports YouTube, TikTok, Loom, local files, screen recordings. Processes only key frames for cost reduction. Uses Groq Whisper for speech-to-text.",
+  "platform": "github",
+  "category_guess": "AI & Machine Learning",
+  "categories": [
+    "AI & Machine Learning",
+    "Development"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "claude",
+    "github",
+    "video",
+    "analysis",
+    "code",
+    "cost",
+    "extracts",
+    "files",
+    "frames",
+    "groq",
+    "key",
+    "local",
+    "loom",
+    "only",
+    "open-source"
+  ],
+  "title_preview": "https://github.com/bradautomates/claude-video",
+  "timestamp": "2026-07-27T20:58:53.419530+03:30",
+  "user_message": "https://github.com/bradautomates/claude-video Claude Video — open-source video analysis for Claude Code. Summarizes videos, extracts key points with timestamps. Supports YouTube, TikTok, Loom, local files, screen recordings. Processes only key frames for cost reduction. Uses Groq Whisper for speech-to-text.",
+  "processed": false
+}

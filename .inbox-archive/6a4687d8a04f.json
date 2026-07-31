@@ -1,0 +1,32 @@
+{
+  "id": "6a4687d8a04f",
+  "url": "https://github.com/deepbeepmeep/Wan2GP",
+  "text": "Wan2GP — free open-source AI video studio. Text-to-video, image-to-video. Runs on 6GB VRAM (even RTX 10 series/laptops). Built-in models: Wan 2.2, LTX-2, Hunyuan Video, Flux. LoRA support, mask editor, prompt enhancer. Browser UI with queue system. No upload, no watermark.",
+  "platform": "github",
+  "category_guess": "Development",
+  "categories": [
+    "Development"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "github",
+    "wan2gp",
+    "browser",
+    "built-in",
+    "editor",
+    "enhancer",
+    "even",
+    "flux",
+    "free",
+    "hunyuan",
+    "image-to-video",
+    "laptops",
+    "lora",
+    "ltx-2",
+    "mask"
+  ],
+  "title_preview": "https://github.com/deepbeepmeep/Wan2GP",
+  "timestamp": "2026-07-30T08:59:02.971660+03:30",
+  "user_message": "https://github.com/deepbeepmeep/Wan2GP Wan2GP — free open-source AI video studio. Text-to-video, image-to-video. Runs on 6GB VRAM (even RTX 10 series/laptops). Built-in models: Wan 2.2, LTX-2, Hunyuan Video, Flux. LoRA support, mask editor, prompt enhancer. Browser UI with queue system. No upload, no watermark.",
+  "processed": false
+}

@@ -1,0 +1,33 @@
+{
+  "id": "77e3eae822b8",
+  "url": null,
+  "text": "Hallusquatting — cybersecurity threat: attackers register hallucinated package names from AI coding assistants and inject malware. AI suggests non-existent packages, attackers claim them and embed malicious code. Source: @Linuxor",
+  "platform": "note",
+  "category_guess": "Cybersecurity",
+  "categories": [
+    "Cybersecurity",
+    "DevOps & Infrastructure"
+  ],
+  "content_type": "reference",
+  "tags": [
+    "assistants",
+    "attackers",
+    "claim",
+    "code",
+    "coding",
+    "cybersecurity",
+    "embed",
+    "hallucinated",
+    "hallusquatting",
+    "inject",
+    "linux",
+    "linuxor",
+    "malicious",
+    "malware",
+    "names"
+  ],
+  "title_preview": "Hallusquatting — cybersecurity threat: attackers register hallucinated package n",
+  "timestamp": "2026-07-30T22:37:58.324551+03:30",
+  "user_message": "Hallusquatting — cybersecurity threat: attackers register hallucinated package names from AI coding assistants and inject malware. AI suggests non-existent packages, attackers claim them and embed malicious code. Source: @Linuxor",
+  "processed": false
+}

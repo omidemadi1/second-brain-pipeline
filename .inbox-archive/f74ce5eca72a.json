@@ -1,0 +1,32 @@
+{
+  "id": "f74ce5eca72a",
+  "url": null,
+  "text": "Grok Build CLI v0.2.112 — New /tutorial command, tool_overrides for search date/domain limits, /doctor improvements, [edit] button for queued prompts, voice shortcut toggle, workflow progress & retry, hooks in config.toml. Source: @smartainewss",
+  "platform": "note",
+  "category_guess": "Productivity & Tools",
+  "categories": [
+    "Productivity & Tools"
+  ],
+  "content_type": "idea",
+  "tags": [
+    "build",
+    "button",
+    "cli",
+    "command",
+    "config",
+    "date",
+    "doctor",
+    "domain",
+    "edit",
+    "grok",
+    "hooks",
+    "improvements",
+    "limits",
+    "progress",
+    "prompts"
+  ],
+  "title_preview": "Grok Build CLI v0.2.112 — New /tutorial command, tool_overrides for search date/",
+  "timestamp": "2026-07-26T08:55:56.573998+03:30",
+  "user_message": "Grok Build CLI v0.2.112 — New /tutorial command, tool_overrides for search date/domain limits, /doctor improvements, [edit] button for queued prompts, voice shortcut toggle, workflow progress & retry, hooks in config.toml. Source: @smartainewss",
+  "processed": false
+}

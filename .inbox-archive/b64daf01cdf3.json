@@ -1,0 +1,27 @@
+{
+  "id": "b64daf01cdf3",
+  "url": null,
+  "text": "Idea: Build a Python automation tool for Proxmox VM backups",
+  "platform": "note",
+  "category_guess": "DevOps & Infrastructure",
+  "categories": [
+    "DevOps & Infrastructure",
+    "Development",
+    "Productivity & Tools",
+    "Hardware & DIY"
+  ],
+  "content_type": "idea",
+  "tags": [
+    "automation",
+    "backups",
+    "build",
+    "idea",
+    "proxmox",
+    "python",
+    "tool"
+  ],
+  "title_preview": "Idea: Build a Python automation tool for Proxmox VM backups",
+  "timestamp": "2026-07-26T08:40:30.507602+03:30",
+  "user_message": "Idea: Build a Python automation tool for Proxmox VM backups",
+  "processed": false
+}

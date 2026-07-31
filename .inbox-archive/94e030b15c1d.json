@@ -1,0 +1,32 @@
+{
+  "id": "94e030b15c1d",
+  "url": null,
+  "text": "ByteByteGo infographic: Why Most AI Demos Fail in Production — 8 failure modes: clean demo vs messy production data, retrieval failures causing hallucinations, outdated evals creating false confidence, standard monitoring missing AI failures, token costs compounding at scale, data drift causing regressions, prompt coupling deployment risks, cascading pipeline failures.",
+  "platform": "note",
+  "category_guess": "General",
+  "categories": [
+    "General"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "bytebytego",
+    "cascading",
+    "causing",
+    "clean",
+    "compounding",
+    "confidence",
+    "costs",
+    "coupling",
+    "creating",
+    "data",
+    "demo",
+    "demos",
+    "deployment",
+    "drift",
+    "evals"
+  ],
+  "title_preview": "ByteByteGo infographic: Why Most AI Demos Fail in Production — 8 failure modes: ",
+  "timestamp": "2026-07-26T23:07:11.829643+03:30",
+  "user_message": "ByteByteGo infographic: Why Most AI Demos Fail in Production — 8 failure modes: clean demo vs messy production data, retrieval failures causing hallucinations, outdated evals creating false confidence, standard monitoring missing AI failures, token costs compounding at scale, data drift causing regressions, prompt coupling deployment risks, cascading pipeline failures.",
+  "processed": false
+}

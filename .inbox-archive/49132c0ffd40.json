@@ -1,0 +1,32 @@
+{
+  "id": "49132c0ffd40",
+  "url": null,
+  "text": "Grok Build v0.2.113 — MCP server enable/disable from CLI (grok mcp enable/disable), copy full markdown output in plan mode with y key. Source: @smartainewss",
+  "platform": "note",
+  "category_guess": "General",
+  "categories": [
+    "General"
+  ],
+  "content_type": "idea",
+  "tags": [
+    "build",
+    "cli",
+    "copy",
+    "disable",
+    "enable",
+    "full",
+    "grok",
+    "key",
+    "markdown",
+    "mcp",
+    "mode",
+    "output",
+    "plan",
+    "server",
+    "smartainewss"
+  ],
+  "title_preview": "Grok Build v0.2.113 — MCP server enable/disable from CLI (grok mcp enable/disabl",
+  "timestamp": "2026-07-29T18:44:25.193199+03:30",
+  "user_message": "Grok Build v0.2.113 — MCP server enable/disable from CLI (grok mcp enable/disable), copy full markdown output in plan mode with y key. Source: @smartainewss",
+  "processed": false
+}

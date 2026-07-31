@@ -1,0 +1,32 @@
+{
+  "id": "a57c64d86946",
+  "url": null,
+  "text": "Llama.cpp optimization tool — runs 30B models at ~22 tok/s with only 6GB VRAM. Predicts inference speed on your system before download, recommends optimal llama.cpp commands. Focuses on correct memory placement, not just quantization. Source: @smartainewss",
+  "platform": "note",
+  "category_guess": "General",
+  "categories": [
+    "General"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "c++",
+    "commands",
+    "correct",
+    "download",
+    "focuses",
+    "inference",
+    "llama",
+    "memory",
+    "models",
+    "only",
+    "optimal",
+    "optimization",
+    "placement",
+    "predicts",
+    "quantization"
+  ],
+  "title_preview": "Llama.cpp optimization tool — runs 30B models at ~22 tok/s with only 6GB VRAM. P",
+  "timestamp": "2026-07-29T15:05:57.653718+03:30",
+  "user_message": "Llama.cpp optimization tool — runs 30B models at ~22 tok/s with only 6GB VRAM. Predicts inference speed on your system before download, recommends optimal llama.cpp commands. Focuses on correct memory placement, not just quantization. Source: @smartainewss",
+  "processed": false
+}

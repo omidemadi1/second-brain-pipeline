@@ -1,0 +1,28 @@
+{
+  "id": "7f1e26cd2a46",
+  "url": null,
+  "text": "Idea: Build a Python automation tool for Proxmox VM backups using their REST API",
+  "platform": "note",
+  "category_guess": "DevOps & Infrastructure",
+  "categories": [
+    "DevOps & Infrastructure",
+    "Development",
+    "Productivity & Tools",
+    "Hardware & DIY"
+  ],
+  "tags": [
+    "api",
+    "automation",
+    "backups",
+    "build",
+    "idea",
+    "proxmox",
+    "python",
+    "rest-api",
+    "tool"
+  ],
+  "title_preview": "Idea: Build a Python automation tool for Proxmox VM backups using their REST API",
+  "timestamp": "2026-07-25T23:25:36.872655+03:30",
+  "user_message": "Idea: Build a Python automation tool for Proxmox VM backups using their REST API",
+  "processed": false
+}
