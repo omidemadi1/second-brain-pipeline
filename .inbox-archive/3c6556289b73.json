@@ -1,0 +1,33 @@
+{
+  "id": "3c6556289b73",
+  "url": "https://github.com/Kikobeats/untracked",
+  "text": "Untracked — by Kiko Beats (ex-Vercel dev). Optimizes project output by removing junk/unnecessary files. Cuts build context 99.8% (1.87GB to 2.51MB). Auto-generates .dockerignore rules. Faster builds, smaller images.",
+  "platform": "github",
+  "category_guess": "DevOps & Infrastructure",
+  "categories": [
+    "DevOps & Infrastructure",
+    "Development"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "github",
+    "untracked",
+    "auto-generates",
+    "beats",
+    "build",
+    "builds",
+    "context",
+    "cuts",
+    "dev",
+    "docker",
+    "dockerignore",
+    "ex-vercel",
+    "faster",
+    "files",
+    "images"
+  ],
+  "title_preview": "https://github.com/Kikobeats/untracked",
+  "timestamp": "2026-07-30T11:43:49.586751+03:30",
+  "user_message": "https://github.com/Kikobeats/untracked Untracked — by Kiko Beats (ex-Vercel dev). Optimizes project output by removing junk/unnecessary files. Cuts build context 99.8% (1.87GB to 2.51MB). Auto-generates .dockerignore rules. Faster builds, smaller images.",
+  "processed": false
+}

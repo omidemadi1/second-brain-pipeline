@@ -1,0 +1,32 @@
+{
+  "id": "ac920b6da9e2",
+  "url": null,
+  "text": "Grok Build CLI v0.2.115 (alpha) — improved prompt caching for long conversations reducing redundant transcript costs. Bugfixes: chat history corruption causing duplicate tool results or 400 errors, redirect loop in previews, auth commands on Windows. Stable: v0.2.114. Update: grok update --alpha",
+  "platform": "note",
+  "category_guess": "General",
+  "categories": [
+    "General"
+  ],
+  "content_type": "idea",
+  "tags": [
+    "alpha",
+    "auth",
+    "bugfixes",
+    "build",
+    "caching",
+    "causing",
+    "chat",
+    "cli",
+    "commands",
+    "conversations",
+    "corruption",
+    "costs",
+    "duplicate",
+    "errors",
+    "grok"
+  ],
+  "title_preview": "Grok Build CLI v0.2.115 (alpha) — improved prompt caching for long conversations",
+  "timestamp": "2026-07-30T08:52:52.851779+03:30",
+  "user_message": "Grok Build CLI v0.2.115 (alpha) — improved prompt caching for long conversations reducing redundant transcript costs. Bugfixes: chat history corruption causing duplicate tool results or 400 errors, redirect loop in previews, auth commands on Windows. Stable: v0.2.114. Update: grok update --alpha",
+  "processed": false
+}

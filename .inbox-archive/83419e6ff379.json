@@ -1,0 +1,32 @@
+{
+  "id": "83419e6ff379",
+  "url": "https://x.com/GrokInsider/status/2079302123620045092",
+  "text": "Grok Build v0.2.107 — Stop Hooks now return reason to model instead of ending turn. Session resume via S3 transcripts. Custom model rotating tokens. Auto mode explains block reasons.",
+  "platform": "x",
+  "category_guess": "General",
+  "categories": [
+    "General"
+  ],
+  "content_type": "reference",
+  "tags": [
+    "auto",
+    "block",
+    "build",
+    "custom",
+    "ending",
+    "explains",
+    "grok",
+    "hooks",
+    "instead",
+    "mode",
+    "model",
+    "now",
+    "reason",
+    "reasons",
+    "resume"
+  ],
+  "title_preview": "https://x.com/GrokInsider/status/2079302123620045092",
+  "timestamp": "2026-07-26T08:52:05.679738+03:30",
+  "user_message": "https://x.com/GrokInsider/status/2079302123620045092 Grok Build v0.2.107 — Stop Hooks now return reason to model instead of ending turn. Session resume via S3 transcripts. Custom model rotating tokens. Auto mode explains block reasons.",
+  "processed": false
+}

@@ -1,0 +1,32 @@
+{
+  "id": "a8ac739df228",
+  "url": null,
+  "text": "Grok Build /deep-research command — structured research with bounded parallel agents. Designs focused sub-questions, collects claims with evidence, cross-checks each claim separately, keeps only verified ones with sources. Marks incomplete coverage as Partial. Uses Grok 4.5 model. Source: @smartainewss",
+  "platform": "note",
+  "category_guess": "AI & Machine Learning",
+  "categories": [
+    "AI & Machine Learning"
+  ],
+  "content_type": "idea",
+  "tags": [
+    "ai-agents",
+    "bounded",
+    "build",
+    "claim",
+    "claims",
+    "collects",
+    "command",
+    "coverage",
+    "cross-checks",
+    "deep-research",
+    "designs",
+    "evidence",
+    "focused",
+    "grok",
+    "incomplete"
+  ],
+  "title_preview": "Grok Build /deep-research command — structured research with bounded parallel ag",
+  "timestamp": "2026-07-27T13:27:43.658296+03:30",
+  "user_message": "Grok Build /deep-research command — structured research with bounded parallel agents. Designs focused sub-questions, collects claims with evidence, cross-checks each claim separately, keeps only verified ones with sources. Marks incomplete coverage as Partial. Uses Grok 4.5 model. Source: @smartainewss",
+  "processed": false
+}

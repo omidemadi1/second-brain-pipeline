@@ -1,0 +1,33 @@
+{
+  "id": "6df9393ad5b5",
+  "url": "https://gitlab.com/abolfazlghorbani369/hermes-academy",
+  "text": "Hermes Academy — open-source Rust CLI that converts Hermes agent tasks (bug fixing, deployment, refactoring) into structured searchable lessons. Auto-generates documentation from AI work for learning and review.",
+  "platform": "web",
+  "category_guess": "AI & Machine Learning",
+  "categories": [
+    "AI & Machine Learning",
+    "Development"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "gitlab",
+    "academy",
+    "ai-agents",
+    "auto-generates",
+    "bug",
+    "cli",
+    "converts",
+    "deployment",
+    "documentation",
+    "fixing",
+    "hermes",
+    "learning",
+    "lessons",
+    "open-source",
+    "refactoring"
+  ],
+  "title_preview": "https://gitlab.com/abolfazlghorbani369/hermes-academy",
+  "timestamp": "2026-07-28T19:11:28.491636+03:30",
+  "user_message": "https://gitlab.com/abolfazlghorbani369/hermes-academy Hermes Academy — open-source Rust CLI that converts Hermes agent tasks (bug fixing, deployment, refactoring) into structured searchable lessons. Auto-generates documentation from AI work for learning and review.",
+  "processed": false
+}

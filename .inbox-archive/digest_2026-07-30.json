@@ -1,0 +1,116 @@
+{
+  "chat_id": "244972243",
+  "date": "2026-07-30",
+  "notes": [
+    {
+      "id": "49132c0ffd40",
+      "title": "Grok Build v0.2.113 — MCP Server Enable/Disable & Markdown Copy",
+      "url": null,
+      "category": "Development",
+      "content_type": "tool",
+      "rating": "quick-note",
+      "tags": ["grok", "ai-coding-assistant", "mcp", "cli-tools", "developer-tools"],
+      "summary": "Grok Build v0.2.113 ships two quality-of-life features:\n\n1. MCP server management from CLI — grok mcp enable/disable toggles MCP servers without editing config files\n2. Copy full markdown output — Press y in plan mode to copy entire markdown output to clipboard\n\nIncremental but practical improvements for Grok Build users managing multiple tool integrations."
+    },
+    {
+      "id": "575426db92cb",
+      "title": "Reddit r/indiehackers Discussion",
+      "url": "https://www.reddit.com/r/indiehackers/s/bNNdKKeKeX",
+      "category": "General",
+      "content_type": "reference",
+      "rating": "reference",
+      "tags": ["reddit", "indiehackers", "startups", "entrepreneurship"],
+      "summary": "A link saved from r/indiehackers on Reddit. Content could not be fetched at save time — the page may require authentication or may have been restricted. Worth checking manually if the topic is of interest."
+    },
+    {
+      "id": "5d5fa54ff17b",
+      "title": "Gotcha App — 32k New Users in 1 Week, $0 Ad Spend",
+      "url": "https://x.com/i/status/2082059924721619091",
+      "category": "Marketing & Growth",
+      "content_type": "reference",
+      "rating": "worth-deep-reading",
+      "tags": ["organic-growth", "app-marketing", "mobile-apps", "growth-hacking", "zero-budget-marketing"],
+      "summary": "Jurre (@jurree), ex-Amazon engineer building collection apps, achieved ~32,000 new organic users for his iOS animal identifier app Gotcha in one week with $0 ad spend.\n\nKey insight: Niche utility apps (like animal identification) have natural viral mechanics — people discover, use, and share. The full strategy breakdown is documented in the linked article.\n\nStrong case study in organic user acquisition for mobile apps."
+    },
+    {
+      "id": "6a8fb0a5280e",
+      "title": "Opencode + Brick — 80% Inference Cost Reduction via Semantic Routing",
+      "url": null,
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["inference-optimization", "cost-reduction", "semantic-routing", "model-routing", "privacy-focused-ai"],
+      "summary": "Opencode + Brick achieves 80% inference cost reduction through semantic routing. The system analyzes incoming prompts and routes them to the optimal model:\n\n- Simple queries go to cheaper/smaller models\n- Complex reasoning goes to frontier models\n- Sensitive prompts go to local/self-hosted models (privacy advantage)\n\nUses SubAgents for prompt analysis and Regolo as the routing layer. Applicable to any multi-model AI pipeline or coding assistant setup."
+    },
+    {
+      "id": "75484b1f5f46",
+      "title": "Comparison of Financing Methods (Persian)",
+      "url": "https://invexholding.co",
+      "category": "Business & Finance",
+      "content_type": "reference",
+      "rating": "reference",
+      "tags": ["financing-methods", "business-finance", "funding", "venture-capital", "crowdfunding"],
+      "summary": "Comprehensive comparison table of 10 financing methods from invexholding.co (originally in Farsi). Each method evaluated by suitable use case, advantage, and weakness:\n\n1. Personal Capital — Early-stage, full control, limited by wealth\n2. Bank Loan — Established businesses, low cost, hard to qualify\n3. Government Grants — Specific sectors, non-dilutive, competitive\n4. Venture Capital — High-growth startups, large amounts, dilutive\n5. Capital Increase — Listed companies, existing shareholders\n6. Murabaha Bonds — Asset-backed, Sharia-compliant\n7. Leasing Bonds — Equipment acquisition, tax benefits\n8. Fund — Diversified investment, professional management\n9. Crowdfunding — Early products, community building\n10. IPO — Mature companies, maximum capital, regulatory burden"
+    },
+    {
+      "id": "7e0220e5d3ce",
+      "title": "Growth Playbook — From $0 to $50k/Month with Apps",
+      "url": "https://x.com/i/status/2081979523873038368",
+      "category": "Marketing & Growth",
+      "content_type": "learning",
+      "rating": "worth-deep-reading",
+      "tags": ["app-growth", "mobile-apps", "growth-strategy", "monetization", "no-code-apps"],
+      "summary": "George Lampropoulos (100k+ downloads through apps built with Rork) compiled a Growth Playbook from his experience taking apps from $0 to $50k/month.\n\nKey points:\n- Built with Rork (no-code app builder) — shows viable path without deep technical skills\n- Covers the full revenue trajectory from zero to $50k/month\n- Practical playbook format based on real execution, not theory\n- George offers 1-on-1 consulting for personalized guidance\n\nValuable for anyone building app businesses, especially with no-code tools."
+    },
+    {
+      "id": "a372b254e8e2",
+      "title": "Tuby — AI Persian Subtitle Translator for YouTube",
+      "url": "https://tubyapp.com/fa",
+      "category": "Productivity & Tools",
+      "content_type": "tool",
+      "rating": "reference",
+      "tags": ["youtube", "subtitles", "translation", "persian", "ai-translation", "chrome-extension"],
+      "summary": "Tuby (تیوبی) — Chrome extension that uses AI to generate accurate Persian subtitles for YouTube videos.\n\n- One-click activation within YouTube's native interface\n- AI-generated subtitles for any video (not just those with existing subs)\n- Customizable display (size, style, position)\n- Free to install and use\n\nUseful for Persian speakers consuming English-language YouTube content."
+    },
+    {
+      "id": "a57c64d86946",
+      "title": "Llama.cpp Optimization Tool — 30B Models at 22 tok/s on 6GB VRAM",
+      "url": null,
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["llama-cpp", "local-llm", "inference-optimization", "vram-optimization", "model-deployment"],
+      "summary": "A llama.cpp optimization tool that enables running 30B parameter models at ~22 tok/s with only 6GB VRAM.\n\nKey capabilities:\n- Pre-download speed prediction — know performance before committing bandwidth\n- Optimal command generation — outputs ready-to-use llama.cpp commands\n- Memory placement focus — emphasizes layer distribution between GPU VRAM and system RAM, not just quantization\n\nSignificant for local AI deployment. The memory placement insight is key — how you split layers matters as much as quantization level."
+    },
+    {
+      "id": "b492ec56ce07",
+      "title": "Zed v1.14.0 Preview — High-Performance Code Editor",
+      "url": "https://github.com/zed-industries/zed",
+      "category": "Development",
+      "content_type": "tool",
+      "rating": "reference",
+      "tags": ["zed", "code-editor", "rust", "gpui", "performance", "open-source"],
+      "summary": "Zed — High-performance, multiplayer code editor built in Rust by the creators of Atom and Tree-sitter.\n\n- 87.7k stars on GitHub — one of the fastest-growing editors\n- Rust-based with GPUI engine for GPU-accelerated rendering\n- Real-time multiplayer collaboration built-in (not an add-on)\n- v1.14.0 preview brings performance improvements and new project management features\n- Tree-sitter integration for best-in-class syntax highlighting\n\nCompelling VS Code alternative for developers who prioritize performance."
+    },
+    {
+      "id": "bc878c2d5a92",
+      "title": "Distribution 101 — How to Sell Your Products (Organic Marketing)",
+      "url": "https://x.com/i/status/2082083321383997553",
+      "category": "Marketing & Growth",
+      "content_type": "learning",
+      "rating": "worth-deep-reading",
+      "tags": ["organic-marketing", "distribution", "product-sales", "marketing-strategy", "video-marketing"],
+      "summary": "EP (@eptwts) published a comprehensive organic marketing framework — Distribution 101: How to Sell Your Products.\n\nThree core channels:\n1. X (Twitter) — Niche engagement, value-first content, trend leverage\n2. YouTube — Product education through SEO-optimized video\n3. Short-form (TikTok + Reels) — Reach broader audiences with trending content\n\nCore principles:\n- 1:1 Niche-Product Rule — one niche, one product, no spray-and-pray\n- VALUE Rule — content must provide real value; value builds trust, trust leads to sales\n- Make every video a hidden VSL — subtle product showcasing in educational content\n- Price fairly for long-term trust\n\nSolid framework: distribution matters as much as product quality."
+    },
+    {
+      "id": "f2de6383574c",
+      "title": "Defeating AI Slop — A 3-Step Guide to Cultivating Taste in Web Design",
+      "url": "https://youtu.be/7FU98O0JLHs",
+      "category": "Design & Creative",
+      "content_type": "learning",
+      "rating": "worth-deep-reading",
+      "tags": ["ai-slop", "web-design", "ai-design", "taste-cultivation", "design-workflow", "claude-code"],
+      "summary": "A comprehensive video guide on defeating AI slop — the generic, recognizable look AI tools produce by default.\n\n3-Step Workflow:\n\n1. Cultivate Taste — Build a design inspiration library from Dribbble, Pinterest, and Twitter. Screenshot designs you like, organize by type with vocabulary keywords.\n\n2. Bring Taste to AI — Use MCP tools (like Impeccable/Taste Skill) to feed reference images to Claude. Reference images + specific prompts beat vague instructions like make it premium.\n\n3. Iterate and Tweak — Use visual tweaking tools (Tweaks Bar) to adjust fonts, colors, spacing in real-time. Iterate visually rather than playing the prompt lottery.\n\nKey insight: AI has no taste. It produces average, regression-to-the-mean output. The solution is taste injection through curation.\n\nBest practical guide on human-AI collaboration for creative work."
+    }
+  ]
+}

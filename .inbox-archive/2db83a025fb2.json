@@ -1,0 +1,33 @@
+{
+  "id": "2db83a025fb2",
+  "url": "https://github.com/unclecode/crawl4ai",
+  "text": "Crawl4AI — open-source LLM-friendly web crawler & scraper. Converts raw HTML into clean structured data for RAG and AI agents. 75k stars, 8k forks, 87 contributors.",
+  "platform": "github",
+  "category_guess": "AI & Machine Learning",
+  "categories": [
+    "AI & Machine Learning",
+    "Development"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "crawl4ai",
+    "github",
+    "ai-agents",
+    "clean",
+    "contributors",
+    "converts",
+    "crawler",
+    "data",
+    "forks",
+    "html",
+    "llm",
+    "llm-friendly",
+    "open-source",
+    "rag",
+    "raw"
+  ],
+  "title_preview": "https://github.com/unclecode/crawl4ai",
+  "timestamp": "2026-07-27T21:50:59.767153+03:30",
+  "user_message": "https://github.com/unclecode/crawl4ai Crawl4AI — open-source LLM-friendly web crawler & scraper. Converts raw HTML into clean structured data for RAG and AI agents. 75k stars, 8k forks, 87 contributors.",
+  "processed": false
+}

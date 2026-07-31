@@ -1,0 +1,56 @@
+{
+  "chat_id": "244972243",
+  "date": "2026-07-29",
+  "notes": [
+    {
+      "id": "24140777a372",
+      "title": "Google Free AI Tools — 15 Products That Rival Paid Alternatives",
+      "url": "https://x.com/i/status/2081998977151721958",
+      "category": "AI & Machine Learning",
+      "content_type": "reference",
+      "rating": "worth-deep-reading",
+      "tags": ["google-ai", "free-tools", "open-source", "ai-tools", "pomelli", "stitch", "opal", "antigravity", "mixboard", "disco", "notebooklm", "ai-studio", "jules", "gemini-cli", "code-wiki", "firebase-studio", "gemini-code-assist", "no-code", "developer-tools", "content-creation", "ai-coding", "image-generation"],
+      "summary": "Google has released 15 AI tools that are free or open source, collectively replacing multiple paid subscriptions. Key tools: Pomelli (brand identity + social content), Stitch (UI to production-ready HTML/CSS/Tailwind + Figma), Opal (plain English app creation), Antigravity (AI coding workspace), NotebookLM (document analysis with podcast-style discussions), Gemini CLI (terminal AI), Jules (GitHub issue to PR automation), Code Wiki (living wikis for repos), Firebase Studio (backend AI workspace), and Gemini Code Assist (free coding assistant with IDE integrations). Many are Google Labs experiments with evolving terms, but they represent a significant free AI ecosystem covering development, content creation, and productivity."
+    },
+    {
+      "id": "5380a96b0728",
+      "title": "Machina — AI Video Studio in Claude Code",
+      "url": "https://x.com/i/status/2082107255449919582",
+      "category": "AI & Machine Learning",
+      "content_type": "reference",
+      "rating": "reference",
+      "tags": ["claude-code", "ai-video", "video-production", "content-creation", "ai-agents", "claude", "content-automation", "ai-workflows", "ai-powered-agencies", "creative-ai", "video-automation", "multi-agent"],
+      "summary": "Machina (@EXM7777), founder of weeklyaiops newsletter and AI-powered agencies, shares how to build an AI video studio using Claude Code (151K views). He's known for practical AI agent setups: running multiple coding harnesses simultaneously (Claude Code + Codex), building listener agents for content creators, and the 'vanillamaxxing' philosophy of using tools as-is without plugin overload. His approach demonstrates how coding assistants like Claude Code can power creative production workflows beyond traditional software development — automating video creation, content generation, and agency operations."
+    },
+    {
+      "id": "6df9393ad5b5",
+      "title": "Hermes Academy — Convert AI Tasks into Structured Lessons",
+      "url": "https://gitlab.com/abolfazlghorbani369/hermes-academy",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["hermes-academy", "rust", "cli", "ai-agents", "documentation-generation", "learning-from-ai", "agent-workflows", "bug-fixing", "deployment", "refactoring", "open-source", "knowledge-management", "structured-lessons", "gitlab", "self-improving-ai"],
+      "summary": "Hermes Academy is an open-source Rust CLI that automatically converts Hermes agent tasks into structured, searchable lessons. When an AI agent performs bug fixes, deployments, refactoring, or other work, the tool captures what was done, why, and how — then generates reusable documentation. This creates a searchable knowledge base from actual AI work, turning routine agent operations into educational content that can be reviewed and learned from. Particularly useful for teams wanting to retain knowledge from AI-assisted development and build institutional memory from agent workflows."
+    },
+    {
+      "id": "cce463c7309f",
+      "title": "Graph Engineering — 7 Repos That Make It Work",
+      "url": "https://x.com/i/status/2081787771333546438",
+      "category": "AI & Machine Learning",
+      "content_type": "reference",
+      "rating": "worth-deep-reading",
+      "tags": ["graph-engineering", "ai-agents", "langgraph", "microsoft-agent-framework", "temporal", "graphify", "gitnexus", "graphiti", "cognee", "agent-orchestration", "knowledge-graphs", "open-source", "developer-tools", "agent-memory", "workflow-automation", "code-intelligence", "agent-persistence", "temporal-memory"],
+      "summary": "Yarchi's thread organizes graph engineering into two halves: execution (running work) and knowledge (looking things up). Execution layer: LangGraph (38k stars, checkpoint-based agent step diagrams with resume), Microsoft Agent Framework (12k stars, merged AutoGen + Semantic Kernel for .NET/Python), and Temporal (battle-tested process durability). Knowledge layer: Graphify (97k stars, maps any folder into a connected knowledge graph), GitNexus (45k stars, traces code dependencies deeply), Graphiti (29k stars, temporal-aware memory that knows when facts were true), and Cognee (29k stars, queryable document graph on your own Postgres). The distinction between running graphs and knowledge graphs is a useful system design framework."
+    },
+    {
+      "id": "d8604d984e98",
+      "title": "Google Search Documentation — SEO Fundamentals",
+      "url": "https://developers.google.com/search/docs",
+      "category": "Development",
+      "content_type": "learning",
+      "rating": "reference",
+      "tags": ["seo", "google-search", "web-development", "search-engine-optimization", "crawling", "indexing", "ranking", "canonical-urls", "structured-data", "search-console", "web-master", "url-structure", "duplicate-content", "javascript-seo"],
+      "summary": "Google's official SEO documentation covering how the search engine crawls, indexes, and ranks websites. The SEO Starter Guide provides best practices for URL structure, duplicate content handling, and canonical URLs. Key sections include controlling how Google crawls your site, using structured data for rich results, JavaScript SEO for modern web apps, and monitoring performance with Search Console. Includes training video series and case studies. Essential foundational reference for anyone managing online content visibility or building web applications that need search engine presence."
+    }
+  ]
+}

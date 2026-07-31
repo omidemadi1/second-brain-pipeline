@@ -1,0 +1,236 @@
+{
+  "chat_id": "244972243",
+  "date": "2026-07-31",
+  "notes": [
+    {
+      "id": "0e6a9b929cfd",
+      "title": "Google Flow Music — Lyria 3.5 Music Generation",
+      "url": "https://www.flowmusic.app",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["music-generation", "ai-music", "lyria", "google-deepmind", "text-to-music", "image-to-music", "lyrics-generation", "vocal-synthesis", "flow-music", "generative-ai", "creative-ai", "veo-video", "audio-production"],
+      "summary": "**What:** Google's Flow Music platform powered by Lyria 3.5, a state-of-the-art music generation model that creates full songs with lyrics, instrumentation, and vocal performance from a single prompt.\n\n**Key features:**\n- Analyzes images and generates complete songs with rich musicality and dynamic vocals\n- AI-powered Covers feature to restyle existing tracks\n- Lip-sync music video generation using Google's Veo model\n- Vibe-code audio plugins, music games, and custom DAWs directly in the browser\n- Built-in stem splitting, audio effects, and remixing tools\n\n**Use case:** Musicians, content creators, and producers who want to rapidly prototype songs, generate background music, or experiment with AI-assisted composition.\n\n→ Best for: anyone exploring AI music creation without needing traditional DAW skills."
+    },
+    {
+      "id": "1f480a525aae",
+      "title": "Qwen Free API — Connect to Hermes and AI Harnesses",
+      "url": "https://x.com/i/status/2082782953214554567",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "reference",
+      "tags": ["qwen", "free-api", "ai-harness", "hermes-agent", "openai-compatible", "llm-api", "cost-optimization", "ali-cloud", "ai-agent", "model-access", "api-key", "workaround", "community-tool"],
+      "summary": "**What:** A community-discovered method to obtain free API access to Qwen models via a proxy endpoint and connect them to Hermes or other AI harnesses.\n\n**Key details:**\n- API Base URL: `https://qwen.aikit.club/v1` (OpenAI-compatible)\n- API key extracted from browser cookies after logging into Qwen\n- Works with Hermes and other OpenAI-compatible harnesses\n- Author notes account suspension risk was lower than expected\n\n> ⚠️ This is an unofficial workaround — not an officially supported API endpoint. Use at your own risk."
+    },
+    {
+      "id": "38a9e2bbf62a",
+      "title": "Hallusquatting — AI Hallucination Package Attacks",
+      "url": "https://www.securityweek.com/hallusquatting-turns-ai-hallucinations-into-botnet-delivery-mechanism/",
+      "category": "Cybersecurity",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["supply-chain-security", "ai-security", "hallucination", "package-squatting", "malware", "ai-coding-assistants", "dependency-confusion", "adversarial-attack", "npm", "pypi", "code-generation", "botnet", "security-research", "threat-intelligence"],
+      "summary": "**What:** Hallusquatting (Adversarial Hallucination Squatting) is a new supply-chain attack where hackers register package names that AI coding assistants commonly hallucinate, then embed malware in those packages.\n\n**How it works:**\n- AI coding assistants suggest non-existent package names when generating code\n- Attackers pre-register these hallucinated package names on npm, PyPI, etc.\n- When developers install the suggested packages, they unknowingly execute malicious code\n\n**Key takeaways:**\n- AI coding assistants hallucinate package names at a non-trivial rate, creating a new attack surface\n- Attackers can claim these hallucinated names before developers use them\n- Defense requires package name validation, lockfiles, and verified registries\n\n→ This is an evolution of traditional typosquatting — AI hallucinations become a security vulnerability."
+    },
+    {
+      "id": "3c6556289b73",
+      "title": "Untracked — Optimize Docker Build Context by 99.8%",
+      "url": "https://github.com/Kikobeats/untracked",
+      "category": "DevOps & Infrastructure",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["docker", "build-optimization", "dockerignore", "containerization", "devops", "javascript", "cli-tool", "build-context", "image-size", "kiko-beats", "deployment", "lambda", "webpack", "packaging"],
+      "summary": "**What:** Untracked is a CLI tool by Kiko Beats (ex-Vercel dev) that optimizes project output by removing junk and unnecessary files, dramatically reducing build contexts.\n\n**Key features:**\n- Cuts build context by 99.8% (1.87GB → 2.51MB demonstrated)\n- Auto-generates `.dockerignore` rules\n- Universal untracked file list for zip/lambda/webpack bundles\n- Faster builds, smaller images, reduced bandwidth\n\n→ Best for: teams with bloated build contexts looking for a quick win."
+    },
+    {
+      "id": "3f04eb046c8b",
+      "title": "Grok Voice Think Fast 2.0 — Next-Gen Speech-to-Speech",
+      "url": "https://x.ai/news/grok-voice-think-fast-2",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["grok", "xai", "voice-ai", "speech-to-speech", "real-time-voice", "transcription", "ai-pricing", "api", "spacex-ai", "conversational-ai", "inference-cost", "model-update", "multilingual"],
+      "summary": "**What:** Grok Voice Think Fast 2.0 is xAI's next-generation speech-to-speech voice model with improved intelligence, transcription accuracy, and conversational capabilities.\n\n**Key improvements:**\n- 22% smoother conversation flow\n- 44% faster first voice response time\n- 40% better speech-to-text accuracy\n- 60% lower inference token cost\n- Pricing: $0.08 per audio minute\n\n→ The 60% inference cost reduction makes this viable for production voice applications at scale."
+    },
+    {
+      "id": "5408947c82a7",
+      "title": "Building Cinematic Scroll Websites with KimmyK3",
+      "url": "https://youtu.be/0zlwXSVmoeg",
+      "category": "Design & Creative",
+      "content_type": "learning",
+      "rating": "worth-deep-reading",
+      "tags": ["web-design", "cinematic-websites", "scroll-animation", "ai-web-design", "kimmy-k3", "video-generation", "frame-interpolation", "creative-coding", "moonshot", "ai-frontend", "interactive-design", "web-development", "tutorial", "maker-zero"],
+      "summary": "**What:** A comprehensive tutorial on creating cinematic, scroll-driven websites using KimmyK3 (Moonshot's frontier model) that combine AI-generated video with interactive web experiences.\n\n**Key techniques:**\n- Generating background video assets using AI\n- Frame interpolation for smooth scroll-based video playback\n- Binding video progress to scroll position for interactive exploration\n- Auto-play tour-based experiences for guided navigation\n- Wrapping everything in KimmyK3's code generation\n\n→ This workflow makes high-end interactive experiences accessible to non-specialists."
+    },
+    {
+      "id": "68a6c284cff5",
+      "title": "Graphify — Turn Codebase into Queryable Knowledge Graph",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["knowledge-graph", "code-analysis", "ai-agents", "ast-parsing", "tree-sitter", "graphrag", "rag", "claude-code", "cursor", "codex", "gemini", "developer-tools", "code-search", "leiden-clustering", "mcp"],
+      "summary": "**What:** Graphify turns any codebase (with docs, SQL schemas, configs, and PDFs) into a queryable knowledge graph using local deterministic AST parsing — no vector store needed.\n\n**Key features:**\n- Local deterministic AST parsing with tree-sitter\n- Generates knowledge graphs with explained edges\n- Works with Claude Code, Cursor, Codex, and Gemini CLI\n- Leiden community detection for clustering related code\n- 99k+ stars — one of the most popular AI dev tools\n\n→ This is essentially GraphRAG for code — deterministic, explainable, and runs locally."
+    },
+    {
+      "id": "6a4687d8a04f",
+      "title": "Wan2GP — Free AI Video Studio for Low-VRAM GPUs",
+      "url": "https://github.com/deepbeepmeep/Wan2GP",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["ai-video-generation", "text-to-video", "image-to-video", "low-vram", "wan-2.2", "ltx-2", "hunyuan-video", "flux", "lora", "open-source", "video-generation", "browser-ui", "gpu-poor", "creative-ai"],
+      "summary": "**What:** Wan2GP is a free, open-source AI video studio that runs on as little as 6GB VRAM, supporting multiple video generation models.\n\n**Key features:**\n- Runs on 6GB VRAM — works on RTX 10 series and laptops\n- Built-in models: Wan 2.2, LTX-2, Hunyuan Video, Flux\n- Text-to-video and image-to-video capabilities\n- LoRA support for fine-tuned models\n- Browser-based UI with queue system\n- No upload, no watermark, completely local\n\n→ The 6GB VRAM requirement makes this accessible to a much wider audience than most video AI tools."
+    },
+    {
+      "id": "6fddfe1ad0b9",
+      "title": "OpenWork — Open Source Claude Cowork Alternative",
+      "url": "https://openworklabs.com/",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["open-source", "claude-cowork", "ai-agents", "team-collaboration", "task-automation", "browser-automation", "mcp", "agent-framework", "y-combinator", "opencode", "shared-workspaces", "agent-setup", "enterprise-ai"],
+      "summary": "**What:** OpenWork is an open-source alternative to Claude Cowork, built on OpenCode with free model access, enabling task automation and team shared workspaces for AI agents.\n\n**Key features:**\n- Bring your own model and provider\n- Reusable agent setups across organizations with guardrails\n- Works with Claude Code, Cursor, Codex, OpenCode, and other agents\n- Shared skills and MCPs across team workspaces\n- Y Combinator backed\n\n→ This is enterprise-grade agent orchestration with open-source flexibility."
+    },
+    {
+      "id": "717695712312",
+      "title": "Imp Skills — Pre-built Skills for AI Agent UI Design",
+      "url": "https://github.com/jakubkrehel/skills",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["ai-skills", "ui-design", "claude-code", "codex", "accessibility", "typography", "color-themes", "layout", "agent-skills", "frontend-design", "visual-design", "product-writing", "animation", "skill-collection"],
+      "summary": "**What:** Imp Skills is a collection of pre-built agent skills that improve UI design quality — covering visual appearance, color themes, typography, layout, accessibility, and UI copy.\n\n**Key features:**\n- Pre-built skills for Claude Code, Codex, and other AI agents\n- Covers visual appearance, color themes, typography, and layout\n- Accessibility-focused skills for inclusive design\n- UI copy and product writing quality improvements\n- 2.3k stars — growing adoption\n\n→ These skills act as design consultants embedded in your AI coding workflow."
+    },
+    {
+      "id": "77f41ce06d43",
+      "title": "CodeWiki by Google — AI-Generated Code Documentation",
+      "url": "https://codewiki.google",
+      "category": "Development",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["documentation", "ai-documentation", "code-exploration", "github", "dependency-graphs", "tutorials", "google", "codebase-analysis", "developer-tools", "api-reference", "architecture-overview", "beginner-friendly", "code-wiki", "interactive-docs"],
+      "summary": "**What:** CodeWiki by Google generates interactive documentation from GitHub repositories, including dependency graphs, module explanations, and beginner tutorials.\n\n**Key features:**\n- Paste a GitHub repo link — AI generates complete documentation\n- Automatic dependency graphs showing code relationships\n- Step-by-step module explanations\n- Built-in chatbot for asking questions about the codebase\n\n→ This eliminates the \"where do I start?\" problem for large codebases."
+    },
+    {
+      "id": "81fb0b6406ba",
+      "title": "Agent-Reach — Social Media Access for AI Agents",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["ai-agents", "social-media", "twitter-scraper", "reddit-scraper", "youtube-transcript", "web-scraper", "cli-tool", "mcp", "free-api", "python", "bilibili", "xiaohongshu", "agent-infrastructure", "data-access", "no-api-key"],
+      "summary": "**What:** Agent-Reach gives AI agents read and search access to Twitter/X, Reddit, YouTube, GitHub, LinkedIn, Bilibili, XiaoHongShu, and more — all via a single CLI with zero API fees.\n\n**Key features:**\n- One CLI for multiple social media platforms\n- No API keys needed — works out of the box\n- Supports Twitter/X, Reddit, YouTube, GitHub, LinkedIn, Bilibili, XiaoHongShu\n- 62k+ stars — massive community adoption\n\n→ This is the missing piece for agents that need to understand what's happening on social platforms."
+    },
+    {
+      "id": "8e33b5b141a1",
+      "title": "Microsoft TRELLIS.2 — Open Source 3D Model Generation",
+      "url": "https://github.com/microsoft/TRELLIS.2",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["3d-generation", "image-to-3d", "microsoft", "open-source", "pbr-materials", "voxel-reconstruction", "blender", "unity", "unreal-engine", "ai-model", "computer-graphics", "3d-asset", "real-time-generation", "texture-generation", "four-billion-parameters"],
+      "summary": "**What:** Microsoft TRELLIS.2 is a state-of-the-art open-source 3D generation model (4B parameters) that converts any image into a production-ready 3D model in ~3 seconds with full PBR materials.\n\n**Key features:**\n- 4 billion parameter model for high-fidelity 3D generation\n- Full PBR materials: base color, roughness, metallic, transparency\n- Handles hair, fabric, glass, and complex geometries\n- Outputs .glb format ready for Unity, Unreal, and Blender\n- Runs locally, generates in ~3 seconds\n- Full training codebase is open source\n\n→ This is not a demo or research preview — it's a production-ready tool with full source code."
+    },
+    {
+      "id": "a4065ba35fd5",
+      "title": "AgentCookie — Browser Cookie Sync for AI Agents",
+      "url": "https://agentcookie.dev/",
+      "category": "Productivity & Tools",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["browser-automation", "cookie-sync", "ai-agents", "tailscale", "encrypted-sync", "session-management", "cli-tokens", "api-keys", "openclaw", "hermes-agent", "macos", "developer-tool", "authentication", "secrets-management"],
+      "summary": "**What:** AgentCookie is an open-source tool that syncs browser cookies, CLI tokens, and API keys with AI agents using encrypted Tailscale connections.\n\n**Key features:**\n- Continuous laptop → agent sync of browser cookies\n- Per-CLI secrets bus for bearer tokens and API keys\n- Encrypted over Tailscale (AES-256-GCM)\n- Works with Chrome, Stripe, Linear, Notion, Slack, and dozens more\n- macOS only (both ends)\n\n→ Solves the \"my agent can't log into my services\" problem securely."
+    },
+    {
+      "id": "aa7f58d8fa2b",
+      "title": "Keenable — Free Web Search for AI Agents",
+      "url": "https://keenable.ai/",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "reference",
+      "tags": ["web-search", "ai-agents", "hermes-agent", "openclaw", "content-extraction", "page-to-markdown", "free-api", "cli-tool", "mcp-server", "rest-api", "agent-infrastructure", "low-latency", "developer-tool", "open-source"],
+      "summary": "**What:** Keenable is a free web search and page-to-markdown extraction service built specifically for AI agents, providing low-latency search via CLI, REST API, and MCP server.\n\n**Key features:**\n- Free web search + page reading + extraction for agents\n- Works with OpenClaw, Hermes, and other agent frameworks\n- CLI, REST API, and MCP server interfaces\n- Page-to-markdown conversion for clean content extraction\n\n→ A compelling free alternative to paid search APIs for agent development."
+    },
+    {
+      "id": "ac920b6da9e2",
+      "title": "Grok Build CLI v0.2.115 — Alpha with Prompt Caching",
+      "url": "https://x.ai/news/grok-build-mode",
+      "category": "Development",
+      "content_type": "tool",
+      "rating": "reference",
+      "tags": ["grok-build", "cli-tool", "prompt-caching", "alpha-release", "bugfixes", "chat-history", "developer-tool", "spacex-ai", "code-generation", "inference-optimization", "cost-reduction", "windows-support", "preview-mode", "software-update"],
+      "summary": "**What:** Grok Build CLI v0.2.115 (alpha) introduces improved prompt caching for long conversations, reducing redundant transcript costs, plus critical bugfixes.\n\n**Key changes:**\n- Improved prompt caching reduces costs for long conversations\n- Fixed chat history corruption causing duplicate tool results or 400 errors\n- Fixed redirect loop in preview mode\n- Fixed auth commands on Windows\n\n→ The prompt caching improvement alone makes this upgrade worthwhile for heavy users."
+    },
+    {
+      "id": "be5ebbef0aa0",
+      "title": "Hackflix — Security Conference Video Archive",
+      "url": "https://h4ckfl1x.com",
+      "category": "Cybersecurity",
+      "content_type": "reference",
+      "rating": "reference",
+      "tags": ["cybersecurity", "conference-talks", "def-con", "black-hat", "rsa", "bsides", "video-archive", "security-research", "infosec", "hacking", "educational-resource", "knowledge-base", "security-conferences", "vulnerability-research"],
+      "summary": "**What:** Hackflix is a curated archive of security conference talks from DEF CON, Black Hat, RSA, BSides, and more — with 19,827 videos, 557 events, and 37,430 topics.\n\n**Key features:**\n- 19,827 security conference videos\n- 557 events covered\n- 37,430 topics indexed\n- Search and filter by conference, year, speaker, or topic\n\n→ This is the Netflix of cybersecurity talks — searchable, organized, and comprehensive."
+    },
+    {
+      "id": "c0e0430d25f5",
+      "title": "Connecting OpenCode to Qwen — Free Setup Guide",
+      "url": "https://x.com/i/status/2082862111810589067",
+      "category": "AI & Machine Learning",
+      "content_type": "learning",
+      "rating": "reference",
+      "tags": ["opencode", "qwen", "free-api", "ai-harness", "configuration", "tutorial", "setup-guide", "openai-compatible", "cost-optimization", "developer-tool", "community-tool", "ai-agent", "token-auth", "github-gist"],
+      "summary": "**What:** A practical guide on connecting OpenCode to Qwen's free API endpoint, including configuration setup and token extraction.\n\n**Key details:**\n- Qwen API Base URL: `https://qwen.aikit.club/v1` (OpenAI-compatible)\n- API key extracted from browser cookies after Qwen login\n- OpenCode configuration shared via GitHub Gist\n- Users only need to add their own token to the provided config\n\n→ This builds on the Qwen free API workaround, providing a concrete setup for OpenCode users."
+    },
+    {
+      "id": "c3b627034fb7",
+      "title": "Grok Build Mode — Full App Builder in Chat",
+      "url": "https://x.ai/news/grok-build-mode",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["grok", "build-mode", "app-builder", "no-code", "ai-code-generation", "spacex-ai", "instant-deployment", "web-development", "mobile-development", "ios", "android", "supergrok-heavy", "prototype-tool", "creative-coding", "chat-based-coding"],
+      "summary": "**What:** Grok Build Mode is a new feature by SpaceXAI for Grok 4.5 that lets you build working apps directly in chat — describe what you want, it builds, previews, and iterates live.\n\n**Key features:**\n- Describe what you want → Grok builds a working version live in chat\n- Supports websites, dashboards, games, 3D worlds, calculators\n- No IDE, terminal, or laptop needed — works on web, iOS, and Android\n- Publish via grok.me or custom domain\n- Available in Early Beta for SuperGrok Heavy subscribers\n\n→ This is the \"describe it and it exists\" paradigm for app creation."
+    },
+    {
+      "id": "cb3eddfe11b5",
+      "title": "Last30days — AI Agent Research Skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["ai-research", "agent-skill", "deep-research", "reddit", "twitter", "youtube", "hackernews", "polymarket", "web-search", "trend-analysis", "summary-generation", "claude-code", "openclaw", "social-media-monitoring", "recency-filtering"],
+      "summary": "**What:** Last30days is an AI agent skill that researches any topic across Reddit, X/Twitter, YouTube, Hacker News, Polymarket, and the web, then synthesizes a grounded summary.\n\n**Key features:**\n- Multi-platform research: Reddit, X, YouTube, HN, Polymarket, web\n- Recency filtering — focuses on last 30 days of content\n- Synthesizes findings into structured summaries\n- 55k+ stars — one of the most popular agent skills\n\n→ This is \"deep research\" as a reusable agent skill — check multiple platforms, synthesize, deliver."
+    },
+    {
+      "id": "d1e78f1a755b",
+      "title": "OKF v0.2 — Google's AI-Readable Content Metadata",
+      "url": "https://www.bushletter.com/google-adds-five-trust-signals-to-its-open-ai-knowledge-format/",
+      "category": "Development",
+      "content_type": "reference",
+      "rating": "worth-deep-reading",
+      "tags": ["seo", "metadata", "ai-readable-content", "google", "open-knowledge-format", "trust-signals", "provenance", "content-verification", "seo-ranking", "structured-data", "ai-agents", "knowledge-management", "content-strategy", "enterprise-ai"],
+      "summary": "**What:** OKF v0.2 (Open Knowledge Format) is Google's metadata format for AI-readable content, adding five trust signals: Provenance, Trust, Freshness, Lifecycle, and Attestation.\n\n**Key features:**\n- Five key metadata fields for content verification\n- Vendor-neutral, open specification\n- Designed for enterprise AI agent workflows\n- Plain Markdown format for easy adoption\n- Potential SEO ranking signal\n\n→ This could become the standard for content verification in the AI era."
+    },
+    {
+      "id": "e8edecffc889",
+      "title": "Brinicle — Resource-Efficient C++ Vector Index Engine",
+      "url": "https://github.com/bicardinal/brinicle",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["vector-search", "semantic-search", "embeddings", "hnsw", "rag", "c++", "low-ram", "resource-efficient", "image-search", "text-search", "production-ready", "iranian-team", "vector-database", "similarity-search"],
+      "summary": "**What:** Brinicle is a resource-efficient C++ vector index engine designed for low-RAM production workloads, offering semantic search for text and images at high speed.\n\n**Key features:**\n- Runs on minimal RAM where larger alternatives like Qdrant crash\n- High-speed semantic search for text and images\n- C++ implementation for maximum performance\n- HNSW-based indexing for efficient similarity search\n\n→ When Qdrant or Milvus won't run on your hardware, Brinicle will."
+    },
+    {
+      "id": "eb06f1158ef5",
+      "title": "Ava-82M — Farsi TTS Model from Kokoro",
+      "url": "https://huggingface.co/xmanii/Ava-82M",
+      "category": "AI & Machine Learning",
+      "content_type": "tool",
+      "rating": "worth-deep-reading",
+      "tags": ["text-to-speech", "farsi", "persian", "kokoro", "tts-model", "huggingface", "fine-tuning", "low-cost-training", "audio-generation", "single-speaker", "24khz", "styletts2", "istftnet", "multilingual-ai"],
+      "summary": "**What:** Ava-82M is a Farsi (Persian) text-to-speech model fine-tuned from Kokoro-82M, producing 24kHz single-speaker Persian speech with ~$0 budget training cost.\n\n**Key features:**\n- 82M parameters, under 400MB model size\n- Trained on ~20 hours of Farsi data in 2 stages\n- Total training cost: $0.90\n- Includes Persian text frontend, number/date normalization\n- CPU inference on Apple Silicon (~4.5s speech in ~0.9s)\n\n→ Training a usable TTS model for under $1 makes this an incredible demonstration of accessible AI development."
+    }
+  ]
+}

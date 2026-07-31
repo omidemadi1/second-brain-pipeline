@@ -1,0 +1,32 @@
+{
+  "id": "e8edecffc889",
+  "url": "https://github.com/bicardinal/brinicle",
+  "text": "Brinicle — resource-efficient C++ vector index engine by Iranian team (bicardinal). Semantic search for text and images at high speed. Runs on minimal RAM where larger alternatives like Qdrant crash.",
+  "platform": "github",
+  "category_guess": "Development",
+  "categories": [
+    "Development"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "brinicle",
+    "github",
+    "alternatives",
+    "bicardinal",
+    "crash",
+    "engine",
+    "high",
+    "images",
+    "index",
+    "iranian",
+    "larger",
+    "like",
+    "minimal",
+    "qdrant",
+    "ram"
+  ],
+  "title_preview": "https://github.com/bicardinal/brinicle",
+  "timestamp": "2026-07-30T11:45:31.031018+03:30",
+  "user_message": "https://github.com/bicardinal/brinicle Brinicle — resource-efficient C++ vector index engine by Iranian team (bicardinal). Semantic search for text and images at high speed. Runs on minimal RAM where larger alternatives like Qdrant crash.",
+  "processed": false
+}

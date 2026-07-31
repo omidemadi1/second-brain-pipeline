@@ -1,0 +1,11 @@
+# Inbox queue (processed by cron)
+.inbox-queue/
+.inbox-queue/__pycache__/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp scripts
+check_related.py

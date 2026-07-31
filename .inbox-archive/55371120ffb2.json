@@ -1,0 +1,21 @@
+{
+  "id": "55371120ffb2",
+  "url": "https://youtube.com/watch?v=abc123",
+  "text": "python tutorial for beginners",
+  "platform": "youtube",
+  "category_guess": "Development",
+  "categories": [
+    "Development"
+  ],
+  "content_type": "learning",
+  "tags": [
+    "beginners",
+    "python",
+    "tutorial",
+    "video"
+  ],
+  "title_preview": "https://youtube.com/watch?v=abc123",
+  "timestamp": "2026-07-26T08:40:30.401429+03:30",
+  "user_message": "https://youtube.com/watch?v=abc123 python tutorial for beginners",
+  "processed": false
+}

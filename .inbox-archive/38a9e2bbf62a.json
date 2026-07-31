@@ -1,0 +1,33 @@
+{
+  "id": "38a9e2bbf62a",
+  "url": null,
+  "text": "Hallusquatting (Adversarial Hallucination Squatting) — new attack where hackers register package names that AI coding assistants hallucinate, then stuff them with malware. Exploits persistent hallucination flaw in AI code tools. Source: SecurityWeek, @Linuxor",
+  "platform": "note",
+  "category_guess": "Cybersecurity",
+  "categories": [
+    "Cybersecurity",
+    "DevOps & Infrastructure"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "adversarial",
+    "assistants",
+    "attack",
+    "code",
+    "coding",
+    "exploit",
+    "exploits",
+    "flaw",
+    "hackers",
+    "hallucinate",
+    "hallucination",
+    "hallusquatting",
+    "linux",
+    "linuxor",
+    "malware"
+  ],
+  "title_preview": "Hallusquatting (Adversarial Hallucination Squatting) — new attack where hackers ",
+  "timestamp": "2026-07-30T22:37:40.732057+03:30",
+  "user_message": "Hallusquatting (Adversarial Hallucination Squatting) — new attack where hackers register package names that AI coding assistants hallucinate, then stuff them with malware. Exploits persistent hallucination flaw in AI code tools. Source: SecurityWeek, @Linuxor",
+  "processed": false
+}

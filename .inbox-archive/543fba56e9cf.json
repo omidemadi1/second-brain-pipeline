@@ -1,0 +1,31 @@
+{
+  "id": "543fba56e9cf",
+  "url": "https://github.com/virgiliojr94/book-to-skill",
+  "text": "Book-to-Skill — converts books and project documentation into AI agent skill files automatically.",
+  "platform": "github",
+  "category_guess": "AI & Machine Learning",
+  "categories": [
+    "AI & Machine Learning",
+    "Development"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "book",
+    "github",
+    "skill",
+    "ai-agents",
+    "automatically",
+    "book-to-skill",
+    "books",
+    "converts",
+    "documentation",
+    "files",
+    "project",
+    "open-source",
+    "code"
+  ],
+  "title_preview": "https://github.com/virgiliojr94/book-to-skill",
+  "timestamp": "2026-07-27T21:00:58.936477+03:30",
+  "user_message": "https://github.com/virgiliojr94/book-to-skill Book-to-Skill — converts books and project documentation into AI agent skill files automatically.",
+  "processed": false
+}

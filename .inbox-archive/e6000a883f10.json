@@ -1,0 +1,33 @@
+{
+  "id": "e6000a883f10",
+  "url": "https://github.com/calesthio/Crucix",
+  "text": "Crucix — open-source real-time geopolitical/ssecurity monitoring dashboard. Satellite fire tracking, flight/ship tracking, conflict zones, crypto/markets, Telegram social sentiment. 26 live sources, every 15 min. Alerts via Telegram/Discord, no cloud server needed. Live demo: www.crucix.live",
+  "platform": "github",
+  "category_guess": "Cybersecurity",
+  "categories": [
+    "Cybersecurity",
+    "Development"
+  ],
+  "content_type": "tool",
+  "tags": [
+    "crucix",
+    "github",
+    "alerts",
+    "cloud",
+    "conflict",
+    "cryptography",
+    "dashboard",
+    "demo",
+    "discord",
+    "fire",
+    "flight",
+    "geopolitical",
+    "live",
+    "markets",
+    "min"
+  ],
+  "title_preview": "https://github.com/calesthio/Crucix",
+  "timestamp": "2026-07-26T22:05:12.777473+03:30",
+  "user_message": "https://github.com/calesthio/Crucix Crucix — open-source real-time geopolitical/ssecurity monitoring dashboard. Satellite fire tracking, flight/ship tracking, conflict zones, crypto/markets, Telegram social sentiment. 26 live sources, every 15 min. Alerts via Telegram/Discord, no cloud server needed. Live demo: www.crucix.live",
+  "processed": false
+}

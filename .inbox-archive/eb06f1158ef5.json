@@ -1,0 +1,32 @@
+{
+  "id": "eb06f1158ef5",
+  "url": "https://huggingface.co/xmanii/Ava-82M",
+  "text": "Ava-82M — Farsi TTS model fine-tuned from Kokoro with ~0 budget. 82M params, <400MB. Trained on ~20 hours of Farsi data in 2 stages (10h clean Mana TTS + 9h additional). Stage 2 on L40S took 107 min, cost .61. Total: .90.",
+  "platform": "web",
+  "category_guess": "AI & Machine Learning",
+  "categories": [
+    "AI & Machine Learning"
+  ],
+  "content_type": "reference",
+  "tags": [
+    "huggingface",
+    "additional",
+    "ava-82m",
+    "budget",
+    "clean",
+    "cost",
+    "data",
+    "farsi",
+    "fine-tuned",
+    "hours",
+    "kokoro",
+    "l40s",
+    "mana",
+    "min",
+    "model"
+  ],
+  "title_preview": "https://huggingface.co/xmanii/Ava-82M",
+  "timestamp": "2026-07-30T08:57:04.408859+03:30",
+  "user_message": "https://huggingface.co/xmanii/Ava-82M Ava-82M — Farsi TTS model fine-tuned from Kokoro with ~0 budget. 82M params, <400MB. Trained on ~20 hours of Farsi data in 2 stages (10h clean Mana TTS + 9h additional). Stage 2 on L40S took 107 min, cost .61. Total: .90.",
+  "processed": false
+}

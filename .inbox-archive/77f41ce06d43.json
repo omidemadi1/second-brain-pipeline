@@ -1,0 +1,32 @@
+{
+  "id": "77f41ce06d43",
+  "url": "https://codewiki.google",
+  "text": "CodeWiki by Google — paste a GitHub repo link, AI generates interactive documentation. Auto dependency graphs, step-by-step module explanations, beginner tutorials, built-in chatbot.",
+  "platform": "web",
+  "category_guess": "Development",
+  "categories": [
+    "Development"
+  ],
+  "content_type": "learning",
+  "tags": [
+    "auto",
+    "beginner",
+    "built-in",
+    "chatbot",
+    "codewiki",
+    "dependency",
+    "documentation",
+    "explanations",
+    "generates",
+    "github",
+    "google",
+    "graphs",
+    "interactive",
+    "module",
+    "paste"
+  ],
+  "title_preview": "https://codewiki.google",
+  "timestamp": "2026-07-30T11:40:57.120054+03:30",
+  "user_message": "https://codewiki.google CodeWiki by Google — paste a GitHub repo link, AI generates interactive documentation. Auto dependency graphs, step-by-step module explanations, beginner tutorials, built-in chatbot.",
+  "processed": false
+}
