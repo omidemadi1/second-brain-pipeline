@@ -41,3 +41,5 @@ Personal project idea to build a Python-based automation tool for managing Proxm
 - [[mikrotik-vlan-setup]] — Network infrastructure
 - [[docker-kubernetes-production-guide]] — Production infrastructure
 - [[AI Skills for Home Lab Agents]] — Home lab automation
+- [[Untracked-Optimize-Docker-Build-Context]] — Docker optimization
+- [[Decimen-Optical-Transfer-QR-Code-File-Transfer]] — Air-gapped transfer

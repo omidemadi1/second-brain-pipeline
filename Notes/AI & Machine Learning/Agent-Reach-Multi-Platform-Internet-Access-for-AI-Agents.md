@@ -26,8 +26,10 @@ Give your AI agent eyes to see the entire internet. Agent-Reach provides read & 
 
 ## Related
 - [[Keenable-Free-Web-Search-Extraction-for-AI-Agents]] — Web search + extraction for agents
+- [[Agent-Reach-Social-Media-Access-for-Agents]] — Duplicate entry (same tool)
 - [[awesome-hermes-agent]] — Hermes agent ecosystem
 - [[AgentCookie-Browser-Cookie-Sync-for-Agents]] — Agent authentication infrastructure
 - [[Last30days-Research-Skill]] — Multi-platform agent research
 - [[Crucix - OSINT Monitoring Dashboard]] — Social media monitoring via OSINT
 - [[crawl4ai-llm-friendly-web-crawler]] — Web content extraction for agents
+- [[OpenWork-Open-Source-Claude-Cowork-Alternative]] — Agent collaboration

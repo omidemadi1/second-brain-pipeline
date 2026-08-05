@@ -29,3 +29,5 @@ Free comprehensive guide to digital privacy and anonymity. Covers secure browsin
 - [[Hackflix-Security-Conference-Video-Archive]] — Security research
 - [[Crucix - OSINT Monitoring Dashboard]] — OSINT monitoring
 - [[Hallusquatting-AI-Hallucination-Package-Attack]] — AI security
+- [[Decimen-Optical-Transfer-QR-Code-File-Transfer]] — Air-gapped transfer
+- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — Security tools

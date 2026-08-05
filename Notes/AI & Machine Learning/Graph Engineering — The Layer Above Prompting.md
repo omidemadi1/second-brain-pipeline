@@ -28,3 +28,6 @@ Thread about 'Graph Engineering' — designing how AI agents work rather than ju
 - [[Graphify-Knowledge-Graph-from-Codebase]] — Code knowledge graphs
 - [[langchain]] — GraphRAG framework
 - [[Brinicle-Resource-Efficient-Vector-Index]] — Vector search for graphs
+- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — Multi-agent security audit
+- [[Grok Build deep-research Command]] — Parallel agent research
+- [[OpenWork-Open-Source-Claude-Cowork-Alternative]] — Agent orchestration

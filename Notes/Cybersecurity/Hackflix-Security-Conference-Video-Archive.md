@@ -57,9 +57,11 @@ author: Hackflix
 - Worth exploring the topic index for our areas of interest
 
 ## Related
-- [[OSINT - Find Everything About Anyone]] — OSINT research
-- [[Crucix - OSINT Monitoring Dashboard]] — OSINT monitoring
-- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — Pentest tools
-- [[Hallusquatting-AI-Hallucination-Package-Attack]] — AI security
+- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — AI-driven pentest
+- [[OSINT - Find Everything About Anyone]] — OSINT techniques
+- [[Crucix - OSINT Monitoring Dashboard]] — Real-time OSINT monitoring
 - [[Paranoia Privacy Wiki]] — Privacy practices
-- [[crawl4ai-llm-friendly-web-crawler]] — Web scraping for research
+- [[Agent-Reach-Social-Media-Access-for-Agents]] — Social media recon
+- [[crawl4ai-llm-friendly-web-crawler]] — Web research for security
+- [[Graph Engineering — The Layer Above Prompting]] — Multi-agent workflows
+- [[Open Code Review — Alibaba AI Framework]] — AI code security review

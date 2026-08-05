@@ -42,5 +42,9 @@ Open source alternative to Semrush and Ahrefs (8.2k stars). TypeScript-based too
 
 ## Related
 - [[Google Search Documentation — SEO Fundamentals]] — SEO fundamentals
-- [[openseo]] — OpenSEO project
-- [[10 GitHub Repos That Print Money While You Sleep]] — Monetization strategies
+- [[Distribution-101-Organic-Marketing-Guide]] — Marketing strategy
+- [[Gotcha-App-32k-Users-Organic-Growth-Strategy]] — Organic growth
+- [[Growth-Playbook-0-to-50k-Month-Apps]] — Revenue growth
+- [[10 GitHub Repos That Print Money While You Sleep]] — Monetization
+- [[marketing-skills-pre-built-ai-skill-files]] — Pre-built marketing skills
+- [[OKF-v0.2-Google-AI-Readable-Content-Metadata]] — AI-readable metadata

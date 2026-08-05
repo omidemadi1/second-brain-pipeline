@@ -29,6 +29,8 @@ AI-driven penetration testing tool that detects 45+ vulnerability types includin
 - [[Crucix - OSINT Monitoring Dashboard]] — Real-time OSINT monitoring
 - [[Hackflix-Security-Conference-Video-Archive]] — Security research education
 - [[Hallusquatting-AI-Hallucination-Package-Attack]] — AI-powered security threats
-- [[awesome-hermes-agent]] — AI agent tools ecosystem
-- [[Qwen-Free-API-for-Hermes-and-AI-Harnesses]] — Multi-provider LLM for security tools
-- [[crawl4ai-llm-friendly-web-crawler]] — Web research for pentest recon
+- [[Graph Engineering — The Layer Above Prompting]] — Multi-agent audit workflows
+- [[Graphify-Knowledge-Graph-from-Codebase]] — Code analysis for vuln detection
+- [[crawl4ai-llm-friendly-web-crawler]] — Web recon for pentest
+- [[Open Code Review — Alibaba AI Framework]] — AI code security review
+- [[Agent-Reach-Social-Media-Access-for-Agents]] — Social media recon

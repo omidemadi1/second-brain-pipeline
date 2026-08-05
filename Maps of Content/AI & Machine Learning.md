@@ -40,9 +40,10 @@
 - [[Last30days-Research-Skill]] — AI agent research across platforms
 - [[Brinicle-Resource-Efficient-Vector-Index]] — Resource-efficient C++ vector index
 - [[Ava-82M-Farsi-TTS-Model]] — Farsi TTS model for under $1
+- [[PixelRAG-Screenshot-Based-RAG-System]] — Vision-based RAG that reads webpages via screenshots, not HTML
 
 ## Statistics
-Total notes: 34
-Worth deep reading: 23
+Total notes: 35
+Worth deep reading: 24
 Reference: 8
 Quick notes: 3

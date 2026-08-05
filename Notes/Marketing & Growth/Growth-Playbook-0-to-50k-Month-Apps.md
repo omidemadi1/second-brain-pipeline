@@ -47,3 +47,4 @@ George Lampropoulos is known for building successful apps with Rork. This playbo
 - [[10 GitHub Repos That Print Money While You Sleep]] — Monetization strategies
 - [[Prajwal Tomar - MVP Building]] — MVP building
 - [[marketing-skills-pre-built-ai-skill-files]] — Pre-built marketing AI skills
+- [[Google Search Documentation — SEO Fundamentals]] — SEO for growth

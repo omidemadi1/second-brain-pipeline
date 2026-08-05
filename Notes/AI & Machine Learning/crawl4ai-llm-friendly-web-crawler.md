@@ -23,7 +23,10 @@ Open-source LLM-friendly web crawler and scraper with 75k stars and 8k forks. Co
 
 
 ## Related
-- [[Keenable-Web-Search-for-AI-Agents]] — Web data extraction for AI agents
+- [[Keenable-Web-Search-for-AI-Agents]] — Web search + extraction for agents
 - [[Agent-Reach-Social-Media-Access-for-Agents]] — Social media content extraction
-- [[Brinicle-Resource-Efficient-Vector-Index]] — Resource-efficient vector search
+- [[PixelRAG-Screenshot-Based-RAG-System]] — Vision-based alternative to HTML extraction
+- [[Brinicle-Resource-Efficient-Vector-Index]] — Vector search for RAG pipelines
 - [[langchain]] — RAG pipeline ecosystem
+- [[Graphify-Knowledge-Graph-from-Codebase]] — Graph-based knowledge extraction
+- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — Web recon for pentest

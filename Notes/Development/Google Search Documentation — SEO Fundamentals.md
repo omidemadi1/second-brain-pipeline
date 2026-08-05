@@ -36,3 +36,5 @@ This is a foundational reference for any web project. Worth bookmarking for when
 - [[Distribution-101-Organic-Marketing-Guide]] — Organic marketing strategy
 - [[Gotcha-App-32k-Users-Organic-Growth-Strategy]] — SEO-driven organic growth
 - [[10 GitHub Repos That Print Money While You Sleep]] — Monetization strategies
+- [[marketing-skills-pre-built-ai-skill-files]] — Pre-built marketing skills
+- [[OKF-v0.2-Google-AI-Readable-Content-Metadata]] — AI-readable metadata

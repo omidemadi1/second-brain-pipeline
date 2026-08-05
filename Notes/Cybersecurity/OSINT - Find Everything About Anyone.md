@@ -29,6 +29,7 @@ Comprehensive OSINT (Open Source Intelligence) guide covering tools and techniqu
 - [[Hackflix-Security-Conference-Video-Archive]] — Security education
 - [[Crucix - OSINT Monitoring Dashboard]] — OSINT monitoring
 - [[Hallusquatting-AI-Hallucination-Package-Attack]] — AI security threats
-- [[reddit-netsec-audit-tool]] — Security audit tools
 - [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — AI pentest tools
-- [[crawl4ai-llm-friendly-web-crawler]] — Web scraping for OSINT research
+- [[Agent-Reach-Social-Media-Access-for-Agents]] — Social media recon
+- [[crawl4ai-llm-friendly-web-crawler]] — Web scraping for OSINT
+- [[Decimen-Optical-Transfer-QR-Code-File-Transfer]] — Air-gapped transfer

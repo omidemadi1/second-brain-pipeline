@@ -63,3 +63,5 @@ author: mvanhorn
 - [[Keenable-Web-Search-for-AI-Agents]] — Agent web search
 - [[Grok Build deep-research Command]] — AI deep research
 - [[awesome-hermes-agent]] — Hermes ecosystem
+- [[Crucix - OSINT Monitoring Dashboard]] — OSINT monitoring
+- [[OpenWork-Open-Source-Claude-Cowork-Alternative]] — Agent collaboration

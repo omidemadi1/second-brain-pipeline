@@ -42,9 +42,10 @@ Guide to downloadable AI agent skills for home lab use. Covers Awesome GitHub Co
 
 
 ## Related
-- [[awesome-hermes-agent]] — Hermes skill ecosystem
+- [[Awesome-hermes-agent]] — Hermes skill ecosystem
 - [[book-to-skill-convert-books-to-ai-agent-skills]] — Converting docs to skills
 - [[Idea - Proxmox VM Backup Automation Tool]] — Homelab automation
 - [[proxmox-vm-backup-automation]] — Proxmox automation
 - [[Untracked-Optimize-Docker-Build-Context]] — Docker optimization
 - [[docker-kubernetes-production-guide]] — Container orchestration
+- [[Graphify-Knowledge-Graph-from-Codebase]] — Code analysis tools

@@ -57,7 +57,11 @@ author: Keenable AI
 - Should evaluate search quality against existing solutions
 
 ## Related
-- [[Agent-Reach-Social-Media-Access-for-Agents]] — Social media data access
-- [[AgentCookie-Browser-Cookie-Sync-for-Agents]] — Agent infrastructure
-- [[crawl4ai-llm-friendly-web-crawler]] — Web crawling for RAG
-- [[awesome-hermes-agent]] — Hermes ecosystem
+- [[Brinicle-Resource-Efficient-Vector-Index]] — Resource-efficient vector search
+- [[Llama-cpp-Optimization-Tool-30B-on-6GB-VRAM]] — Low-VRAM AI tools
+- [[Wan2GP-Free-AI-Video-Studio]] — Local AI video generation
+- [[neural-networks-explained]] — ML fundamentals
+- [[langchain]] — RAG framework
+- [[Graphify-Knowledge-Graph-from-Codebase]] — Code knowledge graphs
+- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — Web recon for security
+- [[Keenable-Web-Search-for-AI-Agents]] — Web search for agents

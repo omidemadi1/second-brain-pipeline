@@ -59,3 +59,5 @@ author: Kiko Beats
 - [[Brinicle-Resource-Efficient-Vector-Index]] — Performance optimization
 - [[AI Skills for Home Lab Agents]] — Home lab Docker/DevOps
 - [[Idea - Proxmox VM Backup Automation Tool]] — Infrastructure automation
+- [[Graphify-Knowledge-Graph-from-Codebase]] — Code analysis tools
+- [[proxmox-vm-backup-automation]] — Proxmox automation

@@ -61,3 +61,6 @@ This is a solid organic marketing framework. The key insight is that distributio
 - [[Prajwal Tomar - MVP Building]] — MVP and startup building
 - [[Comparison-of-Financing-Methods]] — Business financing
 - [[marketing-skills-pre-built-ai-skill-files]] — Pre-built marketing AI skills
+- [[Open SEO - Open Source SEO Tool]] — SEO toolkit for growth
+- [[Google Search Documentation — SEO Fundamentals]] — SEO fundamentals
+- [[10 GitHub Repos That Print Money While You Sleep]] — Monetization strategies

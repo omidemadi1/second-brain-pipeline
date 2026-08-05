@@ -63,3 +63,6 @@ author: Panniantong
 - [[crawl4ai-llm-friendly-web-crawler]] — Web crawling for AI agents
 - [[awesome-hermes-agent]] — Hermes agent ecosystem
 - [[AgentCookie-Browser-Cookie-Sync-for-Agents]] — Agent infrastructure
+- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — Security agent tools
+- [[OSINT - Find Everything About Anyone]] — OSINT recon
+- [[OpenWork-Open-Source-Claude-Cowork-Alternative]] — Agent collaboration

@@ -45,3 +45,5 @@ This is a strong case study in organic user acquisition for mobile apps. The key
 - [[Distribution-101-Organic-Marketing-Guide]] — Marketing channels
 - [[Prajwal Tomar - MVP Building]] — MVP building
 - [[Comparison-of-Financing-Methods]] — Startup funding options
+- [[10 GitHub Repos That Print Money While You Sleep]] — Monetization strategies
+- [[Google Search Documentation — SEO Fundamentals]] — SEO for organic growth

@@ -51,5 +51,6 @@ Open-source real-time geopolitical/security monitoring dashboard (10.7k stars). 
 - [[Hallusquatting-AI-Hallucination-Package-Attack]] — Security threats
 - [[Agent-Reach-Social-Media-Access-for-Agents]] — Social media monitoring
 - [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — AI pentest tools
+- [[Last30days-Research-Skill]] — Multi-platform research
 - [[crawl4ai-llm-friendly-web-crawler]] — Web research for OSINT
 
