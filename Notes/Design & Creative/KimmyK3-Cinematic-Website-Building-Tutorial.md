@@ -58,6 +58,6 @@ author: YouTube Creator
 
 ## Related
 - [[Defeating-AI-Slop-3-Step-Guide-Taste-in-Web-Design]] — Web design principles
-- [[Google-Flow-Music-Lyria-3.5-Music-Generation]] — Another creative AI tool
-- [[Grok-Build-Mode-App-Builder]] — AI app building tools
 - [[Imp-Skills-AI-Agent-UI-Design]] — AI agent UI design skills
+- [[Grok-Build-Mode-App-Builder]] — AI app building tools
+- [[154295023ffe Scroll-World 3D Scrollable Product Pages]] — 3D product pages

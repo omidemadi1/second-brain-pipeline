@@ -67,5 +67,4 @@ author: SecurityWeek
 - [[Paranoia Privacy Wiki]] — Privacy practices
 - [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — AI pentest tools
 - [[Agent-Reach-Social-Media-Access-for-Agents]] — Social media recon
-- [[hallusquatting-ai-hallucination-package-attack]] — AI supply chain attacks
-- [[Open Code Review — Alibaba AI Framework]] — AI code security
+- [[Open Code Review — Alibaba AI Framework]] — AI code security review

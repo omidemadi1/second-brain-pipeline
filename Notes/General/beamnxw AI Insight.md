@@ -30,4 +30,8 @@ High-engagement AI tweet from beamnxw (2142 likes). Content focused on AI topics
 
 
 ## Related
+- [[Codez — Viral AI Post]] — Viral AI content
+- [[Machina — High-Engagement AI Post]] — AI engagement
+- [[Akshay — AI Post]] — AI social content
+- [[Lunar Researcher Post]] — AI community insights
 

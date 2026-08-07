@@ -34,4 +34,6 @@ Step-by-step solution to the Terraria talent discovery challenge designed for Ta
 
 
 ## Related
+- [[YouTube Video (No Transcript)]] — YouTube gaming content
+- [[x-post-2080609185499140125]] — Social media saves
 

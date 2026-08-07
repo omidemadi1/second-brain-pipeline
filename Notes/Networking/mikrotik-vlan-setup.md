@@ -25,6 +25,6 @@ A Stack Overflow question about MikroTik VLAN configuration via API. The origina
 The Stack Overflow link appears to be broken/removed. For MikroTik VLAN setup, check the official MikroTik documentation or RouterOS wiki directly.
 
 ## Related
-- [[Proxmox VM Backup Automation]] — Network infrastructure automation
 - [[Idea - Proxmox VM Backup Automation Tool]] — Homelab infrastructure
 - [[docker-kubernetes-production-guide]] — Production infrastructure
+- [[proxmox-vm-backup-automation]] — Proxmox automation

@@ -24,3 +24,7 @@ None
 
 ## Notes
 This is a guide for writing effective prompts for AI video generation. The key insight is to treat prompts like film scripts with structured elements.
+## Related
+- [[Wan2GP-Free-AI-Video-Studio]] — AI video generation
+- [[Machina — AI Video Studio in Claude Code]] — AI video workflows
+- [[Google-Flow-Music-Lyria-3.5-Music-Generation]] — Creative AI tools

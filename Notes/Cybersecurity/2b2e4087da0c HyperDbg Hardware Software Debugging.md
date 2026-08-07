@@ -30,3 +30,8 @@ None
 
 ## Notes
 This is a powerful debugging tool for cybersecurity professionals. It uses Intel VT-x/EPT for low-level debugging, making it useful for reverse engineering and malware analysis.
+## Related
+- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — AI-driven pentesting
+- [[OSINT - Find Everything About Anyone]] — OSINT techniques
+- [[Hackflix-Security-Conference-Video-Archive]] — Security research
+- [[837ad3289694 Open Code Review Alibaba AI Framework]] — AI code security

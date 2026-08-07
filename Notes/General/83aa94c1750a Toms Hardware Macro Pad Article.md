@@ -24,3 +24,7 @@ None
 
 ## Notes
 The article discusses the utility of macro pads even for users who already have advanced mice with multiple buttons.
+## Related
+- [[a2b37e04d265 MakeUseOf Article Reference]] — Tech media references
+- [[25b3034b792c XDA Article Reference]] — Tech articles
+- [[Tom's Hardware Macro Pad Article]] — Macro pad hardware

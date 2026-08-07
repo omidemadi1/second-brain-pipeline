@@ -69,10 +69,9 @@ This is one of the best practical guides I've seen on using AI for design withou
 The three-step framework (Cultivate Taste → Bring to AI → Iterate) is a solid mental model that applies beyond web design — it's essentially the human-AI collaboration pattern for any creative work.
 
 ## Related
-- [[Tuby-Persian-Subtitle-Translator-YouTube]] — Content creation
 - [[Machina — AI Video Studio in Claude Code]] — AI creative workflows
 - [[Wan2GP-Free-AI-Video-Studio]] — AI video generation
 - [[Google Free AI Tools — 15 Products That Rival Paid Alternatives]] — Free creative AI tools
 - [[Imp-Skills-AI-Agent-UI-Design]] — Design skills for AI agents
-- [[Grok-Build-Mode-App-Builder]] — AI app building for design
-- [[marketing-skills-pre-built-ai-skill-files]] — Pre-built marketing skills
+- [[KimmyK3-Cinematic-Website-Building-Tutorial]] — Cinematic web design
+- [[154295023ffe Scroll-World 3D Scrollable Product Pages]] — 3D product pages

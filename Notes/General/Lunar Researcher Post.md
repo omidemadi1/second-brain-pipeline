@@ -30,4 +30,7 @@ Post from Lunar, CEO of KollectiveXYZ and AI engineer involved in prediction mar
 
 
 ## Related
+- [[beamnxw AI Insight]] — AI community insights
+- [[Reddit-Indiehackers-Link]] — Community discussions
+- [[Prajwal Tomar - MVP Building]] — Startup community
 

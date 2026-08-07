@@ -27,3 +27,8 @@ None
 
 ## Notes
 This tool appears to be a game-changer for creating high-quality 3D product pages that typically require expensive custom development. The 7383 stars indicate strong community interest.
+## Related
+- [[Defeating-AI-Slop-3-Step-Guide-Taste-in-Web-Design]] — Web design principles
+- [[KimmyK3-Cinematic-Website-Building-Tutorial]] — Cinematic web design
+- [[Imp-Skills-AI-Agent-UI-Design]] — AI agent UI design skills
+- [[Grok-Build-Mode-App-Builder]] — AI app building

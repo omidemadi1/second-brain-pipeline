@@ -29,3 +29,8 @@ None
 
 ## Notes
 This is an AI-powered code review tool from Alibaba that focuses on security vulnerabilities. It can detect common issues like SQL injection, NPE errors, and thread safety problems.
+## Related
+- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — AI-driven pentesting
+- [[Hallusquatting-AI-Hallucination-Package-Attack]] — AI security threats
+- [[Hackflix-Security-Conference-Video-Archive]] — Security research
+- [[HyperDbg Hardware Software Debugging]] — Debugging infrastructure

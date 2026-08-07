@@ -35,4 +35,7 @@ YouTube tutorial covering Python basics for beginners. A good starting point for
 
 
 ## Related
+- [[langchain]] — Python ML framework
+- [[crawl4ai-llm-friendly-web-crawler]] — Python web crawler
+- [[book-to-skill-convert-books-to-ai-agent-skills]] — Python skill creation
 

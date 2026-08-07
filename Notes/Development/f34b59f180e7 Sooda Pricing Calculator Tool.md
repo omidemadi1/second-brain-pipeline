@@ -29,3 +29,7 @@ None
 
 ## Notes
 This is a simple but useful tool for small businesses to calculate pricing. The offline-first PWA approach is interesting for accessibility.
+## Related
+- [[Comparison-of-Financing-Methods]] — Business financing options
+- [[Growth-Playbook-0-to-50k-Month-Apps]] — Revenue strategies
+- [[10 GitHub Repos That Print Money While You Sleep]] — Monetization

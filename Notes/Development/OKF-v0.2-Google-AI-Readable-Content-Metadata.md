@@ -61,3 +61,6 @@ author: Google Cloud
 
 - [[Google-Search-Documentation-SEO-Fundamentals]] — SEO foundations
 - [[Hallusquatting-AI-Hallucination-Package-Attack]] — Content trust issues
+- [[Open SEO - Open Source SEO Tool]] — SEO toolkit
+- [[28119545e6f6 AI Answer Engine Optimization Tutorial]] — AI search optimization
+- [[Distribution-101-Organic-Marketing-Guide]] — Content strategy

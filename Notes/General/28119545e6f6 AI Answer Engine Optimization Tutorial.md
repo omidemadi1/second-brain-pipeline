@@ -25,3 +25,8 @@ None
 
 ## Notes
 This is a comprehensive guide to optimizing content for AI search engines. The key insight is that AI assistants work differently from traditional search engines - they use "query fan-out" where one prompt gets broken into many specific searches.
+## Related
+- [[Google Search Documentation — SEO Fundamentals]] — SEO fundamentals
+- [[OKF-v0.2-Google-AI-Readable-Content-Metadata]] — AI-readable metadata
+- [[Open SEO - Open Source SEO Tool]] — SEO toolkit
+- [[Distribution-101-Organic-Marketing-Guide]] — Marketing strategy
