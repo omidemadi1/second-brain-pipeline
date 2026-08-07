@@ -34,7 +34,8 @@ A link saved from r/indiehackers on Reddit. The content could not be fetched at 
 This link was queued but the content extraction failed. Worth checking manually if the topic is still of interest.
 
 ## Related
-- [[Growth-Playbook-0-to-50k-Month-Apps]] — Indie hacker growth
-- [[Gotcha-App-32k-Users-Organic-Growth-Strategy]] — Organic growth
-- [[Prajwal Tomar - MVP Building]] — MVP building
-- [[Comparison-of-Financing-Methods]] — Startup financing
+- [[Agent-Reach-Social-Media-Access-for-Agents]] — Social media access for agents
+- [[crawl4ai-llm-friendly-web-crawler]] — Web scraping for market research
+- [[Keenable-Web-Search-for-AI-Agents]] — Free web search for research
+- [[marketing-skills-pre-built-ai-skill-files]] — Marketing automation skills
+- [[Google Search Documentation — SEO Fundamentals]] — SEO fundamentals

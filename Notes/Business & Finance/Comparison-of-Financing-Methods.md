@@ -53,7 +53,7 @@ A comprehensive comparison table of 10 financing methods, originally in Farsi, f
 Useful reference table for evaluating funding options. The Iranian finance context adds unique instruments like Murabaha and Leasing bonds that are less common in Western financing discussions. Good to have as a quick reference when evaluating financing strategies.
 
 ## Related
-
 - [[10 GitHub Repos That Print Money While You Sleep]] — Monetization strategies
 - [[Growth-Playbook-0-to-50k-Month-Apps]] — Revenue growth strategies
 - [[Prajwal Tomar - MVP Building]] — Startup MVP building
+- [[marketing-skills-pre-built-ai-skill-files]] — Marketing automation

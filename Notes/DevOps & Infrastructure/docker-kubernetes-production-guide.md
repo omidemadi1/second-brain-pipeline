@@ -29,3 +29,4 @@ The URL appears to be a placeholder domain (example.com). This may have been a t
 - [[Idea - Proxmox VM Backup Automation Tool]] — Infrastructure automation
 - [[proxmox-vm-backup-automation]] — Proxmox automation
 - [[mikrotik-vlan-setup]] — Network infrastructure
+- [[Paranoia Privacy Wiki]] — Container security best practices

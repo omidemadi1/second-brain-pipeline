@@ -10,6 +10,12 @@
 - [[Hackflix-Security-Conference-Video-Archive]] — 19k+ security conference videos
 - [[2b2e4087da0c HyperDbg Hardware Software Debugging]] — Hardware/software debugging infrastructure
 
+## Cross-Category Connections
+- [[crawl4ai-llm-friendly-web-crawler]] — AI/ML: Web recon for pentest
+- [[Agent-Reach-Social-Media-Access-for-Agents]] — AI/ML: Social media recon
+- [[Graph Engineering — The Layer Above Prompting]] — AI/ML: Multi-agent audit workflows
+- [[docker-kubernetes-production-guide]] — DevOps: Container security
+
 ## Statistics
 
 Total notes: 8

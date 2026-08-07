@@ -48,3 +48,5 @@ George Lampropoulos is known for building successful apps with Rork. This playbo
 - [[Prajwal Tomar - MVP Building]] — MVP building
 - [[marketing-skills-pre-built-ai-skill-files]] — Pre-built marketing AI skills
 - [[Google Search Documentation — SEO Fundamentals]] — SEO for growth
+- [[28119545e6f6 AI Answer Engine Optimization Tutorial]] — AI search optimization
+- [[crawl4ai-llm-friendly-web-crawler]] — Web research for market analysis

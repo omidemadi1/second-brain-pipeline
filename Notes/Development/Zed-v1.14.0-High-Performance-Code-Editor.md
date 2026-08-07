@@ -48,6 +48,6 @@ author: Zed Industries
 Zed is a compelling alternative to VS Code for developers who prioritize performance. The Rust-based GPUI engine makes it noticeably faster for large files and projects. The multiplayer editing feature is unique among editors. Worth trying if VS Code feels sluggish on larger projects.
 
 ## Related
-
-- [[Grok-Build-v0.2.113-MCP-and-Markdown-Copy]]
-- [[Developer-Tools-2026]]
+- [[Grok-Build-v0.2.113-MCP-and-Markdown-Copy]] — MCP protocol details
+- [[trae-ai-ide]] — AI-powered IDE alternative
+- [[Grok Build CLI v0.2.112 Features]] — Grok features

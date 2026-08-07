@@ -64,3 +64,6 @@ This is a solid organic marketing framework. The key insight is that distributio
 - [[Open SEO - Open Source SEO Tool]] — SEO toolkit for growth
 - [[Google Search Documentation — SEO Fundamentals]] — SEO fundamentals
 - [[10 GitHub Repos That Print Money While You Sleep]] — Monetization strategies
+- [[Agent-Reach-Social-Media-Access-for-Agents]] — AI-powered social media research
+- [[crawl4ai-llm-friendly-web-crawler]] — Web scraping for market research
+- [[28119545e6f6 AI Answer Engine Optimization Tutorial]] — AEO for organic visibility

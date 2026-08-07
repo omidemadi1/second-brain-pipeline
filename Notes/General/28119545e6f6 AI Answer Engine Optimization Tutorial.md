@@ -30,3 +30,5 @@ This is a comprehensive guide to optimizing content for AI search engines. The k
 - [[OKF-v0.2-Google-AI-Readable-Content-Metadata]] — AI-readable metadata
 - [[Open SEO - Open Source SEO Tool]] — SEO toolkit
 - [[Distribution-101-Organic-Marketing-Guide]] — Marketing strategy
+- [[Gotcha-App-32k-Users-Organic-Growth-Strategy]] — Organic growth case study
+- [[crawl4ai-llm-friendly-web-crawler]] — Web research for AEO optimization

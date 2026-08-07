@@ -47,3 +47,5 @@ This is a strong case study in organic user acquisition for mobile apps. The key
 - [[Comparison-of-Financing-Methods]] — Startup funding options
 - [[10 GitHub Repos That Print Money While You Sleep]] — Monetization strategies
 - [[Google Search Documentation — SEO Fundamentals]] — SEO for organic growth
+- [[Agent-Reach-Social-Media-Access-for-Agents]] — Social media content for growth
+- [[28119545e6f6 AI Answer Engine Optimization Tutorial]] — AI search optimization

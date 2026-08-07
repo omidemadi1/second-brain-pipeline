@@ -7,6 +7,11 @@
 - [[Idea - Proxmox VM Backup Automation Tool]] — Python automation for Proxmox VM backups
 - [[Untracked-Optimize-Docker-Build-Context]] — Optimize Docker build context by 99.8%
 
+## Cross-Category Connections
+- [[Paranoia Privacy Wiki]] — Cybersecurity: Container and backup security
+- [[AI Skills for Home Lab Agents]] — AI/ML: Home lab automation
+- [[mikrotik-vlan-setup]] — Networking: Infrastructure setup
+
 ## Statistics
 
 Total notes: 4

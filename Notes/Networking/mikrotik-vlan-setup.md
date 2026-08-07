@@ -28,3 +28,4 @@ The Stack Overflow link appears to be broken/removed. For MikroTik VLAN setup, c
 - [[Idea - Proxmox VM Backup Automation Tool]] — Homelab infrastructure
 - [[docker-kubernetes-production-guide]] — Production infrastructure
 - [[proxmox-vm-backup-automation]] — Proxmox automation
+- [[AI Skills for Home Lab Agents]] — Home lab AI deployment
