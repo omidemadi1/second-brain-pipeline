@@ -20,8 +20,13 @@ Input JSON format:
       "category": "AI & Machine Learning",
       "content_type": "tool",  // tool|learning|idea|reference
       "rating": "worth-deep-reading",
-      "tags": ["tag1", "tag2"],
-      "summary": "2-3 sentence summary..."
+      "tags": ["tag1", "tag2", ...],
+      "what": "Up to 10 lines summary...",
+      "key_features": [
+        {"title": "Feature Name", "description": "Short description"},
+        ...
+      ],
+      "use_cases": ["Use case 1", "Use case 2", ...]
     }
   ]
 }
@@ -119,35 +124,82 @@ def send_message(token, chat_id, text, reply_markup=None, thread_id=None):
 # ── Note formatting ───────────────────────────────────────────────
 
 def format_note(note, bot_username):
-    """Format a note as a Telegram message with inline keyboard buttons."""
+    """Format a note as a Telegram message with inline keyboard buttons.
+
+    New format:
+        Title
+        Category
+        Score
+
+        Tags (+5 Tags)
+
+        What:
+        (Summary in 10 lines)
+
+        Key Features:
+        • Feature Title — Description
+        • Feature Title — Description
+
+        Use Cases:
+        • Use case 1
+        • Use case 2
+    """
     icon = CONTENT_TYPE_ICONS.get(note.get("content_type", "reference"), "🔗")
     title = note.get("title", "Untitled")
     url = note.get("url", "")
     category = note.get("category", "")
     rating = note.get("rating", "reference")
     tags = note.get("tags", [])
-    summary = note.get("summary", "")
+    what = note.get("what", note.get("summary", ""))
+    key_features = note.get("key_features", [])
+    use_cases = note.get("use_cases", [])
     note_id = note.get("id", "unknown")
 
-    # Build message text
     lines = []
+
+    # ── Header: Title, Category, Score ──
     lines.append(f"{icon} *{_escape_md(title)}*")
     if category:
         lines.append(f"📂 {_escape_md(category)}")
     if rating:
         label = RATING_LABELS.get(rating, rating)
         lines.append(f"{label}")
+
+    # ── Tags (+N more) ──
     if tags:
-        tag_str = " ".join(f"`{t}`" for t in tags[:10])
+        shown = tags[:5]
+        remaining = len(tags) - len(shown)
+        tag_str = " ".join(f"`{t}`" for t in shown)
+        if remaining > 0:
+            tag_str += f" *(+{remaining} more)*"
         lines.append(f"\n🏷 {tag_str}")
-    if summary:
-        # Summary contains intentional Markdown formatting (bold, bullets)
-        # from the LLM — do NOT escape it
-        lines.append(f"\n{summary}")
+
+    # ── What section ──
+    if what:
+        lines.append(f"\n*What:*")
+        lines.append(f"{_escape_md(what)}")
+
+    # ── Key Features section ──
+    if key_features:
+        lines.append(f"\n*Key Features:*")
+        for feat in key_features:
+            if isinstance(feat, dict):
+                feat_title = feat.get("title", "")
+                feat_desc = feat.get("description", "")
+                lines.append(f"• *{_escape_md(feat_title)}* — {_escape_md(feat_desc)}")
+            else:
+                # Fallback: plain string feature
+                lines.append(f"• {_escape_md(str(feat))}")
+
+    # ── Use Cases section ──
+    if use_cases:
+        lines.append(f"\n*Use Cases:*")
+        for uc in use_cases:
+            lines.append(f"• {_escape_md(str(uc))}")
 
     text = "\n".join(lines)
 
-    # Build inline keyboard
+    # ── Inline keyboard ──
     buttons = []
 
     # Row 1: Read source (URL button)
@@ -155,16 +207,16 @@ def format_note(note, bot_username):
         buttons.append([{"text": "📖 Read source", "url": url}])
 
     # Row 2: Deep dive + Deep search (callback buttons)
-    callback_row = []
-    callback_row.append({
-        "text": "🔍 Deep dive",
-        "callback_data": f"sb:dive:{note_id}",
-    })
-    callback_row.append({
-        "text": "🔎 Deep search",
-        "callback_data": f"sb:search:{note_id}",
-    })
-    buttons.append(callback_row)
+    buttons.append([
+        {
+            "text": "🔍 Deep dive",
+            "callback_data": f"sb:dive:{note_id}",
+        },
+        {
+            "text": "🔎 Deep search",
+            "callback_data": f"sb:search:{note_id}",
+        },
+    ])
 
     keyboard = {"inline_keyboard": buttons}
 

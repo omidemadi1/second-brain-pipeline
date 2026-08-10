@@ -37,28 +37,50 @@ For each item, create a note file at:
 The note MUST include YAML frontmatter with: title, source, platform, content_type, date_saved, date_processed, category, tags, rating, author.
 Then sections: Summary, Key Takeaways, My Notes, Related.
 
-### 6. Generate Smart Summaries (IMPORTANT)
-For each item, generate a summary based on the content type and available information:
+### 6. Generate Content Sections (IMPORTANT)
+For each item, you MUST generate these three sections based on the extracted content:
 
-**Articles & substantial content** (web pages, blog posts, GitHub repos with descriptions, YouTube transcripts, articles with extracted_content > 200 chars):
-- Summarize the actual content in up to 10 lines (max 1000 characters)
-- Cover: what it is, key points, why it matters
-- Use the extracted_content as your source
+**A. What (summary) — up to 10 lines:**
+Write a clear, concise summary answering "What is this project/tool/article?"
+- For tools: What it does, who made it, what problem it solves
+- For articles: Main argument, key insights, why it matters
+- For videos: Core topic, key points covered, verdict
+- For ideas: The concept, motivation, potential impact
+Use the extracted_content as your source.
 
 **Social media posts with little info** (short tweets, engagement-only posts, X/Twitter posts where extracted_content is mostly author info + engagement metrics and < 200 chars of actual text):
 - Use `web_search` to search for the post's subject/topic
-- Write a summary based on YOUR SEARCH RESULTS in up to 10 lines (max 1000 characters)
-- Cover: what the topic is, current state, key facts, why it's relevant
+- Write the What section based on YOUR SEARCH RESULTS
 - Include the search findings, not just the original sparse post
 
 **Personal notes** (platform: "note"):
-- Summarize the note content in up to 10 lines (max 1000 characters)
+- Summarize the note content in up to 10 lines
+
+**B. Key Features — 3-7 bullet points:**
+Extract the most important features, capabilities, or highlights. Each feature MUST be on one line in this format:
+`**Title** — Short description`
+
+Examples:
+- `**Zero-config setup** — Works out of the box with sensible defaults`
+- `**GPU acceleration** — 10x faster inference on consumer hardware`
+- `**Plugin ecosystem** — 200+ community extensions available`
+
+If the content doesn't have clear "features" (e.g., a news article), use "Key Points" instead with the same format.
+
+**C. Use Cases — 3-5 bullet points:**
+List practical, real-world use cases. Each on one line starting with `•`.
+
+Examples:
+- `• Building internal tools for your team`
+- `• Automating repetitive data entry tasks`
+- `• Prototyping MVP features before full development`
 
 ### 7. Send Notes with Inline Buttons (IMPORTANT)
 After creating ALL Obsidian notes, you MUST send them to the user as individual Telegram messages with inline buttons.
 
 Write a JSON file to `~/obsidian-vault/.inbox-queue/digest_YYYY-MM-DD.json` with this structure:
 
+```json
 {
   "chat_id": "244972243",
   "date": "YYYY-MM-DD",
@@ -70,11 +92,21 @@ Write a JSON file to `~/obsidian-vault/.inbox-queue/digest_YYYY-MM-DD.json` with
       "category": "Category Name",
       "content_type": "tool",
       "rating": "worth-deep-reading",
-      "tags": ["tag1", "tag2"],
-      "summary": "Up to 10 lines (max 1000 chars) — detailed article summary OR search-based summary for sparse social posts"
+      "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"],
+      "what": "Up to 10 lines — what is this project/tool/article? Clear summary.",
+      "key_features": [
+        {"title": "Feature Name", "description": "Short description of the feature"},
+        {"title": "Another Feature", "description": "Short description"}
+      ],
+      "use_cases": [
+        "Use case 1 — brief context",
+        "Use case 2 — brief context",
+        "Use case 3 — brief context"
+      ]
     }
   ]
 }
+```
 
 Then run the sender script to deliver each note with buttons:
 
