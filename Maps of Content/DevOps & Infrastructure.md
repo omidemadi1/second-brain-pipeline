@@ -1,7 +1,8 @@
 # DevOps & Infrastructure
 
 ## Notes
-
+- [[Madmail — Self-Hosted Chat Relay for Delta Chat]] — Rust PGP chat relay for Delta Chat
+- [[Coolify — Self-Hosted Vercel Heroku Alternative]] — Self-hosted PaaS with Docker dashboard
 - [[proxmox-vm-backup-automation]] — Python tool idea for Proxmox VM backups via REST API
 - [[docker-kubernetes-production-guide]] — Production Docker/Kubernetes setup guide
 - [[Idea - Proxmox VM Backup Automation Tool]] — Python automation for Proxmox VM backups

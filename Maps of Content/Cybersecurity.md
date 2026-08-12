@@ -8,6 +8,7 @@
 - [[Paranoia Privacy Wiki]] — Free comprehensive digital privacy and anonymity guide
 - [[Hallusquatting-AI-Hallucination-Package-Attack]] — AI hallucination supply-chain attacks
 - [[Hackflix-Security-Conference-Video-Archive]] — 19k+ security conference videos
+- [[OpenAI GPT-5.6-Cyber — AI Cybersecurity Model]] — AI cybersecurity model with Daybreak initiative
 - [[2b2e4087da0c HyperDbg Hardware Software Debugging]] — Hardware/software debugging infrastructure
 
 ## Cross-Category Connections

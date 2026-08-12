@@ -1,6 +1,7 @@
 # Networking
 
 ## Notes
+- [[Sniffnet — Network Traffic Monitor]] — Rust/iced network monitor, 6000+ services, PCAP export
 - [[Decimen-Optical-Transfer-QR-Code-File-Transfer]] — QR code file transfer, no network needed
 - [[mikrotik-vlan-setup]] — MikroTik VLAN configuration
 

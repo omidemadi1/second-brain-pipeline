@@ -40,6 +40,8 @@
 - [[Last30days-Research-Skill]] — AI agent research across platforms
 - [[Brinicle-Resource-Efficient-Vector-Index]] — Resource-efficient C++ vector index
 - [[Ava-82M-Farsi-TTS-Model]] — Farsi TTS model for under $1
+- [[ScrapeGraphAI — AI-Powered Web Scraping]] — Natural language web scraping with LLMs
+- [[Book-to-Skill — Convert Books to AI Agent Skills]] — Convert books to AI skills, 51x token savings
 - [[PixelRAG-Screenshot-Based-RAG-System]] — Vision-based RAG that reads webpages via screenshots, not HTML
 
 ## Statistics
