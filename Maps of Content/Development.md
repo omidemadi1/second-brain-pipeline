@@ -13,9 +13,10 @@
 - [[PR-Agent — AI-Powered Code Review for PRs]] — Open-source AI code review for PRs
 - [[Why Twitter and Instagram Build UI as Web Components]] — Hybrid native+web architecture pattern
 - [[OKF-v0.2-Google-AI-Readable-Content-Metadata]] — Google's AI-readable content metadata
+- [[Diagram Design — Claude Code Skill for Editorial Diagrams]] — 27 editorial diagram types as self-contained HTML/SVG, auto brand-matching, semantic patterns, Mermaid/draw.io converter
 
 ## Statistics
-Total notes: 9
-Worth deep reading: 2
+Total notes: 10
+Worth deep reading: 3
 Reference: 5
 Quick notes: 1
