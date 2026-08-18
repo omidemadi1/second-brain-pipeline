@@ -1,6 +1,7 @@
 # Cybersecurity
 
 ## Notes
+- [[DroidHunter-Android-Security-Assessment-Framework]] — CLI Android pentest framework, ADB, APK analysis, exploit engine, scrcpy
 - [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — AI-driven pentest tool, 45+ vulns, multi-provider
 - [[reddit-netsec-audit-tool]] — Reddit r/netsec security audit tool discussion
 - [[Crucix - OSINT Monitoring Dashboard]] — 10.7k stars, 26 live sources, real-time geopolitical monitoring
