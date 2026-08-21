@@ -11,6 +11,8 @@
 - [[Hackflix-Security-Conference-Video-Archive]] — 19k+ security conference videos
 - [[OpenAI GPT-5.6-Cyber — AI Cybersecurity Model]] — AI cybersecurity model with Daybreak initiative
 - [[2b2e4087da0c HyperDbg Hardware Software Debugging]] — Hardware/software debugging infrastructure
+- [[WireTapper — Wireless OSINT Tool for Passive Signal Intelligence]] — Passive Wi-Fi/Bluetooth/CCTV/vehicle signal mapping
+- [[70 Hands-On Cybersecurity Projects — Beginner to Advanced]] — 70 projects with full source code, beginner to advanced
 
 ## Cross-Category Connections
 - [[crawl4ai-llm-friendly-web-crawler]] — AI/ML: Web recon for pentest

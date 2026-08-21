@@ -43,9 +43,12 @@
 - [[ScrapeGraphAI — AI-Powered Web Scraping]] — Natural language web scraping with LLMs
 - [[Book-to-Skill — Convert Books to AI Agent Skills]] — Convert books to AI skills, 51x token savings
 - [[PixelRAG-Screenshot-Based-RAG-System]] — Vision-based RAG that reads webpages via screenshots, not HTML
+- [[Hermes Agent Passive Income via Reddit Automation]] — Full passive income pipeline: Reddit monitoring → problem discovery → product build → deploy → market
+- [[9 AI Concepts for Engineers — LLM, RAG, and AI Agents]] — Visual deep-dive on 9 essential AI concepts from Daily Dose of Data Science
+- [[Hermes Agent Passive Income Stream — Full Setup Guide]] — Complete implementation guide for autonomous agent founder workflow
 
 ## Statistics
-Total notes: 35
-Worth deep reading: 24
+Total notes: 38
+Worth deep reading: 27
 Reference: 8
 Quick notes: 3
