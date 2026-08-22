@@ -57,7 +57,10 @@ author: YouTube Creator
 - The Maker Zero/Maker School ecosystem seems interesting for learning
 
 ## Related
+
 - [[Defeating-AI-Slop-3-Step-Guide-Taste-in-Web-Design]] — Web design principles
 - [[Imp-Skills-AI-Agent-UI-Design]] — AI agent UI design skills
 - [[Grok-Build-Mode-App-Builder]] — AI app building tools
 - [[154295023ffe Scroll-World 3D Scrollable Product Pages]] — 3D product pages
+- [[web-animation-mastery-gsap-framer-motion]]
+- [[Taste Skill - Anti-Slop UI Design Framework]]

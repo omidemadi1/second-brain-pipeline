@@ -67,3 +67,5 @@ Good candidate for a p5.js or claude-design skill experiment to test the effect 
 - [[Taste Skill - Anti-Slop UI Design Framework]]
 - [[Taste Skill v2 - Official Site]]
 - [[KimmyK3-Cinematic-Website-Building-Tutorial]]
+- [[web-animation-mastery-gsap-framer-motion]]
+- [[Scroll-World - 3D Scrollable Product Pages]]

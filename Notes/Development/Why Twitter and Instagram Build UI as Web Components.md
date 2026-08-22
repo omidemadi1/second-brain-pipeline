@@ -48,3 +48,9 @@ Twitter/X and Instagram embed web-based UI components within their native apps. 
 ## Related
 
 - [[Development]]
+- [[AutoSocial - Open-Source Social Media Scheduler]]
+- [[PR-Agent — AI-Powered Code Review for PRs]]
+- [[AI Website Cloner Template — Multi-Agent Code Generation]]
+- [[T3 Code — Agent Harness Control Surface]]
+- [[crawl4ai-llm-friendly-web-crawler]]
+- [[Browser Use - AI Browser Automation]]

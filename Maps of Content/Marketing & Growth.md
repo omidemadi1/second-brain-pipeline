@@ -13,6 +13,9 @@ Notes on marketing strategies, growth hacking, user acquisition, organic distrib
 ## Distribution & Marketing
 - [[Distribution-101-Organic-Marketing-Guide]] — Three-channel organic marketing framework (X, YouTube, short-form)
 
+## AI Marketing Agents
+- [[Hermes-Bot-Mode-Marketing-Agent-Team]] — 7 specialist bots (Research, SEO, Content, PR, Paid, CRO, Outbound) with shared Company Brain context
+
 ## Cross-Category Connections
 - [[crawl4ai-llm-friendly-web-crawler]] — AI/ML: Web scraping for market research
 - [[Agent-Reach-Social-Media-Access-for-Agents]] — AI/ML: Social media content for growth

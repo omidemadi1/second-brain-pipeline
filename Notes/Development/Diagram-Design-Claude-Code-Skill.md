@@ -52,4 +52,7 @@ Potential integration: Could use this in our AI wardrobe app for architecture di
 - [[AI & Machine Learning/Claude Code]] (if exists)
 - [[Development/Mermaid vs Custom Diagram Tools]]
 - [[Design & Visual Documentation]]
+- [[diagram-design-editorial-diagrams]]
+- [[Scroll-World - 3D Scrollable Product Pages]]
+- [[AI Website Cloner Template — Multi-Agent Code Generation]]
 - Source: https://github.com/cathrynlavery/diagram-design

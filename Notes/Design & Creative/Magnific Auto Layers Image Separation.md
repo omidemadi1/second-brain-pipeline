@@ -51,3 +51,6 @@ Useful for design work — especially for quickly editing composite images witho
 ## Related
 
 - [[Multi-Agent CAD Text-to-3D Pipeline]]
+- [[crawl4ai-llm-friendly-web-crawler]]
+- [[Browser Use - AI Browser Automation]]
+- [[AI Website Cloner Template — Multi-Agent Code Generation]]

@@ -30,3 +30,5 @@ The design philosophy of adapting to each project rather than applying templates
 
 - [[Taste Skill - Anti-Slop UI Design Framework]]
 - [[Impeccable - AI Design Language]]
+- [[Design Skills - Impeccable and Taste Skill Roundup]]
+- [[Taste Skill v2 - Official Site]]

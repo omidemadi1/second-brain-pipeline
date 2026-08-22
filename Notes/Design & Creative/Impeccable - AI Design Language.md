@@ -32,3 +32,6 @@ Complementary to Taste Skill. Could evaluate which produces better results for t
 
 - [[Taste Skill - Anti-Slop UI Design Framework]]
 - [[Scroll-World - 3D Scrollable Product Pages]]
+- [[Diagram-Design-29-Editorial-Diagram-Types-HTML-SVG]]
+- [[web-animation-mastery-gsap-framer-motion]]
+- [[KimmyK3-Cinematic-Website-Building-Tutorial]]

@@ -55,3 +55,7 @@ Diagram Design by Cathryn Lavery provides 38 editorial diagram types as self-con
 - [[web-animation-mastery-gsap-framer-motion]]
 - [[hermes-agent-passive-income-reddit-automation]]
 - [[paper-tunes-lora-qr-audio]]
+- [[Diagram-Design-29-Editorial-Diagram-Types-HTML-SVG]]
+- [[crawl4ai-llm-friendly-web-crawler]]
+- [[Browser Use - AI Browser Automation]]
+- [[AI Website Cloner Template — Multi-Agent Code Generation]]

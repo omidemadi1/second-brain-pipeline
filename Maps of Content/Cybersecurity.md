@@ -12,6 +12,7 @@
 - [[OpenAI GPT-5.6-Cyber — AI Cybersecurity Model]] — AI cybersecurity model with Daybreak initiative
 - [[2b2e4087da0c HyperDbg Hardware Software Debugging]] — Hardware/software debugging infrastructure
 - [[WireTapper — Wireless OSINT Tool for Passive Signal Intelligence]] — Passive Wi-Fi/Bluetooth/CCTV/vehicle signal mapping
+- [[Project-Eyes-On-IP-Camera-Discovery-Tool]] — Multi-threaded global IP camera discovery: directory scraping, deep web dorking, live verification, GeoIP enrichment
 - [[70 Hands-On Cybersecurity Projects — Beginner to Advanced]] — 70 projects with full source code, beginner to advanced
 
 ## Cross-Category Connections

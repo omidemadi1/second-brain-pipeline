@@ -52,3 +52,6 @@ Not directly useful since we're not working on a Laravel project currently, but 
 
 - [[10 GitHub Repos That Print Money (Full Thread).]]
 - [[837ad3289694 Open Code Review Alibaba AI Framework]]
+- [[PR-Agent — AI-Powered Code Review for PRs]]
+- [[Open Code Review by Alibaba]]
+- [[OpenSpec - Spec-Driven Development]]

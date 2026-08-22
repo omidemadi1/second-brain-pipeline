@@ -53,3 +53,6 @@ Excellent for the architecture-diagram skill and any technical documentation nee
 - [[baoyu-infographic]] — 21 layouts × 21 styles infographics
 - [[excalidraw]] — Hand-drawn style diagrams
 - [[popular-web-designs]] — 54 real design systems as reference
+- [[diagram-design-editorial-diagrams]]
+- [[Scroll-World - 3D Scrollable Product Pages]]
+- [[AI Website Cloner Template — Multi-Agent Code Generation]]

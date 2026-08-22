@@ -31,3 +31,6 @@ Should evaluate both side-by-side for the wardrobe app UI work. They emphasize d
 
 - [[Taste Skill - Anti-Slop UI Design Framework]]
 - [[Impeccable - AI Design Language]]
+- [[Taste Skill v2 - Official Site]]
+- [[Taste Skill - Persian Overview by BoKount]]
+- [[Design Skills - Impeccable and Taste Skill Roundup]]

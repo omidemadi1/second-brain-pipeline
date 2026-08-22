@@ -51,3 +51,6 @@ Gowtham R (@gowtham_techie) shares a comprehensive carousel on web animation fun
 
 - [[diagram-design-editorial-diagrams]]
 - [[hermes-agent-passive-income-reddit-automation]]
+- [[Taste Skill - Anti-Slop UI Design Framework]]
+- [[Impeccable - AI Design Language]]
+- [[KimmyK3-Cinematic-Website-Building-Tutorial]]

@@ -31,3 +31,6 @@ Could be useful for capturing design references for the wardrobe app. Find a fas
 
 - [[Taste Skill - Anti-Slop UI Design Framework]]
 - [[Impeccable - AI Design Language]]
+- [[Taste Skill v2 - Official Site]]
+- [[Design Skills - Impeccable and Taste Skill Roundup]]
+- [[Scroll-World - 3D Scrollable Product Pages]]

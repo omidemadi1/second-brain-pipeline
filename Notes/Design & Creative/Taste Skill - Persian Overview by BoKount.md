@@ -31,3 +31,5 @@ The Persian community is actively adopting Taste Skill. This validation reinforc
 
 - [[Taste Skill - Anti-Slop UI Design Framework]]
 - [[Impeccable - AI Design Language]]
+- [[Design Skills - Impeccable and Taste Skill Roundup]]
+- [[Taste Skill v2 - Official Site]]

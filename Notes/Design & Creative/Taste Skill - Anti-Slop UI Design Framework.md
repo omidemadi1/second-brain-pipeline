@@ -33,3 +33,6 @@ Directly applicable to building the AI wardrobe app UI. Install and use whenever
 
 - [[Impeccable - AI Design Language]]
 - [[Scroll-World - 3D Scrollable Product Pages]]
+- [[Diagram-Design-29-Editorial-Diagram-Types-HTML-SVG]]
+- [[web-animation-mastery-gsap-framer-motion]]
+- [[KimmyK3-Cinematic-Website-Building-Tutorial]]

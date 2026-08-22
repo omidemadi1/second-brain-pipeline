@@ -32,3 +32,5 @@ The official documentation is the reference for our taste-skill Hermes skill. Th
 
 - [[Taste Skill - Anti-Slop UI Design Framework]]
 - [[Impeccable - AI Design Language]]
+- [[Design Skills - Impeccable and Taste Skill Roundup]]
+- [[Taste Skill - Persian Overview by BoKount]]

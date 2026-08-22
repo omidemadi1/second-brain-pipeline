@@ -45,6 +45,7 @@
 - [[PixelRAG-Screenshot-Based-RAG-System]] — Vision-based RAG that reads webpages via screenshots, not HTML
 - [[Hermes Agent Passive Income via Reddit Automation]] — Full passive income pipeline: Reddit monitoring → problem discovery → product build → deploy → market
 - [[9 AI Concepts for Engineers — LLM, RAG, and AI Agents]] — Visual deep-dive on 9 essential AI concepts from Daily Dose of Data Science
+- [[Grok-Bot-xAI-Agent-Fleet-Platform]] — xAI's always-on agent fleet (Aug 2026): persistent cross-platform sessions, Teach-a-Task browser recording, Grok 4.6, MCP, plugin ecosystem
 - [[Hermes Agent Passive Income Stream — Full Setup Guide]] — Complete implementation guide for autonomous agent founder workflow
 
 ## Statistics

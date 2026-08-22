@@ -45,3 +45,5 @@ Personal reminder: If working on Next.js 15.x or 16.x projects with large datase
 
 - [[Why Twitter and Instagram Build UI as Web Components]] — React performance at scale
 - [[AI Website Cloner Template — Multi-Agent Code Generation]] — Next.js in AI workflows
+- [[crawl4ai-llm-friendly-web-crawler]]
+- [[Browser Use - AI Browser Automation]]

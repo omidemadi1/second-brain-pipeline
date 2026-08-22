@@ -52,3 +52,6 @@ Paper Tunes by Makestreame (featured on Hackaday) stores a full song on a single
 - [[diagram-design-editorial-diagrams]]
 - [[web-animation-mastery-gsap-framer-motion]]
 - [[wiretapper-wireless-osint-tool]]
+- [[AI Website Cloner Template — Multi-Agent Code Generation]]
+- [[Browser Use - AI Browser Automation]]
+- [[crawl4ai-llm-friendly-web-crawler]]
