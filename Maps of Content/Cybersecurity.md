@@ -1,6 +1,7 @@
 # Cybersecurity
 
 ## Notes
+- [[VPN-Privacy-Testing-WebRTC-DNS-Leaks-Guide]] — Never trust VPN without testing: WebRTC/DNS/IP blacklist leaks; free tools (browserleaks.io, pixelscan.net), 5-min verification
 - [[DroidHunter-Android-Security-Assessment-Framework]] — CLI Android pentest framework, ADB, APK analysis, exploit engine, scrcpy
 - [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — AI-driven pentest tool, 45+ vulns, multi-provider
 - [[reddit-netsec-audit-tool]] — Reddit r/netsec security audit tool discussion
@@ -23,7 +24,7 @@
 
 ## Statistics
 
-Total notes: 8
-Worth deep reading: 5
+Total notes: 9
+Worth deep reading: 6
 Reference: 2
 Quick notes: 1

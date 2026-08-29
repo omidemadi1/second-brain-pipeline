@@ -2,6 +2,8 @@
 
 ## Notes
 
+- [[VibeMarketer-AI-Content-Automation-Systems]] — Hermes kanban multi-agent content pipeline: 50+ source monitoring, 3-agent team (search→draft→quality), Company Brain concept
+- [[Mixamo-LLM-Mocap-Video-to-3D-Animation]] — Open-source video→FK animation on any Mixamo char; GVHMR+SMPL-X, spec-driven retarget, Blender MCP, agent-operable 10-stage pipeline
 - [[Agent-Reach-Multi-Platform-Internet-Access-for-AI-Agents]] — Multi-platform access (Twitter, Reddit, YouTube), 63k stars, zero API fees
 - [[Keenable-Free-Web-Search-Extraction-for-AI-Agents]] — Free web search + extraction for Hermes/Openclaw, email signup only
 - [[awesome-hermes-agent]] — Curated skills, plugins, and tools for Hermes Agent
@@ -49,7 +51,7 @@
 - [[Hermes Agent Passive Income Stream — Full Setup Guide]] — Complete implementation guide for autonomous agent founder workflow
 
 ## Statistics
-Total notes: 38
-Worth deep reading: 27
+Total notes: 40
+Worth deep reading: 29
 Reference: 8
 Quick notes: 3

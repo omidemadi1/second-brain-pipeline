@@ -46,5 +46,6 @@ Interesting for anyone doing 3D printing or prototyping. The multi-agent approac
 
 ## Related
 
+- [[Mixamo-LLM-Mocap-Video-to-3D-Animation]] — Video-to-animation pipeline for Mixamo characters
 - [[Paritok Context Compression Gateway]]
 - [[Repowise Codebase Intelligence for AI Assistants]]

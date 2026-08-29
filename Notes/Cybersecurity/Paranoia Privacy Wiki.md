@@ -6,7 +6,24 @@ content_type: learning
 date_saved: 2026-07-27
 date_processed: 2026-07-28
 category: Cybersecurity
-tags: [privacy, digital-privacy, anonymity, secure-browsing, encrypted-messaging, phone-hardening, metadata-removal, private-email, anonymous-payments, privacy-apps, opsec, self-hosted, tor, vpn, threat-modeling, comprehensive-guide, free-resource]
+tags:
+  - privacy
+  - digital-privacy
+  - anonymity
+  - secure-browsing
+  - encrypted-messaging
+  - phone-hardening
+  - metadata-removal
+  - private-email
+  - anonymous-payments
+  - privacy-apps
+  - opsec
+  - self-hosted
+  - tor
+  - vpn
+  - threat-modeling
+  - comprehensive-guide
+  - free-resource
 rating: worth-deep-reading
 author: Paranoia Privacy community
 ---
@@ -25,6 +42,8 @@ Free comprehensive guide to digital privacy and anonymity. Covers secure browsin
 
 
 ## Related
+
+- [[VPN-Privacy-Testing-WebRTC-DNS-Leaks-Guide]] — Practical VPN leak testing: WebRTC, DNS, IP blacklist verification
 - [[OSINT - Find Everything About Anyone]] — OSINT and privacy
 - [[Hackflix-Security-Conference-Video-Archive]] — Security research
 - [[Crucix - OSINT Monitoring Dashboard]] — OSINT monitoring

@@ -45,5 +45,6 @@ This is particularly interesting for the AI wardrobe app project — real-time 3
 
 ## Related
 
+- [[Mixamo-LLM-Mocap-Video-to-3D-Animation]] — Video-to-character-animation pipeline using GVHMR + Mixamo
 - [[Open Code Review by Alibaba]]
 - [[DeepSeek V4 Pro Launch]]
