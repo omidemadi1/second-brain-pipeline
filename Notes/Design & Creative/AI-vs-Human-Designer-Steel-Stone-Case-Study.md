@@ -39,8 +39,8 @@ This is THE reference for our AI wardrobe styling app design. Key applicable ins
 
 ## Related
 
-- [[Impeccable Design Skill Deep Dive]]
-- [[Magnific AI for Product Photography]]
+- [[Impeccable - AI Design Language]]
+- [[Magnific Auto Layers — AI-Powered Image Layer Separation]]
 - [[AI Wardrobe App Design Brief]]
 - [[Design Process: Strategic Positioning First]]
 - [[Motion Design as Brand System]]

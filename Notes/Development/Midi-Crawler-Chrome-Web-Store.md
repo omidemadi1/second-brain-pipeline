@@ -38,5 +38,6 @@ Duplicate of the GitHub repo entry. Main note is [[Midi-Crawler-Googlebot-Simula
 ## Related
 
 - [[Midi-Crawler-Googlebot-Simulator]]
+- [[Google Search Documentation — SEO Fundamentals]]
 - [[Chrome SEO Extension Toolkit]]
 - [[Technical SEO Audit Checklist]]

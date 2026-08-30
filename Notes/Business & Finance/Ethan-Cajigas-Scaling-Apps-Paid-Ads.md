@@ -30,6 +30,6 @@ This resonates with the AI wardrobe styling app project — we have $0 marketing
 
 ## Related
 
-- [[Indie Hacking Playbook]]
+- [[Reddit-Indiehackers-Link]]
 - [[Paid Ads for Early Stage Startups]]
 - [[App Store Optimization vs Paid Acquisition]]

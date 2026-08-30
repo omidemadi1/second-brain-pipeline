@@ -44,8 +44,10 @@ Must-install for any technical SEO work. For our AI wardrobe app, we'll need to 
 
 ## Related
 
+- [[Google Search Documentation — SEO Fundamentals]]
 - [[Technical SEO Audit Checklist]]
 - [[Next.js SEO: SSR vs CSR for Googlebot]]
 - [[Google Search Console Workflow]]
 - [[Structured Data Testing Tools]]
 - [[Core Web Vitals & Crawling]]
+- [[Midi-Crawler-Chrome-Web-Store]]
