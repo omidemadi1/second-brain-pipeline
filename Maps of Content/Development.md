@@ -14,6 +14,7 @@
 - [[Why Twitter and Instagram Build UI as Web Components]] — Hybrid native+web architecture pattern
 - [[OKF-v0.2-Google-AI-Readable-Content-Metadata]] — Google's AI-readable content metadata
 - [[Diagram Design — Claude Code Skill for Editorial Diagrams]] — 27 editorial diagram types as self-contained HTML/SVG, auto brand-matching, semantic patterns, Mermaid/draw.io converter
+- [[FreeCodeCamp-3D-Web-Development-Blender-Threejs]] — freeCodeCamp course: full 3D workflow (Blender → Three.js), subdivision modeling, TSL shaders, singleton architecture, AI-assisted Blender scripting
 - [[Paper Tunes — Store Songs on Paper via QR Codes, Stream Over LoRA]] — EnCodec neural codec compresses MP3 to 21 kB, fits in 8 QR codes on paper, LoRA transmissible
 - [[ESP32-Development-Board-IoT-Platform-Battery]] — $4-5 ESP32 board with built-in 18650 battery holder/charging, Wi-Fi/BT, for IoT/smart home/robotics/wearables
 

@@ -7,6 +7,7 @@ title: "Design & Creative"
 Notes on design tools, creative workflows, visual design, and AI-assisted creative work.
 
 ## Design & AI
+- [[Tapir-Video-Upscaler]] — Free browser-based AI video upscaler: local WebGPU processing, FSR + neural super-res, 2x/4x, no uploads, no watermark
 - [[Defeating-AI-Slop-3-Step-Guide-Taste-in-Web-Design]] — Cultivating taste to defeat generic AI design output
 - [[KimmyK3-Cinematic-Website-Building-Tutorial]] — Building cinematic scroll websites with KimmyK3
 - [[Web Animation Mastery — GSAP, Framer Motion, Lenis, Three.js]] — Comprehensive animation techniques and tool recommendations from Gowtham R

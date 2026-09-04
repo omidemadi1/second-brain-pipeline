@@ -25,6 +25,7 @@
 - [[Grok Build deep-research Command]] — Structured research with parallel agents
 - [[Google Free AI Tools — 15 Products That Rival Paid Alternatives]] — 15 free Google AI tools rivaling paid subscriptions
 - [[Machina — AI Video Studio in Claude Code]] — Building AI video studios with Claude Code
+- [[video-use-Claude-Code-Video-Editor]] — AI video editor for Claude Code from browser-use team: chat-based editing, transcript-driven, ffmpeg backend
 - [[Hermes Academy — Convert AI Tasks into Structured Lessons]] — Rust CLI for auto-documenting agent work
 - [[Graph Engineering — 7 Repos That Make It Work]] — Execution + knowledge graphs for agent systems
 - [[Google-Flow-Music-Lyria-3.5-Music-Generation]] — AI music generation with Lyria 3.5
@@ -32,6 +33,7 @@
 - [[Grok-Voice-Think-Fast-2.0]] — Next-gen speech-to-speech voice model
 - [[Graphify-Knowledge-Graph-from-Codebase]] — Turn codebase into queryable knowledge graph
 - [[Wan2GP-Free-AI-Video-Studio]] — Free AI video studio for low-VRAM GPUs
+- [[Docker-State-of-Agentic-AI-Report-2026]] — Docker's State of Agentic AI Report (2026): 94% containers for AI, security #1 blocker, MCP not production-ready
 - [[OpenWork-Open-Source-Claude-Cowork-Alternative]] — Open-source Claude Cowork alternative
 - [[Imp-Skills-AI-Agent-UI-Design]] — Pre-built skills for AI agent UI design
 - [[Agent-Reach-Social-Media-Access-for-Agents]] — Social media access for AI agents
