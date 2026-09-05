@@ -30,3 +30,8 @@ Open-source LLM-friendly web crawler and scraper with 75k stars and 8k forks. Co
 - [[langchain]] — RAG pipeline ecosystem
 - [[Graphify-Knowledge-Graph-from-Codebase]] — Graph-based knowledge extraction
 - [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — Web recon for pentest
+- [[ScrapeGraphAI-AI-Powered-Web-Scraping-Library]] — Dev: Natural language web scraping
+- [[Firecrawl-Keyless-Web-Search-for-OpenCode]] — Dev: Web search for coding agents
+- [[VibeMarketer-AI-Content-Automation-Systems]] — Marketing: Content pipeline uses web extraction
+- [[Hermes-Bot-Mode-Marketing-Agent-Team]] — Marketing: Research bot needs web search
+- [[Agent-Reach-Multi-Platform-Internet-Access-for-AI-Agents]] — Multi-platform access for agents
