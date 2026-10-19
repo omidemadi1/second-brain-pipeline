@@ -45,7 +45,8 @@ from urllib.parse import quote
 
 def get_bot_token():
     """Read bot token from .env file."""
-    env_path = os.path.expanduser("~/.hermes/.env")
+    env_path = os.path.join(
+        os.environ.get("HERMES_HOME") or os.path.expanduser("~/.hermes"), ".env")
     if not os.path.exists(env_path):
         raise RuntimeError(f"Config not found: {env_path}")
     with open(env_path) as f:

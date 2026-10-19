@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cd /root/obsidian-vault
+cd "${OBSIDIAN_VAULT_PATH:-$HOME/obsidian-vault}"
 
 # Run the processing script and output its JSON (this will be captured by cronjob)
 python3 scripts/process_inbox.py

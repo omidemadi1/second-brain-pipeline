@@ -19,7 +19,7 @@ import hashlib
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urlparse, unquote
 
-VAULT = os.path.expanduser("~/obsidian-vault")
+VAULT = os.path.expanduser(os.environ.get("OBSIDIAN_VAULT_PATH") or "~/obsidian-vault")
 QUEUE_DIR = os.path.join(VAULT, ".inbox-queue")
 
 # ── Platform detection ───────────────────────────────────────────────

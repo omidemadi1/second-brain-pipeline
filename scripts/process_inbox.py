@@ -19,10 +19,13 @@ import urllib.request
 import urllib.error
 from datetime import datetime, timezone, timedelta
 
-VAULT = os.path.expanduser("~/obsidian-vault")
+VAULT = os.path.expanduser(os.environ.get("OBSIDIAN_VAULT_PATH") or "~/obsidian-vault")
 QUEUE_DIR = os.path.join(VAULT, ".inbox-queue")
 ARCHIVE_DIR = os.path.join(VAULT, ".inbox-archive")
-SKILL_DIR = os.path.expanduser("~/.hermes/skills/media/youtube-content/scripts")
+SKILL_DIR = os.path.join(
+    os.environ.get("HERMES_HOME") or os.path.expanduser("~/.hermes"),
+    "skills/media/youtube-content/scripts",
+)
 
 # fxtwitter API — extracts tweet text, author, media without auth
 FXTWITTER_API = "https://api.fxtwitter.com"
