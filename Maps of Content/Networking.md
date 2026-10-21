@@ -1,18 +1,19 @@
 # Networking
 
-## Notes
-- [[Sniffnet — Network Traffic Monitor]] — Rust/iced network monitor, 6000+ services, PCAP export
-- [[Decimen-Optical-Transfer-QR-Code-File-Transfer]] — QR code file transfer, no network needed
-- [[mikrotik-vlan-setup]] — MikroTik VLAN configuration
+> 4 notes · 2 subtopics
 
-## Cross-Category Connections
-- [[AI Skills for Home Lab Agents]] — AI/ML: Home lab AI deployment
-- [[docker-kubernetes-production-guide]] — DevOps: Production infrastructure
-- [[Paranoia Privacy Wiki]] — Cybersecurity: Network security practices
+## Network Config & Traffic
+
+- [[mikrotik-vlan-setup]] — MikroTik VLAN configuration
+- [[Sniffnet — Network Traffic Monitor]] — Rust/iced network monitor, 6000+ services, PCAP export
+
+## Connectivity & Censorship
+
+- [[Decimen-Optical-Transfer-QR-Code-File-Transfer]] — QR code file transfer, no network needed
+- [[NodeLook — Internet Censorship & Website Checker]] — NodeLook (github.com/nodelook/android) is an Android app for testing website accessibility beyond simple ping. It's designed specifically for users facing internet restrictions…
 
 ## Statistics
-
-Total notes: 2
+Total notes: 4
+Quick note: 1
+Reference: 2
 Worth deep reading: 1
-Reference: 1
-Quick notes: 0

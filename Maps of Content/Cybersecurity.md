@@ -1,30 +1,55 @@
 # Cybersecurity
 
-## Notes
-- [[VPN-Privacy-Testing-WebRTC-DNS-Leaks-Guide]] — Never trust VPN without testing: WebRTC/DNS/IP blacklist leaks; free tools (browserleaks.io, pixelscan.net), 5-min verification
-- [[DroidHunter-Android-Security-Assessment-Framework]] — CLI Android pentest framework, ADB, APK analysis, exploit engine, scrcpy
-- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — AI-driven pentest tool, 45+ vulns, multi-provider
-- [[reddit-netsec-audit-tool]] — Reddit r/netsec security audit tool discussion
-- [[Crucix - OSINT Monitoring Dashboard]] — 10.7k stars, 26 live sources, real-time geopolitical monitoring
-- [[OSINT - Find Everything About Anyone]] — Comprehensive OSINT tools and techniques guide
-- [[Paranoia Privacy Wiki]] — Free comprehensive digital privacy and anonymity guide
-- [[Hallusquatting-AI-Hallucination-Package-Attack]] — AI hallucination supply-chain attacks
-- [[Hackflix-Security-Conference-Video-Archive]] — 19k+ security conference videos
-- [[OpenAI GPT-5.6-Cyber — AI Cybersecurity Model]] — AI cybersecurity model with Daybreak initiative
-- [[2b2e4087da0c HyperDbg Hardware Software Debugging]] — Hardware/software debugging infrastructure
-- [[WireTapper — Wireless OSINT Tool for Passive Signal Intelligence]] — Passive Wi-Fi/Bluetooth/CCTV/vehicle signal mapping
-- [[Project-Eyes-On-IP-Camera-Discovery-Tool]] — Multi-threaded global IP camera discovery: directory scraping, deep web dorking, live verification, GeoIP enrichment
-- [[70 Hands-On Cybersecurity Projects — Beginner to Advanced]] — 70 projects with full source code, beginner to advanced
+> 30 notes · 5 subtopics
 
-## Cross-Category Connections
-- [[crawl4ai-llm-friendly-web-crawler]] — AI/ML: Web recon for pentest
-- [[Agent-Reach-Social-Media-Access-for-Agents]] — AI/ML: Social media recon
-- [[Graph Engineering — The Layer Above Prompting]] — AI/ML: Multi-agent audit workflows
-- [[docker-kubernetes-production-guide]] — DevOps: Container security
+## Offensive Security & Pentesting
+
+- [[2b2e4087da0c HyperDbg Hardware Software Debugging]] — Hardware/software debugging infrastructure
+- [[70-cybersecurity-hands-on-projects]] — Tom Dörr (@tom_doerr) shares a comprehensive GitHub repository (CarterPerez-dev/Cybersecurity-Projects) containing 70 hands-on cybersecurity projects with full source code,…
+- [[Academy-Lian-Must-Watch-Cybersecurity-Hacking-Movies]] — The Instagram account **academy_lian** (academy focused on cybersecurity education) shared a curated list of **must-watch hacking and cybersecurity movies/series** for enthusiasts…
+- [[Deep-Eye-AI-Driven-Penetration-Testing-Tool]] — AI-driven pentest tool, 45+ vulns, multi-provider
+- [[DroidHunter-Android-Security-Assessment-Framework]] — CLI Android pentest framework, ADB, APK analysis, exploit engine, scrcpy
+- [[Hackflix-Security-Conference-Video-Archive]] — 19k+ security conference videos
+- [[HyperDbg - Hardware Software Debugging Infrastructure]] — HyperDbg is a state-of-the-art open-source hardware and software debugging infrastructure using Intel VT-x/EPT for both user and kernel mode debugging. Features include stealth…
+- [[reddit-netsec-audit-tool]] — Reddit r/netsec security audit tool discussion
+- [[Strix — Open-Source AI Pentesting Tool]] — Strix is an open-source, agentic security platform with 50,000+ GitHub stars that uses AI agents to find and validate exploitable vulnerabilities in applications. Unlike…
+- [[wiretapper-wireless-osint-tool]] — WireTapper is a wireless OSINT tool that uses passive signal intelligence to discover and map radio-based devices without active scanning. It detects and correlates signals from…
+- [[Zbtlink Router Backdoor Endlessdoors]] — VulnCheck discovered a persistent backdoor called **"Endlessdoors"** embedded in 20+ Zbtlink consumer router models manufactured in China. The backdoor (tracked as CVE-2026-66747)…
+
+## OSINT & Reconnaissance
+
+- [[Academy-Lian-20-Essential-OSINT-Pentest-Tools]] — **academy_lian** published a comprehensive guide to **20+ essential OSINT and penetration testing tools**, organized by function. The post categorizes tools into three tiers: **🔍…
+- [[Crucix - OSINT Monitoring Dashboard]] — 10.7k stars, 26 live sources, real-time geopolitical monitoring
+- [[Ethical-Hacking-OSINT-400-Tools-Collection]] — Instagram post from @mortaltechschool promoting a curated collection of 400+ ethical hacking tools. The post highlights that the internet extends far beyond surface-level search…
+- [[OSINT - Find Everything About Anyone]] — Comprehensive OSINT tools and techniques guide
+- [[OSINT-Tools-Collection-Carter-Perez]] — Carter Perez (@carterperez.dev on Instagram) shares a curated list of OSINT (Open Source Intelligence) and OPSEC tools for cybersecurity professionals, ethical hackers, and bug…
+- [[Project-Eyes-On-IP-Camera-Discovery-Tool]] — Multi-threaded global IP camera discovery: directory scraping, deep web dorking, live verification, GeoIP enrichment
+- [[Signal Working — Security & OSINT Tool Collection]] — Signal Working (github.com/asgharale/signal-working) is a Python repository collecting several custom security and OSINT (Open Source Intelligence) tools focused on scanning,…
+- [[Telegram-OSINT-Techniques-for-OSINT]] — **@osintsecrets** (3,897 likes, 22 comments) breaks down how Telegram leaves behind more public footprint than most people realize. Telegram's public channels, public groups,…
+
+## AppSec & Vulnerabilities
+
+- [[CryptoJS Weak RNG Crypto Wallet Vulnerability]] — A long-standing weakness in the **CryptoJS** JavaScript library's random number generator (`CryptoJS.lib.WordArray.random()`) has been linked to coordinated cryptocurrency thefts…
+- [[Frontend Security Beyond Backend - A Developer Checklist]] — A comprehensive Persian-language thread from Abolfazl Soltani (DevTwitter) covering seven critical frontend security topics that developers often overlook, focusing on the fact…
+- [[UUID-Predictability-Weak-PRNG-BOLA-Mass-Assignment]] — A cybersecurity educational video demonstrating how weak UUID generation can be exploited to compromise an entire web application. Created by Elisa Elias as a hands-on lab…
+
+## Privacy & Hardening
+
+- [[Paranoia Privacy Wiki]] — Cybersecurity: Network security practices
+- [[VPN-Privacy-Testing-WebRTC-DNS-Leaks-Guide]] — Never trust VPN without testing: WebRTC/DNS/IP blacklist leaks; free tools (browserleaks.io, pixelscan.net), 5-min verification
+
+## AI Security
+
+- [[5-Free-Open-Source-AI-Security-Tools-2026]] — Cybersecurity practitioner **@cyberphobiatv** shared a curated list of **5 free, open-source AI security tools** worth knowing in 2026. These tools cover the emerging AI…
+- [[AI Agent Privacy — Understanding Data Exposure Risks]] — An educational Instagram post about AI agent privacy and security. The core message: when you use AI tools like v0, Cursor, Lovable, or any web-based AI tool, if you're not logged…
+- [[Google-Mantis-Agentic-Vulnerability-Framework]] — Google open-sourced **Mantis**, an agentic AI framework that automates the full vulnerability lifecycle: discovery, triage, reproduction, and patching. Unlike conventional…
+- [[Hallusquatting-AI-Hallucination-Package-Attack]] — AI hallucination supply-chain attacks
+- [[OpenAI GPT-5.6-Cyber — AI Cybersecurity Model]] — AI cybersecurity model with Daybreak initiative
+- [[Prompt Injection - You Cannot Filter Your Way Out]] — Filters and system prompts cannot stop prompt injection — only architecture can. The article covers the "Lethal Trifecta" (high-privilege model + untrusted data + tools), Simon…
 
 ## Statistics
-
-Total notes: 9
-Worth deep reading: 6
-Reference: 2
-Quick notes: 1
+Total notes: 30
+Quick note: 3
+Reference: 5
+Unrated: 1
+Worth deep reading: 21

@@ -438,8 +438,8 @@ def is_likely_real_url(url: str) -> bool:
     return True
 
 
-def guess_categories(platform: str, tags: list) -> list:
-    """Guess categories based on platform + extracted tags. Returns ranked list."""
+def _guess_categories_legacy(platform: str, tags: list) -> list:
+    """Legacy tag-set classifier — only used if scripts/taxonomy.json is unreadable."""
     categories = []
 
     tag_set = set(tags)
@@ -507,6 +507,87 @@ def guess_categories(platform: str, tags: list) -> list:
     return categories
 
 
+# ── Taxonomy-driven classification (scripts/taxonomy.json) ───────────
+#
+# The taxonomy is the single source of truth for categories: one JSON file
+# listing domains -> subtopics -> keywords. Notes live at
+# Notes/<domain>/<subtopic>/<title>.md and `category_guess` is "domain/subtopic".
+
+TAXONOMY_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "taxonomy.json")
+FALLBACK_CATEGORY = "Unsorted/To Review"
+_TAXONOMY_CACHE = None
+
+
+def _norm_key(value: str) -> str:
+    """Lowercase and collapse punctuation so keyword matching is word-based."""
+    return re.sub(r"[^a-z0-9]+", " ", (value or "").lower()).strip()
+
+
+def load_taxonomy(path: str = None) -> list:
+    """Return [(leaf_path, [normalized_keywords]), ...] — cached per process."""
+    global _TAXONOMY_CACHE
+    if _TAXONOMY_CACHE is not None:
+        return _TAXONOMY_CACHE
+    leaves = []
+    try:
+        with open(path or TAXONOMY_PATH, encoding="utf-8") as fh:
+            tax = json.load(fh)
+        for domain in tax.get("domains", []):
+            for sub in domain.get("subtopics", []):
+                kws = [k for k in (_norm_key(x) for x in sub.get("keywords", [])) if k]
+                leaves.append((f"{domain['name']}/{sub['name']}", kws))
+    except (OSError, ValueError, KeyError):
+        leaves = []
+    _TAXONOMY_CACHE = leaves
+    return leaves
+
+
+def _has(kw: str, haystack: str) -> bool:
+    return f" {kw} " in f" {haystack} "
+
+
+def classify_by_taxonomy(tags: list, text: str = "", url: str = "", title: str = "") -> list:
+    """Rank leaf categories by weighted keyword hits. Returns up to 3 paths."""
+    leaves = load_taxonomy()
+    if not leaves:
+        return []
+    hay_title = _norm_key(title)
+    hay_tags = _norm_key(" ".join(tags or []))
+    hay_url = _norm_key(url)
+    hay_text = _norm_key(text)[:2000]
+    scores = {}
+    for leaf, keywords in leaves:
+        score = 0
+        for kw in keywords:
+            if _has(kw, hay_title):
+                score += 5
+            if _has(kw, hay_tags):
+                score += 3
+            if _has(kw, hay_url):
+                score += 2
+            if _has(kw, hay_text):
+                score += 1
+        if score:
+            scores[leaf] = score
+    return [leaf for leaf, _ in sorted(scores.items(), key=lambda kv: -kv[1])][:3]
+
+
+def guess_categories(platform: str, tags: list, text: str = "", url: str = "",
+                     title: str = "") -> list:
+    """Ranked leaf categories ("Domain/Subtopic") for a queued item."""
+    ranked = classify_by_taxonomy(tags, text, url, title)
+    if ranked:
+        return ranked
+    legacy = _guess_categories_legacy(platform, tags)
+    # Legacy names are bare domains; map each onto its least specific subtopic
+    # by taking the first subtopic listed for that domain in the taxonomy.
+    by_domain = {}
+    for leaf, _ in load_taxonomy():
+        by_domain.setdefault(leaf.split("/", 1)[0], leaf)
+    mapped = [by_domain[name] for name in legacy if name in by_domain]
+    return mapped or [FALLBACK_CATEGORY]
+
+
 def queue_item(url: str = None, text: str = None, user_message: str = "") -> dict:
     """Queue an item for daily processing."""
     now = datetime.now(timezone(timedelta(hours=3, minutes=30)))
@@ -519,14 +600,14 @@ def queue_item(url: str = None, text: str = None, user_message: str = "") -> dic
         item_id = generate_id(url)
         platform = detect_platform(url)
         tags = extract_all_tags(url, platform, text or "")
-        categories = guess_categories(platform, tags)
+        categories = guess_categories(platform, tags, text=text or "", url=url)
         content_type = guess_content_type(url, text or "", tags)
         title_preview = url[:80]
     else:
         item_id = hashlib.md5(text.encode()).hexdigest()[:12]
         platform = "note"
         tags = extract_tags_from_text(text or "")
-        categories = guess_categories(platform, tags)
+        categories = guess_categories(platform, tags, text=text or "")
         content_type = guess_content_type("", text or "", tags)
         title_preview = text[:80] if text else "untitled"
 
@@ -535,7 +616,7 @@ def queue_item(url: str = None, text: str = None, user_message: str = "") -> dic
         "url": url,
         "text": text,
         "platform": platform,
-        "category_guess": categories[0] if categories else "General",
+        "category_guess": categories[0] if categories else FALLBACK_CATEGORY,
         "categories": categories,
         "content_type": content_type,
         "tags": tags[:15],  # cap at 15 initial tags, LLM will refine

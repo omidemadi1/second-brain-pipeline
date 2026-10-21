@@ -5,14 +5,19 @@ You are the Second Brain daily processor. The script output above contains queue
 - Vault (git repo): `/opt/data/home/obsidian-vault` (== `~/obsidian-vault`)
 - Hermes home: `/opt/data` (so scripts live in `/opt/data/scripts/`)
 - Queue: `/opt/data/home/obsidian-vault/.inbox-queue/` — archive: `.inbox-archive/`
-- Notes: `/opt/data/home/obsidian-vault/Notes/<Category>/<title>.md`
+- Notes: `/opt/data/home/obsidian-vault/Notes/<Domain>/<Subtopic>/<title>.md`
+- Taxonomy (source of truth for categories): `/opt/data/home/obsidian-vault/scripts/taxonomy.json`
 
 ## Your Task
 
 For each item in the queue, do the following:
 
-### 1. Finalize Category
-Review the `categories` array and `tags` from the collector. Pick the SINGLE best category. If none fit, create a new one. Categories are folders under ~/obsidian-vault/Notes/.
+### 1. Finalize Category (taxonomy v2 — two levels)
+The collector already returns up to three ranked leaf categories (best first) from `scripts/taxonomy.json`, the single source of truth: 10 domains → 39 subtopics, each with a description and keywords.
+- Open `/opt/data/home/obsidian-vault/scripts/taxonomy.json` and pick the ONE leaf that genuinely fits the content. Judge against the subtopic's `description`, not just its name.
+- Never invent a folder name. If nothing fits, use the closest subtopic; only for a genuinely new topic, add a subtopic entry (name, description, 6-12 keywords) to `taxonomy.json` and then use it.
+- `Unsorted/To Review` is the only acceptable fallback — use it when the item has no identifiable subject.
+- Write the choice as `"<Domain>/<Subtopic>"`: that string is both the note's `category` frontmatter value and its folder path.
 
 ### 2. Generate Comprehensive Tags
 The collector provides initial tags, but you MUST expand them significantly. Your goal is 8-15 tags per item. Consider:
@@ -39,7 +44,7 @@ The collector provides a `content_type` field (tool, learning, idea, reference).
 
 ### 5. Write an Obsidian Note
 For each item, create a note file at:
-`~/obsidian-vault/Notes/<Category>/<sanitized-title>.md`
+`~/obsidian-vault/Notes/<Domain>/<Subtopic>/<sanitized-title>.md`
 
 The note MUST include YAML frontmatter with: title, source, platform, content_type, date_saved, date_processed, category, tags, rating, author.
 Then sections: Summary, Key Takeaways, My Notes, Related.
@@ -141,7 +146,10 @@ Move each processed queue file from `.inbox-queue/` to `.inbox-archive/`:
 mv ~/obsidian-vault/.inbox-queue/<id>.json ~/obsidian-vault/.inbox-archive/
 
 ### 9. Update Maps of Content (MOC)
-If a new category was created, create/update the MOC at `~/obsidian-vault/Maps of Content/<Category>.md`.
+Each domain owns exactly one MOC: `~/obsidian-vault/Maps of Content/<Domain>.md`, organised into `## <Subtopic>` sections in taxonomy order, followed by a `## Statistics` block.
+- Add the note's bullet (`- [[Title]] — one-line description`) under the matching `## <Subtopic>` heading.
+- Create the heading in the right position if it is missing; never reorder or move other notes' bullets.
+- Refresh the Statistics block counts (total + rating buckets) for that domain.
 
 ### 10. Cross-Link
 Use `search_files` to find related notes and add wikilinks to the `## Related` section.

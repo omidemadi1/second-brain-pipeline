@@ -1,26 +1,33 @@
 # Development
 
-## Notes
+> 12 notes · 4 subtopics
 
-- [[openseo]] — Open-source SEO tool (Semrush/Ahrefs alternative) with MCP support
-- [[Open SEO - Open Source SEO Tool]] — 8.2k stars, TypeScript, backlink analysis, MCP integration
-- [[Python Tutorial for Beginners]] — YouTube tutorial for Python basics
-- [[10 GitHub Repos That Print Money While You Sleep]] — Monetizing open-source repos
-- [[10 GitHub Repos That Print Money (Full Thread)]] — Full thread on open-source monetization
-- [[Google Search Documentation — SEO Fundamentals]] — Official Google SEO guide for crawling, indexing, ranking
-- [[CodeWiki-Google-AI-Documentation-Generator]] — AI-generated code documentation
-- [[Grok-Build-CLI-v0.2.115-Alpha-Release]] — Grok Build CLI with prompt caching
-- [[PR-Agent — AI-Powered Code Review for PRs]] — Open-source AI code review for PRs
-- [[Why Twitter and Instagram Build UI as Web Components]] — Hybrid native+web architecture pattern
-- [[OKF-v0.2-Google-AI-Readable-Content-Metadata]] — Google's AI-readable content metadata
-- [[Diagram Design — Claude Code Skill for Editorial Diagrams]] — 27 editorial diagram types as self-contained HTML/SVG, auto brand-matching, semantic patterns, Mermaid/draw.io converter
+## Web & Frontend
+
 - [[FreeCodeCamp-3D-Web-Development-Blender-Threejs]] — freeCodeCamp course: full 3D workflow (Blender → Three.js), subdivision modeling, TSL shaders, singleton architecture, AI-assisted Blender scripting
-- [[Paper Tunes — Store Songs on Paper via QR Codes, Stream Over LoRA]] — EnCodec neural codec compresses MP3 to 21 kB, fits in 8 QR codes on paper, LoRA transmissible
-- [[ESP32-Development-Board-IoT-Platform-Battery]] — $4-5 ESP32 board with built-in 18650 battery holder/charging, Wi-Fi/BT, for IoT/smart home/robotics/wearables
-- [[Second Brain Pipeline — Telegram Inbox to Obsidian Vault]] — self-hosted capture → enrich → publish pipeline: Telegram Inbox → JSON queue → LLM processing → tagged Obsidian notes with wikilinks → git push; stdlib Python only
+- [[img2threejs-Photo-to-Browser-3D-Models]] — **img2threejs** is an open-source tool that converts any reference photo into a production-ready Three.js 3D component — entirely in code, no imported mesh files. The tool…
+- [[Next.js-16.3-Memory-Optimization-90-Percent-Reduction]] — Next.js 16.3 introduces a massive memory optimization reducing memory consumption in large projects by up to 90%. This directly addresses the infamous `FATAL ERROR: JavaScript…
+- [[Why Twitter and Instagram Build UI as Web Components]] — Hybrid native+web architecture pattern
+
+## Backend, APIs & Architecture
+
+- [[Laravel Truss — Live Database Schema ER Diagram]] — **Laravel Truss** (⭐ 248) is a Laravel package that scans your database schema and renders it as a scrollable, zoomable ER diagram directly inside your application — no external…
+- [[Repowise Codebase Intelligence for AI Assistants]] — **Repowise** is an open-source codebase intelligence tool that pre-analyzes and documents your entire project before AI coding agents touch it. Instead of the model reading files…
+
+## Dev Tools & Editors
+
+- [[Midi-Crawler-Chrome-Web-Store]] — Chrome Web Store listing for Midi Crawler extension (v1.0.0, updated Aug 12, 2026). 43 users, 5/5 stars (4 ratings). Developer: Mahdi Asgari (mmahdiasgari.ir). Size: 83.3 KiB.…
+- [[Midi-Crawler-Googlebot-Simulator]] — Midi Crawler is a Chrome extension that instantly toggles the active tab to emulate Googlebot Mobile (Smartphone) with JavaScript disabled — all in one click, no DevTools manual…
+- [[Zed-v1.14.0-High-Performance-Code-Editor]] — **Zed** — A high-performance, multiplayer code editor built in Rust by the creators of Atom and Tree-sitter. Version v1.14.0 preview brings performance improvements, GPUI engine…
+
+## Learning & Fundamentals
+
+- [[AntiVibe - Learn from AI-Generated Code]] — AntiVibe is a Claude Code skill that turns AI-generated code into educational deep dives. Instead of just accepting what AI writes, it explains project architecture, dependencies,…
+- [[Learning to Code Through Games]] — A curated list of 10 websites to learn coding through games: (1) Kubernetes — k8sgames.com, (2) DevOps — devops.games, (3) Linux — overthewire.org, (4) Git — ohmygit.org, (5)…
+- [[Python Tutorial for Beginners]] — YouTube tutorial for Python basics
 
 ## Statistics
-Total notes: 11
-Worth deep reading: 4
+Total notes: 12
+Quick note: 3
 Reference: 5
-Quick notes: 1
+Worth deep reading: 4

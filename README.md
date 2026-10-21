@@ -41,23 +41,35 @@ Telegram Inbox Topic
 
 ```
 obsidian-vault/
-├── Notes/                          # Main notes, organized by category
-│   ├── AI & Machine Learning/      # Neural nets, LLMs, AI tools
-│   ├── Cybersecurity/              # Pentesting, OSINT, security tools
-│   ├── Development/                # Programming, frameworks, dev tools
-│   ├── DevOps & Infrastructure/    # Docker, CI/CD, servers
-│   ├── Networking/                 # Network tools, monitoring dashboards
-│   ├── Marketing & Growth/         # Growth hacking, SEO, distribution
-│   ├── Business & Finance/         # Pricing, finance tools
-│   ├── Design & Creative/          # Design systems, creative tools
-│   ├── Productivity & Tools/       # Productivity apps and utilities
-│   └── General/                    # Cross-topic, reference articles
-├── Maps of Content/                # MOC index per category
+├── Notes/                          # Notes, two levels: <Domain>/<Subtopic>/
+│   ├── AI & Machine Learning/      # 8 subtopics: MCP & Agent Tooling, Skills &
+│   │                               # Prompts, Coding Agents & Harnesses, Agentic
+│   │                               # Systems, RAG/Search & Data, Multimodal &
+│   │                               # Generation, Models & Research, Free Access & Cost
+│   ├── Cybersecurity/              # 5: Offensive & Pentesting, OSINT & Recon,
+│   │                               # AppSec & Vulnerabilities, Privacy & Hardening, AI Security
+│   ├── Development/                # 4: Web & Frontend, Backend/APIs & Architecture,
+│   │                               # Dev Tools & Editors, Learning & Fundamentals
+│   ├── DevOps & Infrastructure/    # 4: Containers & Orchestration, Homelab & Self-Hosted,
+│   │                               # Cloud/CI-CD & Backups, Hardware & DIY
+│   ├── Networking/                 # 2: Network Config & Traffic, Connectivity & Censorship
+│   ├── Marketing & Growth/         # 4: Growth & Distribution, SEO & AEO,
+│   │                               # Brand & Storytelling, Outreach & Lead Gen
+│   ├── Business & Finance/         # 3: Entrepreneurship & Startups, Pricing &
+│   │                               # Monetization, Finance & Crypto
+│   ├── Design & Creative/          # 5: Design Craft & Principles, Design Systems & UI,
+│   │                               # AI Design Skills & Anti-Slop, Motion & Interaction,
+│   │                               # 3D & Visual Assets
+│   ├── Productivity & Tools/       # 3: Desktop & Utility Apps, Voice & Dictation,
+│   │                               # Knowledge & Note Tools
+│   └── Unsorted/                   # 1: To Review — only for captures with no subject
+├── Maps of Content/                # One MOC per domain, with a section per subtopic
 ├── Templates/                      # note-template.md with YAML frontmatter
 ├── People & Sources/               # Source tracking
 ├── Daily Digests/                  # Daily summary digests
 ├── scripts/                        # Pipeline scripts
-│   ├── collect.py                  # Inbox collector (URL detection + queuing)
+│   ├── taxonomy.json               # Single source of truth: domains → subtopics → keywords
+│   ├── collect.py                  # Inbox collector (URL detection + taxonomy classification)
 │   ├── process_inbox.py            # Queue processor (API extraction)
 │   ├── process_and_push.sh         # Cron wrapper: process + git push
 │   ├── second_brain_sender.py      # Telegram note sender with inline buttons

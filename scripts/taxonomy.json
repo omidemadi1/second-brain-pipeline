@@ -1,0 +1,257 @@
+{
+  "version": 2,
+  "updated": "2026-10-19",
+  "structure": "Notes/<domain>/<subtopic>/<sanitized-title>.md — `category` frontmatter is \"<domain>/<subtopic>\".",
+  "rules": [
+    "Pick the single most specific subcategory that fits; never fall back to a domain name alone.",
+    "Unsorted/To Review is only for captures with no identifiable subject.",
+    "A new subtopic requires a new entry here plus a MOC section — do not invent folder names ad hoc."
+  ],
+  "domains": [
+    {
+      "name": "AI & Machine Learning",
+      "subtopics": [
+        {
+          "name": "MCP & Agent Tooling",
+          "description": "MCP servers/clients, tool protocols, connectors, and tools or APIs built specifically to be called by agents (browser control, web access, cookie/tool bridges).",
+          "keywords": ["mcp", "mcp-servers", "modelcontextprotocol", "model-context-protocol", "mcp-server", "tool-server", "tool-calling", "function-calling", "connector", "agent-tools", "agent-infrastructure", "browser-use", "browser-automation", "in-page-agent", "dom-automation", "agent-reach", "keenable", "free-api", "cookie-sync", "agent-cookie", "integration"]
+        },
+        {
+          "name": "Skills & Prompts",
+          "description": "Agent skills (SKILL.md packs, skill managers, skill generators), prompt engineering, system prompts and instruction frameworks.",
+          "keywords": ["skill", "skills", "agent-skill", "skill-files", "skill-manager", "skill-recorder", "skill-doctor", "skills-gate", "book-to-skill", "prompt", "prompts", "prompt-engineering", "prompting", "prompt-guide", "prompt-library", "prompt-template", "system-prompt", "system-prompts", "instructions", "instruction-file", "agents-md", "claude-md", "awesome-skills"]
+        },
+        {
+          "name": "Coding Agents & Harnesses",
+          "description": "Coding agents and their harnesses: Claude Code, Codex, Cursor, opencode, Grok Build, AI IDEs, AI code review, context/compaction management for coding agents.",
+          "keywords": ["claude-code", "codex", "cursor", "opencode", "grok-build", "grok-bot", "coding-agent", "coding-agents", "ai-coding", "ai-ide", "ai-code-review", "code-review", "code-generation", "harness", "agent-harness", "spec-driven", "context-management", "compaction", "changelog", "t3-code", "openwork", "openspec", "anti-vibe", "pair-programming"]
+        },
+        {
+          "name": "Agentic Systems",
+          "description": "Agent architecture and orchestration: multi-agent teams, agent memory, persistence, graph engineering, control planes, autonomous runtimes.",
+          "keywords": ["agentic", "ai-agents", "ai-agent", "multi-agent", "agent-orchestration", "agent-memory", "long-term-agents", "graph-engineering", "agent-design", "agent-workflows", "agent-persistence", "autonomous", "agent-fleet", "control-plane", "runtime", "subagent", "handoff", "swarm", "agent-runtime", "cowork", "managed-agents", "agent-team"]
+        },
+        {
+          "name": "RAG, Search & Data",
+          "description": "Retrieval-augmented generation, vector indexes/embeddings, crawlers and scrapers, knowledge graphs, deep-research retrieval, search over your own data.",
+          "keywords": ["rag", "retrieval", "vector-index", "vector-database", "embeddings", "semantic-search", "knowledge-graph", "crawl4ai", "crawler", "crawling", "scraping", "scraper", "data-extraction", "chunking", "deep-research", "web-search", "search-api", "indexing", "pixel-rag"]
+        },
+        {
+          "name": "Multimodal & Generation",
+          "description": "Image, video, audio, speech and 3D generation or understanding: diffusion models, TTS/STT models, OCR, vision, upscalers, mocap, 3D reconstruction.",
+          "keywords": ["image-generation", "video-generation", "text-to-video", "text-to-3d", "diffusion", "stable-diffusion", "tts", "sts", "speech", "voice", "audio", "music-generation", "ocr", "computer-vision", "object-detection", "upscaler", "background-removal", "3d-reconstruction", "mocap", "multimodal", "vision-model", "wan2gp", "seedance", "lyria", "trellis"]
+        },
+        {
+          "name": "Models & Research",
+          "description": "Model releases, reviews and benchmarks; training, inference and quantization; papers and ML theory; eval harnesses.",
+          "keywords": ["model-review", "ai-models", "llm", "benchmark", "eval", "evaluation", "model-comparison", "fine-tuning", "training", "inference", "quantization", "llama-cpp", "gguf", "neural-network", "deep-learning", "machine-learning", "research-paper", "arxiv", "qwen", "deepseek", "gemini", "gpt-5", "claude-opus", "glm", "model-architecture", "scaling-law", "state-of-agentic"]
+        },
+        {
+          "name": "Free Access & Cost",
+          "description": "Free tiers, free APIs and credits, model routers/proxies, and cost-reduction tactics for LLM usage.",
+          "keywords": ["free-api", "free-tier", "free-tool", "free-resources", "cost-optimization", "cost-savings", "cost-reduction", "reduce-cost", "api-cost", "pricing-strategy", "model-router", "ai-gateway", "proxy-router", "credits", "cheap", "budget", "free"]
+        }
+      ]
+    },
+    {
+      "name": "Development",
+      "subtopics": [
+        {
+          "name": "Web & Frontend",
+          "description": "Frontend frameworks, browser APIs, CSS/animation on the web, Three.js/3D web, web components, UI performance.",
+          "keywords": ["frontend", "react", "nextjs", "next.js", "vue", "svelte", "tailwind", "css", "html", "javascript", "typescript", "threejs", "three.js", "web-components", "webgl", "browser-api", "dom", "scroll-page", "landing-page", "web-performance", "hydration"]
+        },
+        {
+          "name": "Backend, APIs & Architecture",
+          "description": "Server-side design: APIs, databases, auth, data modelling, architecture patterns, spec-driven development, technical documentation.",
+          "keywords": ["backend", "api", "rest-api", "graphql", "database", "sql", "postgres", "mongodb", "redis", "architecture", "microservice", "auth", "laravel", "django", "fastapi", "nodejs", "schema", "erd", "documentation-generator", "codebase-intelligence", "monorepo", "design-patterns"]
+        },
+        {
+          "name": "Dev Tools & Editors",
+          "description": "Editors, CLIs, debuggers, extensions and developer productivity tooling that is not itself an AI agent.",
+          "keywords": ["editor", "vim", "neovim", "zed", "cli", "terminal", "debugger", "chrome-extension", "devtools", "extension", "tooling", "makefile", "build-tool", "package-manager", "linter", "formatter"]
+        },
+        {
+          "name": "Learning & Fundamentals",
+          "description": "Tutorials, courses, beginner paths, language fundamentals and practice projects.",
+          "keywords": ["tutorial", "beginners", "beginner", "learn", "learning", "course", "fundamentals", "python", "algorithms", "practice", "roadmap", "from-scratch", "explained", "cheat-sheet", "interview", "coding-games"]
+        }
+      ]
+    },
+    {
+      "name": "Cybersecurity",
+      "subtopics": [
+        {
+          "name": "Offensive Security & Pentesting",
+          "description": "Attacking systems: pentest tooling and frameworks, exploitation, malware/rootkits, reverse engineering, bug bounty, CTFs.",
+          "keywords": ["pentest", "penetration-testing", "offensive", "exploit", "red-team", "ethical-hacking", "bug-bounty", "ctf", "malware", "rootkit", "backdoor", "reverse-engineering", "fuzzing", "privilege-escalation", "binary-analysis", "anti-anti-debug", "hyperdbg", "wiretapper"]
+        },
+        {
+          "name": "OSINT & Reconnaissance",
+          "description": "Open-source intelligence: people/business/email recon, monitoring dashboards, tool collections, investigative workflows.",
+          "keywords": ["osint", "recon", "information-gathering", "intelligence", "people-search", "email-osint", "epieos", "monitoring-dashboard", "intel", "enumeration", "investigation", "digital-investigation", "tool-collection", "tools-collection"]
+        },
+        {
+          "name": "AppSec & Vulnerabilities",
+          "description": "Defending applications: vulnerability classes, secure coding, API/business-logic flaws, crypto misuse, security checklists.",
+          "keywords": ["vulnerability", "appsec", "xss", "csrf", "sql-injection", "rce", "bola", "uuid", "prng", "weak-rng", "cryptojs", "auth-bypass", "mass-assignment", "injection", "security-checklist", "frontend-security", "api-security", "cve", "patch"]
+        },
+        {
+          "name": "Privacy & Hardening",
+          "description": "Personal and system privacy: VPN/DNS/WebRTC leaks, tracking, anonymity, hardening guides, privacy tooling.",
+          "keywords": ["privacy", "vpn", "webrtc", "dns-leak", "anonymity", "tracking", "hardening", "tor", "fingerprinting", "privacy-tools", "ad-blocking", "data-broker"]
+        },
+        {
+          "name": "AI Security",
+          "description": "Security of AI systems and AI-powered security: prompt injection, agent data exposure, AI pentest tools, malicious models/packages.",
+          "keywords": ["ai-security", "prompt-injection", "llm-security", "ai-agent-privacy", "hallucination", "hallusquatting", "ai-pentest", "gpt-5.6-cyber", "mantis", "model-abuse", "ai-threat", "guardrails"]
+        }
+      ]
+    },
+    {
+      "name": "Design & Creative",
+      "subtopics": [
+        {
+          "name": "Design Craft & Principles",
+          "description": "Design thinking, philosophy, critique and case studies: hierarchy, colour, typography, taste, designer-vs-AI comparisons.",
+          "keywords": ["design-philosophy", "design-agency", "case-study", "ai-vs-human", "ux-principles", "typography", "whitespace", "hierarchy", "color", "critique", "design-thinking", "persian-ui", "editorial", "visual-hierarchy", "brand-identity"]
+        },
+        {
+          "name": "Design Systems & UI",
+          "description": "Design systems, component libraries, tokens, design-to-code extractors, dashboard/layout patterns.",
+          "keywords": ["design-system", "ui-kit", "component-library", "design-tokens", "design-extractor", "figma", "layout", "dashboard", "ui-ux", "ui-design", "pattern-library", "design-system-generator"]
+        },
+        {
+          "name": "AI Design Skills & Anti-Slop",
+          "description": "Rules and skill packs for making AI-generated UI not look AI-generated: taste frameworks, impeccable-style skill kits, diagram/design skill packs, slop catalogues.",
+          "keywords": ["anti-slop", "taste", "impeccable", "design-skill", "design-skills", "ai-design", "slop", "design-rules", "design-critique-skill"]
+        },
+        {
+          "name": "Motion & Interaction",
+          "description": "Animation, scroll choreography, micro-interactions, cinematic landing pages, motion libraries.",
+          "keywords": ["animation", "motion", "motion-design", "gsap", "framer-motion", "interaction", "scroll", "parallax", "transitions", "micro-interactions", "cinematic", "loaders", "spinners", "lottie", "scroll-driven"]
+        },
+        {
+          "name": "3D & Visual Assets",
+          "description": "3D models and scenes, image separation/upscaling, generated visual assets, render pipelines for design work.",
+          "keywords": ["3d-model", "image-to-3d", "image-separation", "upscaler", "tripo", "magnific", "render", "asset", "illustration", "texture", "blender", "product-visual"]
+        }
+      ]
+    },
+    {
+      "name": "DevOps & Infrastructure",
+      "subtopics": [
+        {
+          "name": "Containers & Orchestration",
+          "description": "Docker/Compose, Kubernetes, image builds, release and runtime operations.",
+          "keywords": ["docker", "dockerfile", "kubernetes", "k8s", "container", "compose", "helm", "image-build", "build-context", "headless-service", "pod", "registry"]
+        },
+        {
+          "name": "Homelab & Self-Hosted",
+          "description": "Home servers and self-hosted services: Proxmox, Immich, dashboards, media/storage, always-on boxen.",
+          "keywords": ["homelab", "self-hosted", "proxmox", "immich", "coolify", "home-server", "nas", "media-server", "stackyard", "cydrive", "madmail", "photo-management", "backup-automation"]
+        },
+        {
+          "name": "Cloud, CI/CD & Backups",
+          "description": "Cloud providers and credits, pipelines, deployment automation, backup/restore strategy.",
+          "keywords": ["cloud", "aws", "gcp", "azure", "terraform", "ansible", "ci-cd", "github-actions", "backup", "snapshot", "restore", "deployment", "prometheus", "grafana", "monitoring-stack", "uptime", "n8n"]
+        },
+        {
+          "name": "Hardware & DIY",
+          "description": "Physical computing and desk hardware: SBCs, ESP32, IoT, keyboards/macro pads, trackers, sensors.",
+          "keywords": ["hardware", "esp32", "raspberry-pi", "arduino", "iot", "macro-pad", "keyboard", "airtag", "sensor", "soldering", "desk-setup", "opendhaystack", "openhaystack", "usb", "firmware"]
+        }
+      ]
+    },
+    {
+      "name": "Networking",
+      "subtopics": [
+        {
+          "name": "Network Config & Traffic",
+          "description": "Router/switch/VLAN configuration, firewalls, DNS/DHCP, packet capture and traffic monitoring.",
+          "keywords": ["mikrotik", "vlan", "router", "firewall", "dns", "dhcp", "tcp-ip", "packet", "traffic", "sniffnet", "wireshark", "latency", "layer2", "subnet", "bgp", "qos"]
+        },
+        {
+          "name": "Connectivity & Censorship",
+          "description": "Internet reachability, censorship circumvention, offline/air-gapped transfer, alternative links.",
+          "keywords": ["censorship", "circumvention", "availability-checker", "offline", "file-transfer", "mesh", "starlink", "no-network", "qr", "blocked", "dpi", "tunnel"]
+        }
+      ]
+    },
+    {
+      "name": "Marketing & Growth",
+      "subtopics": [
+        {
+          "name": "Growth & Distribution",
+          "description": "Acquisition channels and growth loops: virality, UGC, communities, launch tactics, organic distribution.",
+          "keywords": ["growth", "growth-hacking", "distribution", "viral", "ugc", "creator-economy", "reddit", "community", "launch", "traffic", "engagement", "organic-marketing", "app-marketing", "indie-hackers"]
+        },
+        {
+          "name": "SEO & AEO",
+          "description": "Search and answer-engine optimisation: crawling/indexing, backlinks, SERP features, AI answer visibility.",
+          "keywords": ["seo", "aeo", "answer-engine", "answer-engine-optimization", "serp", "backlink", "keywords", "search-console", "ranking", "crawling", "indexing", "brand-gap-analysis", "ai-search"]
+        },
+        {
+          "name": "Brand & Storytelling",
+          "description": "Positioning, narrative and brand systems: storytelling frameworks, touchpoints, messaging.",
+          "keywords": ["brand", "branding", "brand-strategy", "brand-management", "storytelling", "positioning", "narrative", "messaging", "touchpoints", "copywriting", "content-strategy"]
+        },
+        {
+          "name": "Outreach & Lead Gen",
+          "description": "Cold outreach, lead scraping and sales automation pipelines.",
+          "keywords": ["outreach", "cold-email", "cold-outreach", "lead", "leads", "lead-scraper", "prospecting", "crm", "sales", "dm-automation"]
+        }
+      ]
+    },
+    {
+      "name": "Business & Finance",
+      "subtopics": [
+        {
+          "name": "Entrepreneurship & Startups",
+          "description": "Starting and running a business: validation, business models, bootstrapping, founder case studies.",
+          "keywords": ["startup", "startups", "founder", "entrepreneurship", "entrepreneur", "indie-hacker", "bootstrap", "bootstrapped", "mvp", "business-model", "business-planning", "business-startup", "case-study-scaling", "solopreneur"]
+        },
+        {
+          "name": "Pricing & Monetization",
+          "description": "Pricing, profit calculation, subscriptions, ads and revenue mechanics.",
+          "keywords": ["pricing", "monetization", "monetizing", "revenue", "subscription", "calculator", "profit", "discount", "paid-ads", "app-monetization", "business-tools", "ecommerce"]
+        },
+        {
+          "name": "Finance & Crypto",
+          "description": "Personal/business finance, capital raising, crypto and payments.",
+          "keywords": ["finance", "crypto", "airdrop", "investing", "banking", "capital", "capital-markets", "payments", "tax", "financing", "financial-literacy", "angel-investing"]
+        }
+      ]
+    },
+    {
+      "name": "Productivity & Tools",
+      "subtopics": [
+        {
+          "name": "Desktop & Utility Apps",
+          "description": "Small apps that do one job well: downloaders, converters, exporters, launchers, clipboard and file utilities.",
+          "keywords": ["desktop-app", "utility", "downloader", "converter", "export", "clipboard", "launcher", "screenshot", "batch-download", "offline-app", "cross-platform", "menubar", "extension-tool", "freedium", "omniget"]
+        },
+        {
+          "name": "Voice & Dictation",
+          "description": "Speech-to-text, dictation, transcription and subtitle tooling.",
+          "keywords": ["dictation", "speech-to-text", "stt", "whisper", "transcription", "subtitles", "voice-typing", "voice-dictation", "translation-tool"]
+        },
+        {
+          "name": "Knowledge & Note Tools",
+          "description": "Note-taking, PKM, Obsidian, markdown/PDF pipelines, knowledge workflows.",
+          "keywords": ["obsidian", "note-taking", "notes", "knowledge-management", "second-brain", "pkm", "markdown", "pdf", "export-notes", "bases", "vault", "flashcards", "spaced-repetition"]
+        }
+      ]
+    },
+    {
+      "name": "Unsorted",
+      "subtopics": [
+        {
+          "name": "To Review",
+          "description": "Captures with no identifiable subject, broken titles, or raw social posts that still need a human decision.",
+          "keywords": ["inbox", "unclear", "unknown", "misc"]
+        }
+      ]
+    }
+  ]
+}
