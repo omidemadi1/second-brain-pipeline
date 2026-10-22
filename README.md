@@ -18,6 +18,41 @@ Environment:
 
 Node 24 runs the TypeScript directly; there is no build step.
 
+## Docker
+
+```bash
+docker compose up -d --build
+```
+
+Then open <http://127.0.0.1:8787>. If the local Node server is already using 8787:
+
+```bash
+DASHBOARD_PORT=8788 docker compose up -d --build
+```
+
+The compose file mounts `../second-brain-pipeline` at `/vault` **read-write**. Link fixes need the `.git` directory so they can create commits. To use another vault location:
+
+```bash
+VAULT_PATH_HOST=/absolute/path/to/second-brain-pipeline docker compose up -d
+```
+
+Useful settings:
+
+| Variable | Default | Purpose |
+|---|---|---|
+| `DASHBOARD_BIND` | `127.0.0.1` | Host interface; use `0.0.0.0` for trusted LAN access |
+| `DASHBOARD_PORT` | `8787` | Host port |
+| `VAULT_PATH_HOST` | `../second-brain-pipeline` | Host path mounted at `/vault` |
+| `DASHBOARD_UID` / `DASHBOARD_GID` | `1000` | Linux vault owner, if not UID/GID 1000 |
+| `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL` | `Second Brain Dashboard` / `dashboard@localhost` | Author for link-fix commits |
+
+The container runs as a non-root user, includes `git` for the fix flow, and has a healthcheck on `/api/healthz`.
+
+```bash
+docker compose logs -f
+docker compose down
+```
+
 ## What works
 
 - Indexes both vault layouts: `Notes/<Category>/` and the legacy top-level folders.
