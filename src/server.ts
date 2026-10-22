@@ -373,7 +373,11 @@ app.get("/issues", (c) => {
       ${stat(frontmatterNotes.length, "no frontmatter", "warn", issueHref("frontmatter"))}
       ${stat(missingTotal, "missing fields", "warn", issueHref("frontmatter"))}
     </div>
-    ${fixed ? `<div class="notice success" style="margin-bottom:18px"><strong>Link fixed.</strong> The note was rewritten and committed to git. The vault index has been reloaded.</div>` : ""}
+    ${fixed ? `<div class="notice ${fixed === "saved" ? "warn" : "success"}" style="margin-bottom:18px">${
+      fixed === "saved"
+        ? "<strong>Link fixed.</strong> The note was rewritten, but the git commit failed. Commit the change manually."
+        : "<strong>Link fixed.</strong> The note was rewritten and committed to git. The vault index has been reloaded."
+    }</div>` : ""}
     <div class="tabs">
       <a class="tab ${tab === "broken" ? "active" : ""}" href="${issueHref("broken")}">Broken links <span class="count">${stats.brokenLinks}</span></a>
       <a class="tab ${tab === "frontmatter" ? "active" : ""}" href="${issueHref("frontmatter")}">Missing frontmatter <span class="count">${frontmatterNotes.length}</span></a>
@@ -504,16 +508,18 @@ app.post("/issues/fix", async (c) => {
   if (!count) return c.text("Link not found in the file.", 400);
 
   fs.writeFileSync(file, text, "utf8");
+  let committed = false;
   try {
     execFileSync("git", ["-C", VAULT_PATH, "add", "--", note.path], { stdio: "pipe" });
     execFileSync("git", ["-C", VAULT_PATH, "commit", "-m", `Fix broken link in ${note.path}`, "--", note.path], {
       stdio: "pipe",
     });
+    committed = true;
   } catch {
     // The file change is still valid; the user may need to commit manually.
   }
   reload();
-  return c.redirect(`/issues?tab=broken&fixed=1`);
+  return c.redirect(`/issues?tab=broken&fixed=${committed ? "1" : "saved"}`);
 });
 
 // ---------------------------------------------------------------- graph
