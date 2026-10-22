@@ -1,6 +1,6 @@
 # AI & Machine Learning
 
-> 113 notes · 8 subtopics
+> 118 notes · 8 subtopics
 
 ## MCP & Agent Tooling
 
@@ -113,20 +113,25 @@
 - [[Roboflow Supervision - Computer Vision Library]] — Roboflow Supervision is a Python computer vision library with 48k+ stars. Pure Python, pip install only. Object detection, tracking, segmentation, and data processing. Used for…
 - [[Seedance 2.5 Prompt Guide]] — Seedance 2.5 Prompt Guide for AI video generation best practices. Treat prompts like a film script: define roles for reference images, split scenes into time segments, specify…
 - [[Tapir-Video-Upscaler]] — Free browser-based AI video upscaler: local WebGPU processing, FSR + neural super-res, 2x/4x, no uploads, no watermark
+- [[Unlimited-OCR-Baidu-Long-Document-OCR]] — Baidu's 3B open OCR model: 100-page PDFs in one pass, 32K window, local via vLLM/SGLang/llama.cpp
 - [[Wan2GP-Free-AI-Video-Studio]] — Free AI video studio for low-VRAM GPUs
+- [[WanGP-All-in-One-Local-AI-Studio-Persian-Overview]] — Persian walkthrough of WanGP v18: video/image/3D generation on 6 GB VRAM, offline
 - [[YOLO26 from Scratch in Assembly + C]] — YOLO26 implemented from scratch in ARM64 Assembly and C for Raspberry Pi 4. No ML frameworks used. Features Winograd convolution, custom ARM micro-kernels, NEON SIMD optimization,…
 
 ## Models & Research
 
+- [[Decision-3.0-Open-Multimodal-Decision-Models]] — d3 family: open multimodal decision models 0.6B–27B, typed answers + calibrated probabilities; 64.1 on Jev Decision Index
 - [[DeepSeek V4 J-Space Capability Realization Report]] — A GitHub repository (⭐ 1,019) documenting how the **J-Space harness** unlocks the full capability of DeepSeek V4 Pro (0813 release), reportedly outperforming Claude 5 on all…
 - [[DeepSeek-V4-Pro-Launch-Dynamic-Pricing-Reasoning-Control]] — DeepSeek officially launched **DeepSeek-V4-Pro** (and V4-Flash) in August 2026, introducing two developer-focused features: (1) a **dynamic API pricing model** that charges based…
 - [[distributionally-robust-receive-combining]] — Robust wireless signal combining via ML
 - [[GLM-5.3-ZAI-Coding-and-Cybersecurity-Model]] — Z.ai released GLM-5.3 on August 14, 2026, an upgraded language model focused on programming and cybersecurity. Built on the previous version with advanced post-training, it…
 - [[Llama-cpp-Optimization-Tool-30B-on-6GB-VRAM]] — A llama.cpp optimization tool that enables running 30B parameter models at approximately 22 tokens/second with only 6GB of VRAM. The tool predicts inference speed on your specific…
+- [[Mizan-v3-Persian-Decision-Model]] — Persian-first 3B decision model: typed questions + calibrated probabilities in one pass, 1.9 GB Q4 GGUF, Apache-2.0
 - [[neural-networks-explained]] — 3Blue1Brown visual intro to neural networks
 - [[Nitin-Gavhane-GLM-5.3-Coding-Bug-Discovery]] — Nitin Gavhane is a security researcher and technical writer (1.5K+ followers on Medium) who shared a post about GLM-5.3, Z.ai's latest model release. In his Medium article…
 - [[NVIDIA-PAIR-Distributed-Local-Inference-Clustering]] — NVIDIA has released a new software called **PAIR** that turns multiple computers into a personal AI inference cluster on a local network. PAIR distributes inference requests…
 - [[Ori Eval - AI Model Evaluation by OpenRouter]] — Ori Eval by OpenRouter is an AI model evaluation tool that runs your agent on real prompts, checks tool calls, and scores outputs to find the best model for your specific project.…
+- [[Perplexity-Decider-v1.1-Open-Weights-Clinical-Decisions]] — Open-weights 27B decision model: 643/669 clinical cases vs Jev's 628, 42% cheaper per decision, $0.02/M input on OpenRouter
 - [[Qwen 3.8 Max Model Review]] — Momi shares a review of testing Qwen 3.8 Max on a relatively heavy project. The post covers strengths, weaknesses, and a comparison with Claude. Limited details in the post itself…
 
 ## Free Access & Cost
@@ -140,8 +145,8 @@
 - [[using-claude-and-claude-code-for-free]] — Explores methods to use **Claude** and **Claude Code** for free, including local installation and leveraging free models. - Compares **9Router + Mimo (Xiaomi free model)**,…
 
 ## Statistics
-Total notes: 113
+Total notes: 118
 Quick note: 4
-Reference: 35
+Reference: 37
 Unrated: 2
-Worth deep reading: 72
+Worth deep reading: 75
