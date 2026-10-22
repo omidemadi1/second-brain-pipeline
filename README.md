@@ -1,6 +1,6 @@
 # Second Brain Dashboard
 
-Phase 0 of the reading workspace: a local, read-only view over the Obsidian vault.
+A local reading workspace over the Obsidian vault: browse, search, inspect links, and fix broken ones.
 
 ## Run
 
@@ -14,20 +14,35 @@ Environment:
 
 - `VAULT_PATH` — defaults to `../second-brain-pipeline`
 - `PORT` — defaults to `8787`
+- `HOST` — defaults to `127.0.0.1`; set `0.0.0.0` only for trusted LAN access
+
+Node 24 runs the TypeScript directly; there is no build step.
 
 ## What works
 
 - Indexes both vault layouts: `Notes/<Category>/` and the legacy top-level folders.
-- Resolves wikilinks by path, filename, and title; MOCs resolve but are not listed as notes.
-- Category index with counts, client-side text filter, and note list.
-- Note page: metadata, source, tags, summary, sections, backlinks, broken links.
-- `/api/bootstrap` returns the normalized index; `/api/healthz` for liveness.
+- Sidebar navigation: Library, Tags, Issues, Graph, plus category counts.
+- Library: newest-first list, category chips, live text search, tag filters.
+- Note page: metadata, source, clickable tags, summary, sections, backlinks, unresolved links.
+- Tags page: every tag with counts and a filter; each tag links to its notes.
+- Issues page:
+  - all broken wikilinks grouped by source note, with close-match suggestions;
+  - confidence-scored suggestions, preview diff, and one-click apply;
+  - applying rewrites **one file** and creates **one git commit** in the vault;
+  - all notes without frontmatter, plus missing-field counts.
+- Graph: canvas force layout, category colors, pan/zoom, labels, click-through.
+- `/api/bootstrap`, `/api/graph`, `/api/healthz`.
+- `Design.md` holds the visual system (dark editorial, brass + violet).
+
+## Safety
+
+The server rewrites vault files only from the link-fix preview flow. It binds to localhost by default and has no authentication yet. Do not expose it to a public interface.
 
 ## Not yet
 
-- Editing categories/tags, creating categories.
+- Editing tags/categories or creating categories from the UI.
 - Deep Dive, Deep Research, Merge (needs the Hermes API server).
 - Full rewritten content (`0` notes have it today).
 - Source snapshots, auth, PWA.
 
-The scanner is the foundation; every later screen reads from the same normalized index.
+The scanner is the foundation; every screen reads from the same normalized index.

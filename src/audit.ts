@@ -25,11 +25,11 @@ console.log();
 console.log(rows("Top unresolved targets", s.topBroken));
 console.log();
 console.log("Files without frontmatter:");
-for (const note of vault.notes.filter((note) => !note.hasFrontmatter)) console.log(`  ${note.path}`);
+for (const note of vault.notes.filter((note) => !note.moc && !note.hasFrontmatter)) console.log(`  ${note.path}`);
 
 assert.ok(s.total > 300, `expected >300 notes, got ${s.total}`);
 assert.equal(s.inNotes + s.legacy, s.total);
-assert.equal(new Set(vault.notes.map((note) => note.id)).size, s.total, "duplicate note ids");
+assert.equal(new Set(vault.notes.map((note) => note.id)).size, vault.notes.length, "duplicate note ids");
 for (const note of vault.notes) {
   assert.ok(note.title, `missing title: ${note.path}`);
   assert.ok(note.category, `missing category: ${note.path}`);

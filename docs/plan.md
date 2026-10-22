@@ -1,8 +1,21 @@
 # Second Brain Workspace — Plan v2
 
-Status: draft for approval
+Status: Phase 1 browsing/health UI implemented; agent actions pending the Hermes API server
 Owner: Omid
 Last updated: 2026-10-22
+
+## 0. Implementation status (2026-10-22)
+
+Built in the dashboard repo:
+
+- vault scanner and audit for both layouts, MOCs, links, and frontmatter health;
+- sidebar, library, category and tag filters, live search;
+- note reader with source, tags, summary, sections, backlinks, and broken links;
+- tags index and issues index with link suggestions and preview-before-apply fixes;
+- canvas knowledge graph with pan/zoom, labels, and click-through;
+- `Design.md` visual system.
+
+Still to build: category/tag editing, category create/rename/merge, tag merges, Deep Dive, Deep Research, Merge, and the Hermes API proxy. The full-content note format and backfill are still in the pipeline repo.
 
 ## 1. What we are building
 

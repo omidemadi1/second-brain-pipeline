@@ -29,6 +29,7 @@ export type Note = {
   links: string[];
   brokenLinks: string[];
   backlinks: string[];
+  edges: string[];
 };
 
 export type Vault = {
@@ -127,7 +128,12 @@ function addUnique(map: Map<string, Note | null>, name: string, note: Note) {
 }
 
 function dateValue(value: unknown): string {
-  return text(value).slice(0, 10);
+  if (value instanceof Date && !Number.isNaN(value.getTime())) return value.toISOString().slice(0, 10);
+  const raw = text(value);
+  if (!raw) return "";
+  if (/^\d{4}-\d{2}-\d{2}/.test(raw)) return raw.slice(0, 10);
+  const parsed = new Date(raw);
+  return Number.isNaN(parsed.getTime()) ? raw.slice(0, 10) : parsed.toISOString().slice(0, 10);
 }
 
 function firstHeading(body: string): string {
@@ -147,6 +153,70 @@ function firstParagraph(body: string): string {
     .map((part) => part.trim())
     .find((part) => part && !part.startsWith("[[") && !/^\*\*(Author|Bio)/i.test(part));
   return (paragraph ?? "").slice(0, 600);
+}
+
+function normalize(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function levenshtein(a: string, b: string): number {
+  if (a === b) return 0;
+  if (!a.length) return b.length;
+  if (!b.length) return a.length;
+  let previous = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    const current = [i];
+    for (let j = 1; j <= b.length; j++) {
+      current[j] = Math.min(
+        previous[j] + 1,
+        current[j - 1] + 1,
+        previous[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1),
+      );
+    }
+    previous = current;
+  }
+  return previous[b.length];
+}
+
+function overlap(a: string, b: string): number {
+  const left = new Set(a.split(" ").filter((word) => word.length > 2));
+  const right = new Set(b.split(" ").filter((word) => word.length > 2));
+  if (!left.size || !right.size) return 0;
+  let shared = 0;
+  for (const word of left) if (right.has(word)) shared++;
+  return shared / (left.size + right.size - shared);
+}
+
+export type LinkSuggestion = { note: Note; score: number };
+
+export function suggestLinks(target: string, notes: Note[], limit = 3): LinkSuggestion[] {
+  const wanted = normalize(target);
+  if (!wanted) return [];
+
+  return notes
+    .map((note) => {
+      const candidates = [note.title, path.basename(note.path, ".md"), note.id.split("/").pop() ?? ""];
+      let score = 0;
+      for (const candidate of candidates) {
+        const value = normalize(candidate);
+        if (!value) continue;
+        if (value === wanted) score = Math.max(score, 1);
+        else if (value.includes(wanted) || wanted.includes(value)) {
+          score = Math.max(score, 0.82 - Math.abs(value.length - wanted.length) / 200);
+        } else {
+          const edit = 1 - levenshtein(wanted, value) / Math.max(wanted.length, value.length);
+          score = Math.max(score, edit * 0.8, overlap(wanted, value) * 0.85);
+        }
+      }
+      return { note, score };
+    })
+    .filter((item) => item.score >= 0.45)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit);
 }
 
 export function loadVault(vaultPath: string): Vault {
@@ -216,6 +286,7 @@ export function loadVault(vaultPath: string): Vault {
       links: wikiLinks(body),
       brokenLinks: [],
       backlinks: [],
+      edges: [],
     };
 
     notes.push(note);
@@ -237,8 +308,12 @@ export function loadVault(vaultPath: string): Vault {
   for (const note of notes) {
     for (const target of note.links) {
       const resolved = resolve(target);
-      if (resolved) resolved.backlinks.push(note.id);
-      else note.brokenLinks.push(target);
+      if (resolved) {
+        resolved.backlinks.push(note.id);
+        note.edges.push(resolved.id);
+      } else {
+        note.brokenLinks.push(target);
+      }
     }
   }
 
@@ -278,6 +353,7 @@ export function vaultStats(notes: Note[]) {
     topBroken: count(broken).slice(0, 10),
     zeroLinks: content.filter((note) => note.links.length === 0).length,
     tags: new Set(tags).size,
+    tagCounts: count(tags),
     fullContent: content.filter((note) => note.contentStatus === "full").length,
     words: content.reduce((sum, note) => sum + note.wordCount, 0),
   };
