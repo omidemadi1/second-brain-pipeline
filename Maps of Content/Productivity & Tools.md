@@ -1,6 +1,6 @@
 # Productivity & Tools
 
-> 8 notes · 3 subtopics
+> 9 notes · 3 subtopics
 
 ## Desktop & Utility Apps
 
@@ -17,9 +17,10 @@
 
 - [[AfterChat-Export-AI-Chat-History-to-Markdown]] — AfterChat is an open-source tool (11 stars, JavaScript) that exports chat history from major LLM platforms — ChatGPT, Gemini, DeepSeek, and others — to Markdown files. It…
 - [[Firecrawl PDF Inspector - Fast PDF Processing]] — Firecrawl PDF Inspector is the fastest PDF processing engine at 0.002 seconds per page. A fully local parser (not OCR) written in Rust. Supports Farsi text. Competes with Docling,…
+- [[Pele — Fast Mermaid-to-SVG Renderer for Obsidian]] — Obsidian's zero-dependency Mermaid→SVG renderer: 230 kB gzip vs 1.6 MB, CSS-variable theming, all Mermaid 12.1.0 diagram types
 - [[Second-Brain-Pipeline-Telegram-Inbox-to-Obsidian]] — **What:** An end-to-end personal knowledge management pipeline that turns links and notes sent to a Telegram Inbox topic into structured, tagged Obsidian notes. Items are queued…
 
 ## Statistics
-Total notes: 8
-Reference: 5
+Total notes: 9
+Reference: 6
 Worth deep reading: 3

@@ -1,6 +1,6 @@
 # DevOps & Infrastructure
 
-> 15 notes · 4 subtopics
+> 16 notes · 4 subtopics
 
 ## Containers & Orchestration
 
@@ -14,6 +14,7 @@
 - [[CyDrive-Telegram-Unlimited-Drive]] — CyDrive is an open-source project that maps a Telegram bot's cloud storage to a native Windows network drive (e.g., Y:), effectively turning Telegram into an unlimited, free cloud…
 - [[Idea - Proxmox VM Backup Automation Tool]] — Python automation for Proxmox VM backups
 - [[Immich-Self-Hosted-Photo-Management]] — Switch and Click recommends Immich as the single most essential self-hosted app for any home server. Immich is an open-source, self-hosted photo and video management platform…
+- [[Local Cloud Lab with Coolify — Learn on Localhost, Deploy on the Company Server]] — Plan: free Coolify lab on Proxmox → same stack on the company's idle server; learning sequence, SSL/DNS caveats, approval checklist
 - [[Madmail — Self-Hosted Chat Relay for Delta Chat]] — Rust PGP chat relay for Delta Chat
 - [[proxmox-vm-backup-automation]] — Python tool idea for Proxmox VM backups via REST API
 - [[Stackyard - Self-Hosted Homelab Dashboard]] — Stackyard is a self-hosted homelab dashboard that shows system status, disk health, backups, network speed, GitHub stats, libraries, and services. Add any API data as widget/badge…
@@ -30,8 +31,8 @@
 - [[OpenHaystack-Open-Source-AirTag-Alternative-Find-My]] — OpenHaystack (by SEEMOO Lab, TU Darmstadt) is an open-source framework for building custom Bluetooth trackers compatible with Apple's massive Find My network. It lets you create…
 
 ## Statistics
-Total notes: 15
+Total notes: 16
 Quick note: 1
-Reference: 6
+Reference: 7
 Unrated: 1
 Worth deep reading: 7

@@ -1,6 +1,6 @@
 # AI & Machine Learning
 
-> 118 notes · 8 subtopics
+> 120 notes · 8 subtopics
 
 ## MCP & Agent Tooling
 
@@ -20,6 +20,7 @@
 - [[BHolmesDev-skill-doctor-AI-Skill-Analysis-Tool]] — **BHolmesDev** is developing **skill-doctor** — a new diagnostic tool that **automatically analyzes and improves your AI coding agent skills** across **Claude Code, Codex, and…
 - [[Book-to-Skill — Convert Books to AI Agent Skills]] — Convert books to AI skills, 51x token savings
 - [[book-to-skill-convert-books-to-ai-agent-skills]] — Convert books to AI agent skills
+- [[Claude PC Cleanup — 7 Prompts to Diagnose a Slow Computer]] — Diagnostic prompt sequence for a slow PC: CPU/RAM, startup apps, storage, unused apps (list itself is DM-gated)
 - [[Imp-Skills-AI-Agent-UI-Design]] — Pre-built skills for AI agent UI design
 - [[Last30days-Research-Skill]] — AI agent research across platforms
 - [[marketing-skills-pre-built-ai-skill-files]] — Pre-built marketing skill files for AI agents (42k stars)
@@ -36,6 +37,7 @@
 - [[Claude Code Context Management - When to Clear and Compact]] — Long AI coding sessions degrade code quality significantly. Key findings: accuracy drops after ~32k tokens (11 of 13 tested models fell below half baseline at 32k); 66% more…
 - [[claude-video-video-analysis-for-claude-code]] — Video analysis for Claude Code
 - [[CodeWiki-Google-AI-Documentation-Generator]] — AI-generated code documentation
+- [[Context Mode — Context Window Optimization for Coding Agents]] — MCP server + hooks: sandboxes tool output (98% less), SQLite/FTS5 session memory across compaction, 17 platforms
 - [[Firecrawl-Keyless-Web-Search-for-OpenCode]] — Firecrawl announced integration as a keyless web search provider in OpenCode (the AI coding agent platform). The key features are: - **Zero setup required**: No API key, no…
 - [[Grok Build CLI v0.2.107 Changelog]] — Stop hooks, S3 session resume, rotating auth tokens
 - [[Grok Build CLI v0.2.112 Features]] — /tutorial command, tool_overrides, hooks in config.toml
@@ -145,8 +147,8 @@
 - [[using-claude-and-claude-code-for-free]] — Explores methods to use **Claude** and **Claude Code** for free, including local installation and leveraging free models. - Compares **9Router + Mimo (Xiaomi free model)**,…
 
 ## Statistics
-Total notes: 118
-Quick note: 4
+Total notes: 120
+Quick note: 5
 Reference: 37
 Unrated: 2
-Worth deep reading: 75
+Worth deep reading: 76

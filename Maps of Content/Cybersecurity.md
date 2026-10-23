@@ -1,6 +1,6 @@
 # Cybersecurity
 
-> 30 notes · 5 subtopics
+> 31 notes · 5 subtopics
 
 ## Offensive Security & Pentesting
 
@@ -45,11 +45,12 @@
 - [[Google-Mantis-Agentic-Vulnerability-Framework]] — Google open-sourced **Mantis**, an agentic AI framework that automates the full vulnerability lifecycle: discovery, triage, reproduction, and patching. Unlike conventional…
 - [[Hallusquatting-AI-Hallucination-Package-Attack]] — AI hallucination supply-chain attacks
 - [[OpenAI GPT-5.6-Cyber — AI Cybersecurity Model]] — AI cybersecurity model with Daybreak initiative
+- [[OWASP Top 10 for LLM Applications 2025]] — The 10 LLM risks + mitigations: prompt injection, excessive agency, vector/embedding weaknesses, unbounded consumption
 - [[Prompt Injection - You Cannot Filter Your Way Out]] — Filters and system prompts cannot stop prompt injection — only architecture can. The article covers the "Lethal Trifecta" (high-privilege model + untrusted data + tools), Simon…
 
 ## Statistics
-Total notes: 30
+Total notes: 31
 Quick note: 3
 Reference: 5
 Unrated: 1
-Worth deep reading: 21
+Worth deep reading: 22

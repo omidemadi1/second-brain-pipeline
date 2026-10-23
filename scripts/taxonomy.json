@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-19",
+  "updated": "2026-10-23",
   "structure": "Notes/<domain>/<subtopic>/<sanitized-title>.md — `category` frontmatter is \"<domain>/<subtopic>\".",
   "rules": [
     "Pick the single most specific subcategory that fits; never fall back to a domain name alone.",
@@ -75,6 +75,11 @@
           "name": "Learning & Fundamentals",
           "description": "Tutorials, courses, beginner paths, language fundamentals and practice projects.",
           "keywords": ["tutorial", "beginners", "beginner", "learn", "learning", "course", "fundamentals", "python", "algorithms", "practice", "roadmap", "from-scratch", "explained", "cheat-sheet", "interview", "coding-games"]
+        },
+        {
+          "name": "Career & Skill Strategy",
+          "description": "Career direction and skill development: breadth vs depth, M-shaped/T-shaped careers, choosing a specialisation, strategic quitting, learning plans, motivation and the psychology of work.",
+          "keywords": ["career", "career-strategy", "career-growth", "skill-development", "learning-strategy", "breadth-vs-depth", "m-shaped-career", "t-shaped", "specialisation", "focus", "strategic-quitting", "psychology", "personal-growth", "motivation", "roadmap"]
         }
       ]
     },

@@ -1,6 +1,6 @@
 # Marketing & Growth
 
-> 20 notes · 4 subtopics
+> 21 notes · 4 subtopics
 
 ## Growth & Distribution
 
@@ -19,6 +19,7 @@
 - [[Answer Engine Optimization (AEO) Strategy]] — AEO (Answer Engine Optimization) is how brands get recommended by AI assistants. Key concepts: AI assistants use "query fan" — a single prompt gets broken into dozens of…
 - [[Google Search Console Social Account Support]] — **Google Search Console** now supports adding **Instagram, TikTok, X (Twitter), and YouTube** accounts directly within the platform. This is a significant update that brings…
 - [[Google Search Documentation — SEO Fundamentals]] — Official Google SEO guide for crawling, indexing, ranking
+- [[Hermes SEO — Native SEO Plugin for Hermes Agent]] — Hermes plugin port of Claude SEO: 25 workflow skills + SEO Router, 19 role skills, 56 scripts, Schema.org/JSON-LD, GEO; setup pulls Python deps + Chromium
 - [[OKF-v0.2-Google-AI-Readable-Content-Metadata]] — Google's AI-readable content metadata
 - [[Open SEO - Open Source SEO Tool]] — 8.2k stars, TypeScript, backlink analysis, MCP integration
 - [[openseo]] — Open-source SEO tool (Semrush/Ahrefs alternative) with MCP support
@@ -35,8 +36,8 @@
 - [[OpenClaw-Bot-Cold-Outreach-Lead-Scraper]] — Chris (@everestchris6) shared a thread about building an OpenClaw bot that scraped 1,000+ leads for cold outreach. The bot's strategy: find businesses with bad websites, flag them…
 
 ## Statistics
-Total notes: 20
+Total notes: 21
 Quick note: 2
 Reference: 9
 Unrated: 1
-Worth deep reading: 8
+Worth deep reading: 9

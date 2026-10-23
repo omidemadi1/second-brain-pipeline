@@ -1,6 +1,6 @@
 # Development
 
-> 12 notes · 4 subtopics
+> 13 notes · 5 subtopics
 
 ## Web & Frontend
 
@@ -26,8 +26,12 @@
 - [[Learning to Code Through Games]] — A curated list of 10 websites to learn coding through games: (1) Kubernetes — k8sgames.com, (2) DevOps — devops.games, (3) Linux — overthewire.org, (4) Git — ohmygit.org, (5)…
 - [[Python Tutorial for Beginners]] — YouTube tutorial for Python basics
 
+## Career & Skill Strategy
+
+- [[The Psychology of People Who Want to Do Everything]] — 15-min video essay on too many interests: breadth vs depth, M-shaped career, strategic quitting, capturing ideas instead of holding them open
+
 ## Statistics
-Total notes: 12
+Total notes: 13
 Quick note: 3
 Reference: 5
-Worth deep reading: 4
+Worth deep reading: 5

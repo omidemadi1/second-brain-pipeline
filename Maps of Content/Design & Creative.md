@@ -1,6 +1,6 @@
 # Design & Creative
 
-> 27 notes · 5 subtopics
+> 28 notes · 5 subtopics
 
 ## Design Craft & Principles
 
@@ -11,6 +11,7 @@
 ## Design Systems & UI
 
 - [[769338dedcc1 TypeUI Design Extractor Chrome Extension]] — Chrome extension that converts website designs into SKILL/DESIGN.md prompts for AI replication. Works with Claude, Cursor, OpenCode, Windsurf, and other AI coding tools.
+- [[OpenDesign — Open-Source Design Agent Workspace]] — Apache-2.0 design workspace over a coding agent: 150+ design systems, HTML prototypes/dashboards/slides, comment-to-revision loop, HTML video via OpenDesign Motion
 - [[TypeUI Design Extractor - Chrome Extension]] — TypeUI Design Extractor is a Chrome extension with 30k installs and 5 stars. It converts any website's design into SKILL/DESIGN.md prompts that AI tools can use to replicate the…
 - [[typeui-chrome-extension]] — **TypeUI** is a **Chrome extension** (30k installs, 5-star rating) that extracts a website's design style into **SKILL/DESIGN.md prompts** for AI replication. - Compatible with…
 - [[UI-UX-Pro-Max-Skill-Design-System-Generator]] — AI Design System Generator (NextLevelBuilder) creates complete design systems from requirements
@@ -45,8 +46,8 @@
 - [[Tripo-AI-Image-to-3D-Model]] — Tripo AI is an AI-powered 3D modeling tool that converts 2D images into detailed 3D models. The workflow: upload an image of an object → Tripo generates initial geometry and…
 
 ## Statistics
-Total notes: 27
+Total notes: 28
 Quick note: 2
 Reference: 11
 Unrated: 2
-Worth deep reading: 12
+Worth deep reading: 13
