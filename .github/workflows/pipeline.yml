@@ -1,0 +1,27 @@
+name: pipeline
+
+on:
+  push:
+    paths:
+      - "services/pipeline/**"
+      - ".github/workflows/pipeline.yml"
+  pull_request:
+    paths:
+      - "services/pipeline/**"
+      - ".github/workflows/pipeline.yml"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Byte-compile scripts
+        run: python -m compileall -q services/pipeline/scripts
+      - name: Validate taxonomy JSON
+        run: python -m json.tool services/pipeline/scripts/taxonomy.json > /dev/null
+      - name: Shell syntax
+        run: bash -n services/pipeline/scripts/process_and_push.sh

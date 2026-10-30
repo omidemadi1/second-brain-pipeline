@@ -1,9 +1,12 @@
-name: second-brain-dashboard
+name: second-brain
+
+# Runs the dashboard (services/dashboard) against the vault in ./vault.
+# The pipeline (services/pipeline) is driven by Hermes cron, not by compose.
 
 services:
   dashboard:
     build:
-      context: .
+      context: ./services/dashboard
       dockerfile: Dockerfile
     image: second-brain-dashboard:local
     init: true
@@ -27,6 +30,6 @@ services:
     user: "${DASHBOARD_UID:-1000}:${DASHBOARD_GID:-1000}"
 
     # Read-write: applying a link fix rewrites one note and creates a git commit.
-    # Override with an absolute path if the vault is not a sibling directory.
+    # Override with an absolute path if the vault lives elsewhere.
     volumes:
-      - "${VAULT_PATH_HOST:-..}:/vault"
+      - "${VAULT_PATH_HOST:-./vault}:/vault"

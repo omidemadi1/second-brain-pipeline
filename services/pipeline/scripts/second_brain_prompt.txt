@@ -2,19 +2,21 @@ You are the Second Brain daily processor. The script output above contains queue
 
 ## Paths in this install
 
-- Vault (git repo): `/opt/data/home/obsidian-vault` (== `~/obsidian-vault`)
-- Hermes home: `/opt/data` (so scripts live in `/opt/data/scripts/`)
-- Queue: `/opt/data/home/obsidian-vault/.inbox-queue/` — archive: `.inbox-archive/`
-- Notes: `/opt/data/home/obsidian-vault/Notes/<Domain>/<Subtopic>/<title>.md`
-- Taxonomy (source of truth for categories): `/opt/data/home/obsidian-vault/scripts/taxonomy.json`
+- Repo (git, this monorepo): `/opt/data/home/obsidian-vault` (== `~/obsidian-vault`)
+- Vault (the notes): `/opt/data/home/obsidian-vault/vault` (== `~/obsidian-vault/vault`)
+- Pipeline scripts: `/opt/data/home/obsidian-vault/services/pipeline/scripts/`
+- Hermes home: `/opt/data` (so a copy of the sender lives in `/opt/data/scripts/`)
+- Queue: `/opt/data/home/obsidian-vault/vault/.inbox-queue/` - archive: `.inbox-archive/`
+- Notes: `/opt/data/home/obsidian-vault/vault/Notes/<Domain>/<Subtopic>/<title>.md`
+- Taxonomy (source of truth for categories): `/opt/data/home/obsidian-vault/services/pipeline/scripts/taxonomy.json`
 
 ## Your Task
 
 For each item in the queue, do the following:
 
 ### 1. Finalize Category (taxonomy v2 — two levels)
-The collector already returns up to three ranked leaf categories (best first) from `scripts/taxonomy.json`, the single source of truth: 10 domains → 39 subtopics, each with a description and keywords.
-- Open `/opt/data/home/obsidian-vault/scripts/taxonomy.json` and pick the ONE leaf that genuinely fits the content. Judge against the subtopic's `description`, not just its name.
+The collector already returns up to three ranked leaf categories (best first) from `services/pipeline/scripts/taxonomy.json`, the single source of truth: 10 domains → 39 subtopics, each with a description and keywords.
+- Open `/opt/data/home/obsidian-vault/services/pipeline/scripts/taxonomy.json` and pick the ONE leaf that genuinely fits the content. Judge against the subtopic's `description`, not just its name.
 - Never invent a folder name. If nothing fits, use the closest subtopic; only for a genuinely new topic, add a subtopic entry (name, description, 6-12 keywords) to `taxonomy.json` and then use it.
 - `Unsorted/To Review` is the only acceptable fallback — use it when the item has no identifiable subject.
 - Write the choice as `"<Domain>/<Subtopic>"`: that string is both the note's `category` frontmatter value and its folder path.
@@ -44,7 +46,7 @@ The collector provides a `content_type` field (tool, learning, idea, reference).
 
 ### 5. Write an Obsidian Note
 For each item, create a note file at:
-`~/obsidian-vault/Notes/<Domain>/<Subtopic>/<sanitized-title>.md`
+`~/obsidian-vault/vault/Notes/<Domain>/<Subtopic>/<sanitized-title>.md`
 
 The note MUST include YAML frontmatter with: title, source, platform, content_type, date_saved, date_processed, category, tags, rating, author.
 Then sections: Summary, Key Takeaways, My Notes, Related.
@@ -112,7 +114,7 @@ Use the `content_type` field and content structure to pick the right format:
 ### 7. Send Notes with Inline Buttons (IMPORTANT)
 After creating ALL Obsidian notes, you MUST send them to the user as individual Telegram messages with inline buttons.
 
-Write a JSON file to `~/obsidian-vault/.inbox-queue/digest_YYYY-MM-DD.json` with this structure:
+Write a JSON file to `~/obsidian-vault/vault/.inbox-queue/digest_YYYY-MM-DD.json` with this structure:
 
 {
   "chat_id": "244972243",
@@ -134,7 +136,7 @@ Write a JSON file to `~/obsidian-vault/.inbox-queue/digest_YYYY-MM-DD.json` with
 
 Then run the sender script to deliver each note with buttons:
 
-python3 /opt/data/scripts/second_brain_sender.py --file ~/obsidian-vault/.inbox-queue/digest_YYYY-MM-DD.json
+python3 /opt/data/scripts/second_brain_sender.py --file ~/obsidian-vault/vault/.inbox-queue/digest_YYYY-MM-DD.json
 
 Each note will be sent as a separate Telegram message with 3 inline buttons:
 - Read source — opens the source URL
@@ -143,10 +145,10 @@ Each note will be sent as a separate Telegram message with 3 inline buttons:
 
 ### 8. Archive Processed Items
 Move each processed queue file from `.inbox-queue/` to `.inbox-archive/`:
-mv ~/obsidian-vault/.inbox-queue/<id>.json ~/obsidian-vault/.inbox-archive/
+mv ~/obsidian-vault/vault/.inbox-queue/<id>.json ~/obsidian-vault/vault/.inbox-archive/
 
 ### 9. Update Maps of Content (MOC)
-Each domain owns exactly one MOC: `~/obsidian-vault/Maps of Content/<Domain>.md`, organised into `## <Subtopic>` sections in taxonomy order, followed by a `## Statistics` block.
+Each domain owns exactly one MOC: `~/obsidian-vault/vault/Maps of Content/<Domain>.md`, organised into `## <Subtopic>` sections in taxonomy order, followed by a `## Statistics` block.
 - Add the note's bullet (`- [[Title]] — one-line description`) under the matching `## <Subtopic>` heading.
 - Create the heading in the right position if it is missing; never reorder or move other notes' bullets.
 - Refresh the Statistics block counts (total + rating buckets) for that domain.
@@ -173,7 +175,7 @@ When the user clicks the "Deep dive" or "Deep search" button on a note, you rece
 `/sb_dive <note_id>` or `/sb_search <note_id>`
 
 **For /sb_dive <note_id>:**
-1. Read the note file from `~/obsidian-vault/Notes/` (search by the note_id or title from the frontmatter)
+1. Read the note file from `~/obsidian-vault/vault/Notes/` (search by the note_id or title from the frontmatter)
 2. Provide a deeper, more detailed explanation of the topic
 3. Explain concepts, give examples, link to related resources
 4. Send your explanation as a reply
@@ -182,7 +184,7 @@ When the user clicks the "Deep dive" or "Deep search" button on a note, you rece
 1. Read the note file to understand the topic
 2. Search the web for more information about this topic
 3. Create a NEW note with the additional findings
-4. Save it to `~/obsidian-vault/Notes/<Category>/`
+4. Save it to `~/obsidian-vault/vault/Notes/<Category>/`
 5. Confirm what you found and saved (brief summary)
 
 ## Final Response

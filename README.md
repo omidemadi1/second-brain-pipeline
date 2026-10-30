@@ -8,30 +8,37 @@ An automated personal knowledge management system built with [Hermes Agent](http
 
 ## Monorepo Layout
 
-This repository is a monorepo with two apps:
-
 ```
-second-brain-pipeline/            # repo root = the Obsidian vault (the pipeline)
-├── dashboard/                    # second-brain-dashboard: local reading workspace
-│   ├── src/                      # Hono server, vault scanner, UI, audit CLI
-│   ├── docs/
-│   ├── Dockerfile
-│   └── docker-compose.yml
-├── scripts/                      # collect.py, process_inbox.py, sender, taxonomy
-├── Notes/, Maps of Content/, …   # the vault itself
-└── cron-job-config.json          # Hermes cron definitions
+second-brain-pipeline/
+├── services/
+│   ├── dashboard/                 # Hono web app: browse/search the vault, fix links
+│   │   ├── src/
+│   │   ├── docs/
+│   │   └── Dockerfile
+│   └── pipeline/                  # Hermes cron worker (collect → process → notes)
+│       ├── scripts/               # collect.py, process_inbox.py, sender, taxonomy
+│       ├── skills/                # Hermes skills: second-brain, second-brain-inbox
+│       └── cron-job-config.json   # exported Hermes cron definitions
+├── packages/
+│   └── shared/                    # reserved for code shared by more than one service
+├── vault/                         # the Obsidian vault (Notes/, Maps of Content/, …)
+├── docker-compose.yml             # runs the dashboard against ./vault
+├── .github/workflows/             # CI per service
+└── README.md
 ```
 
-Run the dashboard from `dashboard/`:
+Run the dashboard:
 
 ```bash
-cd dashboard
+cd services/dashboard
 npm install
 npm run audit    # reconcile the vault, print stats and issues
 npm start        # http://localhost:8787
 ```
 
-The dashboard finds the vault automatically (two levels up) and skips its own markdown while scanning. See [dashboard/README.md](dashboard/README.md).
+Or from the repo root, `docker compose up -d --build` (dashboard + `./vault` mount). See [services/dashboard/README.md](services/dashboard/README.md).
+
+The pipeline is not containerized: Hermes cron runs `services/pipeline/scripts/process_and_push.sh` with `OBSIDIAN_VAULT_PATH` pointing at `vault/`. On a server clone that means `OBSIDIAN_VAULT_PATH=/root/obsidian-vault/vault`, and the cron prompts must use the same `vault/` prefix.
 
 ---
 
@@ -69,7 +76,7 @@ Telegram Inbox Topic
 ## Vault Structure
 
 ```
-obsidian-vault/
+vault/
 ├── Notes/                          # Notes, two levels: <Domain>/<Subtopic>/
 │   ├── AI & Machine Learning/      # 8 subtopics: MCP & Agent Tooling, Skills &
 │   │                               # Prompts, Coding Agents & Harnesses, Agentic
@@ -96,21 +103,24 @@ obsidian-vault/
 ├── Templates/                      # note-template.md with YAML frontmatter
 ├── People & Sources/               # Source tracking
 ├── Daily Digests/                  # Daily summary digests
-├── scripts/                        # Pipeline scripts
+├── .inbox-queue/                   # Queued items (JSON)
+└── .inbox-archive/                 # Processed items archive
+
+services/pipeline/
+├── scripts/
 │   ├── taxonomy.json               # Single source of truth: domains → subtopics → keywords
 │   ├── collect.py                  # Inbox collector (URL detection + taxonomy classification)
 │   ├── process_inbox.py            # Queue processor (API extraction)
-│   ├── process_and_push.sh         # Cron wrapper: process + git push
+│   ├── process_and_push.sh         # Cron wrapper: process (git push is done by the agent)
 │   ├── second_brain_sender.py      # Telegram note sender with inline buttons
 │   └── check_related.py            # Wikilink relationship scanner
-├── .inbox-queue/                   # Queued items (JSON)
-├── .inbox-archive/                 # Processed items archive
-└── skills/                         # Hermes skills for the pipeline
-    ├── second-brain/
-    └── second-brain-inbox/
+├── skills/                         # Hermes skills for the pipeline
+│   ├── second-brain/
+│   └── second-brain-inbox/
+└── cron-job-config.json            # Exported Hermes cron definitions
 ```
 
-**Current stats:** 96 notes across 10 categories
+**Current stats:** 342 notes (272 in `Notes/`, 70 legacy) + 10 MOCs
 
 ## Note Format
 
@@ -158,7 +168,7 @@ Both run on the default Hermes profile on the shared Telegram gateway.
 Detects URLs in messages and queues them for processing.
 
 ```bash
-python3 scripts/collect.py "https://github.com/user/repo"
+python3 services/pipeline/scripts/collect.py "https://github.com/user/repo"
 # Output: JSON with action + queued items
 # Side effect: writes .json to .inbox-queue/
 ```
@@ -169,7 +179,7 @@ python3 scripts/collect.py "https://github.com/user/repo"
 Reads queued items, fetches content from platform APIs, outputs structured JSON for the LLM.
 
 ```bash
-python3 scripts/process_inbox.py
+python3 services/pipeline/scripts/process_inbox.py
 # Output: JSON with all unprocessed items + extracted content
 ```
 
@@ -177,7 +187,7 @@ python3 scripts/process_inbox.py
 Runs the processor, captures output, then pushes to git in the background.
 
 ```bash
-bash scripts/process_and_push.sh
+bash services/pipeline/scripts/process_and_push.sh
 ```
 
 ### `check_related.py` — Wikilink Scanner
@@ -187,7 +197,7 @@ Scans notes for `[[wikilink]]` relationships and reports populated vs. empty lin
 Sends processed notes as individual Telegram messages with inline keyboard buttons.
 
 ```bash
-echo '<json>' | python3 scripts/second_brain_sender.py
+echo '<json>' | python3 services/pipeline/scripts/second_brain_sender.py
 ```
 
 ## Platforms
@@ -206,6 +216,7 @@ echo '<json>' | python3 scripts/second_brain_sender.py
    ```bash
    git clone https://github.com/omidemadi1/second-brain-pipeline.git ~/obsidian-vault
    ```
+   The Obsidian vault is the `vault/` subfolder. Open `~/obsidian-vault/vault` in Obsidian and point the pipeline at it with `OBSIDIAN_VAULT_PATH=~/obsidian-vault/vault`.
 
 2. **Configure Hermes cron jobs** (in `~/.hermes/config.yaml` or via `hermes cron`):
    - `second-brain-daily` — daily processing cron

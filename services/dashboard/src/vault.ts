@@ -53,7 +53,9 @@ const EXCLUDED = new Set([
   "skills",
   "docs",
   "node_modules",
-  // The dashboard lives inside the vault; do not index its markdown.
+  // Code that may sit next to the vault when VAULT_PATH points at the repo root.
+  "services",
+  "packages",
   "dashboard",
 ]);
 
@@ -361,5 +363,5 @@ export function vaultStats(notes: Note[]) {
   };
 }
 
-// The dashboard lives at <vault>/dashboard, so the vault is two levels up.
-export const VAULT_PATH = process.env.VAULT_PATH ?? path.resolve(import.meta.dirname, "../..");
+// The dashboard lives at <repo>/services/dashboard, so the vault is at <repo>/vault.
+export const VAULT_PATH = process.env.VAULT_PATH ?? path.resolve(import.meta.dirname, "../../../vault");
