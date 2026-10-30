@@ -6,6 +6,35 @@ An automated personal knowledge management system built with [Hermes Agent](http
 
 ---
 
+## Monorepo Layout
+
+This repository is a monorepo with two apps:
+
+```
+second-brain-pipeline/            # repo root = the Obsidian vault (the pipeline)
+├── dashboard/                    # second-brain-dashboard: local reading workspace
+│   ├── src/                      # Hono server, vault scanner, UI, audit CLI
+│   ├── docs/
+│   ├── Dockerfile
+│   └── docker-compose.yml
+├── scripts/                      # collect.py, process_inbox.py, sender, taxonomy
+├── Notes/, Maps of Content/, …   # the vault itself
+└── cron-job-config.json          # Hermes cron definitions
+```
+
+Run the dashboard from `dashboard/`:
+
+```bash
+cd dashboard
+npm install
+npm run audit    # reconcile the vault, print stats and issues
+npm start        # http://localhost:8787
+```
+
+The dashboard finds the vault automatically (two levels up) and skips its own markdown while scanning. See [dashboard/README.md](dashboard/README.md).
+
+---
+
 ## How It Works
 
 ```

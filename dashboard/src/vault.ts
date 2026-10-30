@@ -53,6 +53,8 @@ const EXCLUDED = new Set([
   "skills",
   "docs",
   "node_modules",
+  // The dashboard lives inside the vault; do not index its markdown.
+  "dashboard",
 ]);
 
 const REQUIRED = [
@@ -359,5 +361,5 @@ export function vaultStats(notes: Note[]) {
   };
 }
 
-export const VAULT_PATH =
-  process.env.VAULT_PATH ?? path.resolve(import.meta.dirname, "../../second-brain-pipeline");
+// The dashboard lives at <vault>/dashboard, so the vault is two levels up.
+export const VAULT_PATH = process.env.VAULT_PATH ?? path.resolve(import.meta.dirname, "../..");

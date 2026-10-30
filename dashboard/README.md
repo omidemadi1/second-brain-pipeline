@@ -12,7 +12,7 @@ npm start       # http://localhost:8787
 
 Environment:
 
-- `VAULT_PATH` — defaults to `../second-brain-pipeline`
+- `VAULT_PATH` — defaults to the repository root (two levels up from `dashboard/src`)
 - `PORT` — defaults to `8787`
 - `HOST` — defaults to `127.0.0.1`; set `0.0.0.0` only for trusted LAN access
 
@@ -30,10 +30,10 @@ Then open <http://127.0.0.1:8787>. If the local Node server is already using 878
 DASHBOARD_PORT=8788 docker compose up -d --build
 ```
 
-The compose file mounts `../second-brain-pipeline` at `/vault` **read-write**. Link fixes need the `.git` directory so they can create commits. To use another vault location:
+The compose file mounts the repo root (`..`, i.e. this monorepo) at `/vault` **read-write**. Link fixes need the `.git` directory so they can create commits. To use another vault location:
 
 ```bash
-VAULT_PATH_HOST=/absolute/path/to/second-brain-pipeline docker compose up -d
+VAULT_PATH_HOST=/absolute/path/to/vault docker compose up -d
 ```
 
 Useful settings:
@@ -42,7 +42,7 @@ Useful settings:
 |---|---|---|
 | `DASHBOARD_BIND` | `127.0.0.1` | Host interface; use `0.0.0.0` for trusted LAN access |
 | `DASHBOARD_PORT` | `8787` | Host port |
-| `VAULT_PATH_HOST` | `../second-brain-pipeline` | Host path mounted at `/vault` |
+| `VAULT_PATH_HOST` | `..` (repo root) | Host path mounted at `/vault` |
 | `DASHBOARD_UID` / `DASHBOARD_GID` | `1000` | Linux vault owner, if not UID/GID 1000 |
 | `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL` | `Second Brain Dashboard` / `dashboard@localhost` | Author for link-fix commits |
 

@@ -29,4 +29,4 @@ services:
     # Read-write: applying a link fix rewrites one note and creates a git commit.
     # Override with an absolute path if the vault is not a sibling directory.
     volumes:
-      - "${VAULT_PATH_HOST:-../second-brain-pipeline}:/vault"
+      - "${VAULT_PATH_HOST:-..}:/vault"
