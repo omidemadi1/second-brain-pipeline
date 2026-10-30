@@ -1,0 +1,32 @@
+name: second-brain-dashboard
+
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: second-brain-dashboard:local
+    init: true
+    restart: unless-stopped
+
+    # Localhost by default. Set DASHBOARD_BIND=0.0.0.0 for trusted LAN access.
+    ports:
+      - "${DASHBOARD_BIND:-127.0.0.1}:${DASHBOARD_PORT:-8787}:8787"
+
+    environment:
+      VAULT_PATH: /vault
+      HOST: 0.0.0.0
+      PORT: "8787"
+      # Used for commits created by the one-click broken-link fix.
+      GIT_AUTHOR_NAME: "${GIT_AUTHOR_NAME:-Second Brain Dashboard}"
+      GIT_AUTHOR_EMAIL: "${GIT_AUTHOR_EMAIL:-dashboard@localhost}"
+      GIT_COMMITTER_NAME: "${GIT_AUTHOR_NAME:-Second Brain Dashboard}"
+      GIT_COMMITTER_EMAIL: "${GIT_AUTHOR_EMAIL:-dashboard@localhost}"
+
+    # Match the vault owner on Linux if it is not UID/GID 1000.
+    user: "${DASHBOARD_UID:-1000}:${DASHBOARD_GID:-1000}"
+
+    # Read-write: applying a link fix rewrites one note and creates a git commit.
+    # Override with an absolute path if the vault is not a sibling directory.
+    volumes:
+      - "${VAULT_PATH_HOST:-../second-brain-pipeline}:/vault"

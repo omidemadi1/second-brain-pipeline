@@ -1,0 +1,17 @@
+{
+  "name": "second-brain-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.ts",
+    "dev": "node --watch src/server.ts",
+    "audit": "node src/audit.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.5",
+    "gray-matter": "^4.0.3",
+    "hono": "^4.13.13",
+    "markdown-it": "^15.0.3"
+  }
+}
