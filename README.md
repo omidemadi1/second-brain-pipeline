@@ -36,7 +36,7 @@ npm run audit    # reconcile the vault, print stats and issues
 npm start        # http://localhost:8787
 ```
 
-Or from the repo root, `docker compose up -d --build` (dashboard container with the repo mounted at `/repo`). See [services/dashboard/README.md](services/dashboard/README.md).
+Or from the repo root, `docker compose up -d` (pulls `ghcr.io/omidemadi1/second-brain-dashboard:dev` and mounts the repo at `/repo`). See [services/dashboard/README.md](services/dashboard/README.md).
 
 The pipeline is not containerized: Hermes cron runs `services/pipeline/scripts/process_and_push.sh` with `OBSIDIAN_VAULT_PATH` pointing at `vault/`. On a server clone that means `OBSIDIAN_VAULT_PATH=/root/obsidian-vault/vault`, and the cron prompts must use the same `vault/` prefix.
 

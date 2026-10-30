@@ -5,10 +5,9 @@ name: second-brain
 
 services:
   dashboard:
-    build:
-      context: ./services/dashboard
-      dockerfile: Dockerfile
-    image: second-brain-dashboard:local
+    # Prebuilt image. Private package: run `docker login ghcr.io` once first.
+    # For local changes: `docker compose build && docker compose up -d`.
+    image: ghcr.io/omidemadi1/second-brain-dashboard:dev
     init: true
     restart: unless-stopped
 

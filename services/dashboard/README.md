@@ -23,17 +23,20 @@ Node 24 runs the TypeScript directly; there is no build step.
 
 ## Docker
 
-From the repo root:
+The compose file pulls the prebuilt image `ghcr.io/omidemadi1/second-brain-dashboard:dev` (private package — `docker login ghcr.io` once). From the repo root:
 
 ```bash
-docker compose up -d --build
+docker compose pull
+docker compose up -d
 ```
 
 Then open <http://127.0.0.1:8787>. If the local Node server is already using 8787:
 
 ```bash
-DASHBOARD_PORT=8788 docker compose up -d --build
+DASHBOARD_PORT=8788 docker compose up -d
 ```
+
+To run your local changes instead of the published image, add a `build:` block back to the `dashboard` service (`context: ./services/dashboard`) and run `docker compose up -d --build`.
 
 The root `docker-compose.yml` mounts the whole repo at `/repo` (read-write) and points `VAULT_PATH` at `/repo/vault`, so link fixes can see `.git` and create commits. To use another checkout:
 
