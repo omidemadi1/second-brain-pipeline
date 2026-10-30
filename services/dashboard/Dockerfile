@@ -10,6 +10,7 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends git ca-certificates \
   && rm -rf /var/lib/apt/lists/* \
   && git config --system --add safe.directory /vault \
+  && git config --system --add safe.directory /repo \
   && git config --system user.name "Second Brain Dashboard" \
   && git config --system user.email "dashboard@localhost"
 

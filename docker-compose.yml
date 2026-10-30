@@ -12,12 +12,13 @@ services:
     init: true
     restart: unless-stopped
 
-    # Localhost by default. Set DASHBOARD_BIND=0.0.0.0 for trusted LAN access.
+    # Bind to 127.0.0.1 by default. On a VPS behind a reverse proxy, set
+    # DASHBOARD_BIND to the docker bridge IP (e.g. 172.17.0.1) - never 0.0.0.0.
     ports:
       - "${DASHBOARD_BIND:-127.0.0.1}:${DASHBOARD_PORT:-8787}:8787"
 
     environment:
-      VAULT_PATH: /vault
+      VAULT_PATH: /repo/vault
       HOST: 0.0.0.0
       PORT: "8787"
       # Used for commits created by the one-click broken-link fix.
@@ -26,10 +27,10 @@ services:
       GIT_COMMITTER_NAME: "${GIT_AUTHOR_NAME:-Second Brain Dashboard}"
       GIT_COMMITTER_EMAIL: "${GIT_AUTHOR_EMAIL:-dashboard@localhost}"
 
-    # Match the vault owner on Linux if it is not UID/GID 1000.
-    user: "${DASHBOARD_UID:-1000}:${DASHBOARD_GID:-1000}"
+    # The vault and .git are root-owned on a fresh clone, so the dashboard must
+    # be able to rewrite a note and create the link-fix commit.
+    user: "0:0"
 
-    # Read-write: applying a link fix rewrites one note and creates a git commit.
-    # Override with an absolute path if the vault lives elsewhere.
+    # Mount the whole repo, not just ./vault: git needs .git to commit.
     volumes:
-      - "${VAULT_PATH_HOST:-./vault}:/vault"
+      - "${REPO_PATH_HOST:-./}:/repo"

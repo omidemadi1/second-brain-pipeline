@@ -35,11 +35,23 @@ Then open <http://127.0.0.1:8787>. If the local Node server is already using 878
 DASHBOARD_PORT=8788 docker compose up -d --build
 ```
 
-The root `docker-compose.yml` mounts `./vault` at `/vault` **read-write**. Link fixes need the `.git` directory so they can create commits. To use another vault location:
+The root `docker-compose.yml` mounts the whole repo at `/repo` (read-write) and points `VAULT_PATH` at `/repo/vault`, so link fixes can see `.git` and create commits. To use another checkout:
 
 ```bash
-VAULT_PATH_HOST=/absolute/path/to/vault docker compose up -d
+REPO_PATH_HOST=/absolute/path/to/second-brain-pipeline docker compose up -d
 ```
+
+The container runs as root (`user: "0:0"`) so it can write to a root-owned clone and commit as the dashboard; the vault is not exposed directly.
+
+### Behind a reverse proxy (VPS)
+
+The dashboard is unauthenticated, so keep it off the public interface. In a `.env` next to `docker-compose.yml`:
+
+```bash
+DASHBOARD_BIND=172.17.0.1   # docker bridge gateway, reachable as host.docker.internal
+```
+
+Then point your nginx server block at `http://host.docker.internal:8787`.
 
 Useful settings:
 
@@ -47,7 +59,7 @@ Useful settings:
 |---|---|---|
 | `DASHBOARD_BIND` | `127.0.0.1` | Host interface; use `0.0.0.0` for trusted LAN access |
 | `DASHBOARD_PORT` | `8787` | Host port |
-| `VAULT_PATH_HOST` | `./vault` | Host path mounted at `/vault` |
+| `REPO_PATH_HOST` | `./` (this repo) | Host path mounted at `/repo` |
 | `DASHBOARD_UID` / `DASHBOARD_GID` | `1000` | Linux vault owner, if not UID/GID 1000 |
 | `GIT_AUTHOR_NAME` / `GIT_AUTHOR_EMAIL` | `Second Brain Dashboard` / `dashboard@localhost` | Author for link-fix commits |
 
